@@ -1,3 +1,5 @@
+import styles from "@/css/portalform.module.css"
+
 export default function PortalForm() {
     return (
      <>
