@@ -5,7 +5,7 @@ import logo from "@/images/homepage/logo.png"
 
 export default function Navbar() {
   return (
-    <div className={styles.bar}>
+    <div className={styles.wrapper}>
       <div className={styles.info}>
 
         <div className={styles.logo}>
