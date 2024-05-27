@@ -7,7 +7,7 @@ export default function Footer() {
     <div className={styles.wrapper}>
 
 
-      <h1>footer</h1>
+      
 
 
 
