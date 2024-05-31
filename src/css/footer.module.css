@@ -5,8 +5,8 @@
     width: 100%;
     height: auto;
     background-color: #03101D;
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    /* bottom: 0; */
     color: white;
     font-family: Poppins;
     display: flex;
