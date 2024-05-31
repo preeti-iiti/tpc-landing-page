@@ -3,7 +3,7 @@ import styles from "@/css/navbar.module.css"
 
 
 
-export default function Navbar(props) {
+export default function Navbar(props:any ) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.info}>
