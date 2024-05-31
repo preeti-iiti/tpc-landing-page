@@ -55,7 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
     
 }
 
@@ -81,6 +81,8 @@
     
 }
 
+
+
 .all{
     display: flex;
     justify-content: space-between;
@@ -93,7 +95,7 @@
     justify-content: flex-start;
     width: 70%;
 
-    margin-inline: 10px;
+    margin-inline: 20px;
     
 }
 
@@ -125,10 +127,36 @@
 }
 
 .block{
-    display: flex;
-    gap: 20px;
+
+    font-size: 1rem;
+    padding-left: 10px;
+
+}
+
+
+
+.links{
+    font-size: 1rem;
+    padding-left : 10px;
+}
+
+.links:hover{
+    scale: 1.1;
+    border-left: 2px solid white;
+}
+
+
+.logos{
+    width: 3rem;
+    height: 3rem;
+transition: .3s ease;
     
 }
+
+.logos:hover{
+    transform: scale(1.4);
+}
+
 
 
 @media only screen and (max-width: 1440px){
@@ -136,6 +164,7 @@
         width: 40vw;
     }
 }
+
 
 
 
@@ -177,12 +206,17 @@
         justify-content: center;
         margin-bottom: 20px;
         padding-right: 0;
+        margin-inline: 5px;
     }
     .textcontent{
         justify-content: center;
         align-items: center;
         text-align: center;
+        font-size: 0.9rem;
         
+    }
+    .textheader{
+        font-size: 1.5rem;
     }
 
 }
@@ -194,7 +228,8 @@
         align-items: center;
     }
     .connect{
-        gap: 2rem;
+        gap: 1rem;
+        margin-inline: 1rem;
     }
     .stay{
         font-size: 6vw;
@@ -213,7 +248,11 @@
         width: 90%;
     }
     .googlemap{
-        width: 75vw;
+        width: 85vw;
         height: 200px;
+        margin-inline: 10px;
+    }
+    .socialmedia{
+        gap: 1rem;
     }
 }

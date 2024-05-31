@@ -18,7 +18,7 @@ export default function Footer(props) {
             <span className={styles.textheader}>Quick Links</span>
             <div className={styles.textcontent}>
                 {props.quicklinks.map((val)=>{
-                  return <div>{val.title}</div>;
+                  return <div className={styles.links}>{val.title}</div>;
                 })}
               </div>
             </div>
@@ -48,13 +48,17 @@ export default function Footer(props) {
           <div className={styles.connect}>
             <span className={styles.stay}>STAY CONNECTED</span>
             <div className={styles.socialmedia}>
-            <span>in</span>
-            <span>x</span>
+
+            {props.stayconnected.map((val)=>{
+              return <div ><a href={val.link} target="_blank"><img src={val.logo} alt={val.title} className={styles.logos}></img></a></div>
+          })}
+            
             </div>
+
           </div>
 
           <div className={styles.copyright}>
-            © Copyright 2024 SPO, IIT INDORE
+           {props.copyright }
           </div>
 
 
