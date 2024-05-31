@@ -18,7 +18,7 @@ export default function Footer(props) {
             <span className={styles.textheader}>Quick Links</span>
             <div className={styles.textcontent}>
                 {props.quicklinks.map((val)=>{
-                  return <div className={styles.links}>{val.title}</div>;
+                  return <div className={styles.links} key={val.id}>{val.title}</div>;
                 })}
               </div>
             </div>
@@ -27,7 +27,7 @@ export default function Footer(props) {
             <span className={styles.textheader}>Contact</span>
             <div className={styles.textcontent}>
                 {props.contact.map((val)=>{
-                  return <div className={styles.block}><div>{val.description}</div></div> ;
+                  return <div className={styles.block} key={val.id}><div>{val.description}</div></div> ;
                 })}
               </div>
             
@@ -50,7 +50,7 @@ export default function Footer(props) {
             <div className={styles.socialmedia}>
 
             {props.stayconnected.map((val)=>{
-              return <div ><a href={val.link} target="_blank"><img src={val.logo} alt={val.title} className={styles.logos}></img></a></div>
+              return <div key={val.id} ><a href={val.link} target="_blank"><img src={val.logo} alt={val.title} className={styles.logos}></img></a></div>
           })}
             
             </div>
