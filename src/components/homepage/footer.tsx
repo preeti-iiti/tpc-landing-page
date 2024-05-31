@@ -1,7 +1,7 @@
 import styles from "@/css/footer.module.css"
 
 
-export default function Footer(props) {
+export default function Footer(props: any) {
   return (
     <>
 
