@@ -1,23 +1,71 @@
 import styles from "@/css/footer.module.css"
 
-export default function Footer() {
-    return (
-     <>
-     
-    <div className={styles.wrapper}>
+
+export default function Footer(props) {
+  return (
+    <>
+
+      <div className={styles.wrapper}>
+
+        <div className={styles.unexpendable}>
+
+          <div className={styles.all}>
+
+          
+            <div className={styles.text}>
+
+            <div className={styles.section}>
+            <span className={styles.textheader}>Quick Links</span>
+            <div className={styles.textcontent}>
+                {props.quicklinks.map((val)=>{
+                  return <div>{val.title}</div>;
+                })}
+              </div>
+            </div>
+
+            <div className={styles.section}>
+            <span className={styles.textheader}>Contact</span>
+            <div className={styles.textcontent}>
+                {props.contact.map((val)=>{
+                  return <div className={styles.block}><div>{val.description}</div></div> ;
+                })}
+              </div>
+            
+
+            </div>
 
 
-      
+
+            
+
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.330526493356!2d75.92317729999999!3d22.529287999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962efb7df4ad60b%3A0xb51ea33269875e24!2sIIT%20Indore%20Simrol%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1717103018656!5m2!1sen!2sin" width="340" height="260" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className={styles.googlemap}></iframe>
+
+
+          </div>
+
+          <div className={styles.connect}>
+            <span className={styles.stay}>STAY CONNECTED</span>
+            <div className={styles.socialmedia}>
+            <span>in</span>
+            <span>x</span>
+            </div>
+          </div>
+
+          <div className={styles.copyright}>
+            © Copyright 2024 SPO, IIT INDORE
+          </div>
 
 
 
-      <div className={styles.finishergrad}>
+        </div>
+        <div className={styles.finishergrad}>
+        </div>
       </div>
-    </div>
-  
-   
-     </>
-      
-    );
-  }
-  
+
+
+    </>
+
+  );
+}

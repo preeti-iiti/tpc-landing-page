@@ -4,18 +4,19 @@ import PortalForm from "@/components/homepage/portalform"
 import Recruiters from "@/components/homepage/recruiters"
 import Messages from "@/components/homepage/messages"
 import Footer from "@/components/homepage/footer"
-
+import FooterData from "@/data/footer.json";
+import NavbarData from "@/data/navbar.json";
 
 export default function Home() {
   return (
    <>
    
-   <Navbar />
+   <Navbar {...NavbarData} />
    <Carousel />
    <PortalForm />
    <Recruiters />
    <Messages />
-   <Footer />
+   <Footer {...FooterData}/>
 
  
    </>
