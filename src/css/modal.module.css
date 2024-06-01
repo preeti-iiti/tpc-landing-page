@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+.modal{
+    font-family: "Inter", serif;
+}
+.modal dialog {
+    width: 425px;
+}
+
+
+.modal dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal button {
+    align-self: flex-end;
+}
+
+.close {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 900;
+}
+
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 1rem 0 1rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* justify-content: space-between; */
+    color: hsl(0, 0%, 100%);
+}
+
+.heading h2 {
+    color: rgb(28, 27, 27);
+    font-size: 1.4rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+.heading h1 {
+    color: hsl(0, 0%, 100%);
+    background-color: rgb(28, 27, 27);
+    font-size: 1.7rem;
+    font-weight: bold;
+
+}
+
+.image {
+    overflow: hidden;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    border: 5px solid #5BBCFF;
+}
+
+.info {
+    padding: 0 1rem;
+    font-family: "Arvo", serif;
+    font-weight: 500;
+    
+}
+
+.modal::-webkit-scrollbar {
+    width: 0px; /* Customize scrollbar width */
+}
