@@ -10,17 +10,28 @@
     display: flex;
     align-items: center;
     font-family: Poppins;
-    /* justify-content: center; */
+    position: relative;
+    justify-content: center;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.442)
 }
-.info{
-    max-width: 80vw;
+.unexpendable{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 10px;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
     /* background-color: aqua; */
 }
 
 .logo{
 display: flex;
-gap: 2rem;
+gap: 0.5rem;
+align-items: center;
+width: 20rem;
 }
 
 .name{
@@ -31,10 +42,106 @@ gap: 2rem;
 
 .tpc{
     color: black;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 700;
 }
 .iiti{
     color: black;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
+}
+
+.iitilogo{
+    width: auto;
+    height: 4rem;
+}
+.modals{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.modals ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 0.7rem;
+}
+.modals ul li{
+    margin: 2px;
+}
+
+.modalbutton{
+    font-family: Poppins;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.dropdown{
+    width: 10px;
+    height: 10px;
+}
+
+
+
+.menu{
+    width: 2rem;
+    height: 2rem;
+    /* background-color: aqua; */
+    display: none;
+    margin-right: 20px;
+    
+
+}
+
+.topbar{
+width: 100%;
+height: 1px;
+border: 1px solid black;
+transition: .3s ease;
+}
+.midbar{
+width: 100%;
+height: 1px;
+border: 1px solid black;
+transition: .3s ease;
+}
+.lowbar{
+width: 100%;
+height: 1px;
+border: 1px solid black;
+transition: .3s ease;
+}
+
+.menu:hover > .midbar{
+    width: 60%;
+    transform: translateX(0.8rem);
+
+}
+.menu:hover > .lowbar{
+    width: 30%;
+    transform: translateX(1.4rem);
+
+
+}
+
+
+@media only screen and (max-width: 1024px){
+
+
+.modals{
+    display: none;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
 }

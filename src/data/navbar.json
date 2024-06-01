@@ -1,9 +1,190 @@
 {
 
 
-    "logo" : "./data/logo/iiti.png"
+    "logo" : "./data/logo/iiti.png",
+
+    "buttons" : [
 
 
+        {
+        "title": "ABOUT US",
+        "modal" : [
+
+            {
+
+                "title": "About IITI",
+                "link": "/aboutiiti"
+
+            },
+            {
+
+                "title": "Academic Programs",
+                "link": "/academicprograms"
+
+            },
+            {
+
+                "title": "Why Recruit from IITI",
+                "link": "/whyrecruit"
+
+            },
+            {
+
+                "title": "Student Activities",
+                "link": "/studentactivities"
+
+            },
+            {
+
+                "title": "Achievements",
+                "link": "/achievements"
+
+            }
+
+
+
+
+        ],
+        "modalbutton" : "./data/buttonspngs/dropdownbutton.png",
+        "ismodal" : true
+        },
+        
+        {
+            "title": "STUDENTS' CORNER",
+            "modal" : [
+    
+                {
+    
+                    "title": "FAQs",
+                    "link": "/studentfaqs"
+    
+                },
+                {
+    
+                    "title": "Student Login",
+                    "link": "/studentlogin"
+    
+                }
+    
+    
+    
+            ],
+            "modalbutton" : "./data/buttonspngs/dropdownbutton.png",
+            "ismodal" : true
+        },
+
+        {
+                "title": "RECRUTIERS' CORNER",
+                "modal" : [
+        
+                    {
+        
+                        "title": "Brochure",
+                        "link": "/brochure"
+        
+                    },
+                    {
+        
+                        "title": "Timelines",
+                        "link": "/timelines"
+        
+                    },
+                    {
+        
+                        "title": "Demographics",
+                        "link": "/demographics"
+        
+                    },
+                    {
+        
+                        "title": "FAQs",
+                        "link": "/recruiterfaqs"
+        
+                    },
+                    {
+        
+                        "title": "AIPC Guidelines",
+                        "link": "/aipcguidelines"
+        
+                    },
+                    {
+        
+                        "title": "Facilities",
+                        "link": "/facilities"
+        
+                    },
+                    {
+        
+                        "title": "Recruiter Login",
+                        "link": "/recruiterlogin"
+        
+                    }
+        
+        
+        
+                ],
+                "modalbutton" : "./data/buttonspngs/dropdownbutton.png",
+                "ismodal" : true
+        },
+
+        {
+            "title": "EXTERNAL OPPORTUNITIES",
+            "modal" : [  ],
+            "ismodal" : false
+        },
+
+        {
+            "title": "CONTACT US",
+            "modal" : [
+    
+                {
+    
+                    "title": "About T&P Cell",
+                    "link": "/abouttpc"
+    
+                },
+                {
+    
+                    "title": "Staff & Team",
+                    "link": "/staffandteam"
+    
+                },
+                {
+    
+                    "title": "Faculty",
+                    "link": "/faculty"
+    
+                },
+                {
+    
+                    "title": "Contacts",
+                    "link": "/contacts"
+    
+                },
+                {
+    
+                    "title": "How to Reach IITI?",
+                    "link": "/reachiiti"
+    
+                },
+                {
+    
+                    "title": "Developed By",
+                    "link": "/developedby"
+    
+                }
+    
+    
+    
+            ],
+            "modalbutton" : "./data/buttonspngs/dropdownbutton.png",
+            "ismodal" : true
+        }
+
+
+
+
+    ]
 
 
 
