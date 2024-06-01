@@ -148,7 +148,7 @@
 
 .logos{
     width: 3rem;
-    height: 3rem;
+    height: auto;
 transition: .3s ease;
     
 }
