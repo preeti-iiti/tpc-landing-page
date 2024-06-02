@@ -8,15 +8,7 @@ import arrow from "../../../public/data/buttonspngs/arrow.png";
 
 export default function Messages() {
   const modalRef = useRef<HTMLDialogElement>(null);
-  const imgRef = useRef<HTMLImageElement>(null);
-  const [imgHeight, setImgHeight] = useState<number | null>(null);
   const [selectedMessage, setSelectedMessage] = useState<{ heading: string; info: string } | null>(null);
-
-  useEffect(() => {
-    if (imgRef.current) {
-      setImgHeight(imgRef.current.clientHeight);
-    }
-  }, []);
 
   const openModal = (heading: string, info: string) => {
     setSelectedMessage({ heading, info });
@@ -63,7 +55,7 @@ export default function Messages() {
       ))
     }
 
-      {selectedMessage && <Modal ref={modalRef} heading={selectedMessage.heading} info={selectedMessage.info}></Modal>}
+      {selectedMessage && <Modal  heading={selectedMessage.heading} info={selectedMessage.info} ref={modalRef}></Modal>}
       
       </div>
     </div>
