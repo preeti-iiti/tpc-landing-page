@@ -8,14 +8,15 @@ interface ModalProps {
 
 const Modal = forwardRef<HTMLDialogElement, ModalProps>(({ heading, info }, ref) => {
 
+  const dialogRef = ref as React.MutableRefObject<HTMLDialogElement | null>;
 
   if (ref !== null){
 
   return (
     <div className={style.modal}>
-      <dialog className={style.modal} ref={ref}>
+      <dialog className={style.modal} ref={dialogRef}>
         <div className={style.close}>
-          <button onClick={() => ref.current?.close()}>x</button>
+          <button onClick={() => dialogRef.current?.close()}>x</button>
         </div>
         <div className={style.top}>
           <section className={style.heading}>

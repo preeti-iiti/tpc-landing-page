@@ -20,48 +20,48 @@ export default function Messages() {
 
     <>
 
-    <div className={styles.wrapper}>
+      <div className={styles.wrapper}>
 
-      <div className={styles.unexpendable}>
-      { messagesData.messages.map((message, index) => (
-        <div key={index} className={styles.message}>
-          <div className={styles.title}>{message.title}</div>
+        <div className={styles.unexpendable}>
+          {messagesData.messages.map((message, index) => (
+            <div key={index} className={styles.message}>
+              <div className={styles.title}>{message.title}</div>
 
-          <div className={styles.content}>
+              <div className={styles.content}>
 
-          
 
-          <div className={index % 2 === 0 ? styles.info : styles.infoReverse} >
 
-          <div className={styles.profilephoto}>
-            <img src={message.image} alt={message.title} />
-            
-            </div>
-            <div className={styles.para}>
-              <div className={styles.summary}>{message.summary}</div>
-              <button onClick={() => openModal(message.title, message.info)} className={styles.readmore}>
-                READ MORE 
-                <div className={styles.arrow}>
-                <img src={messagesData.arrow} alt="" />
+                <div className={index % 2 === 0 ? styles.info : styles.infoReverse} >
+
+                  <div className={styles.profilephoto}>
+                    <img src={message.image} alt={message.title} />
+
+                  </div>
+                  <div className={styles.para}>
+                    <div className={styles.summary}>{message.summary}</div>
+                    <button onClick={() => openModal(message.title, message.info)} className={styles.readmore}>
+                      READ MORE
+                      <div className={styles.arrow}>
+                        <img src={messagesData.arrow} alt="" />
+                      </div>
+                    </button>
+                  </div>
                 </div>
-              </button>
+
+
+              </div>
+
             </div>
-          </div>
+          ))
+          }
 
-
-          </div>
+          {selectedMessage && <Modal heading={selectedMessage.heading} info={selectedMessage.info} ref={modalRef}></Modal>}
 
         </div>
-      ))
-    }
-
-      {selectedMessage && <Modal  heading={selectedMessage.heading} info={selectedMessage.info} ref={modalRef}></Modal>}
-      
       </div>
-    </div>
 
 
-  </>
+    </>
 
 
 
