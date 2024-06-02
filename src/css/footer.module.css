@@ -8,7 +8,7 @@
     position: relative;
     /* bottom: 0; */
     color: white;
-    font-family: Poppins;
+
     display: flex;
     justify-content: center;
     
@@ -64,7 +64,7 @@
 .stay{
     display: block;
     text-transform: uppercase;
-    font-family: Jura;
+    /* font-family: Jura; */
 
     font-size: 3rem;
     
@@ -102,7 +102,6 @@
 
 .textcontent{
     font-size: 1rem;
-    font-family: Poppins;
     padding-top: 10px;
     display: flex;
     flex-direction: column;
@@ -121,7 +120,7 @@
 }
 
 .textheader{
-    font-family: Jura;
+    /* font-family: Jura; */
     font-size: 2rem;
     text-transform: uppercase;
 
@@ -131,7 +130,7 @@
 
     font-size: 1rem;
     padding-left: 10px;
-    font-family: Poppins;
+
     
 
 }
@@ -141,7 +140,7 @@
 .links{
     font-size: 1rem;
     padding-left : 10px;
-    font-family: Poppins;
+
 }
 
 .links:hover{
@@ -170,7 +169,7 @@ transition: .3s ease;
 }
 
 .copyright{
-    font-family: Poppins;
+
 }
 
 

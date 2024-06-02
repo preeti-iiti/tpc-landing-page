@@ -17,8 +17,8 @@ export default function Footer(props: any) {
             <div className={styles.section}>
             <span className={styles.textheader}>Quick Links</span>
             <div className={styles.textcontent}>
-                {props.quicklinks.map((val: any)=>{
-                  return <div className={styles.links} key={val.id}>{val.title}</div>;
+                {props.quicklinks.map((val: any,index:any)=>{
+                  return <div className={styles.links} key={index}>{val.title}</div>;
                 })}
               </div>
             </div>
@@ -26,8 +26,8 @@ export default function Footer(props: any) {
             <div className={styles.section}>
             <span className={styles.textheader}>Contact</span>
             <div className={styles.textcontent}>
-                {props.contact.map((val: any)=>{
-                  return <div className={styles.block} key={val.id}><div>{val.description}</div></div> ;
+                {props.contact.map((val: any,index:any)=>{
+                  return <div className={styles.block} key={index}><div>{val.description}</div></div> ;
                 })}
               </div>
             

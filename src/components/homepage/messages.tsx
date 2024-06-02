@@ -3,8 +3,8 @@
 import styles from "@/css/messages.module.css";
 import { useRef, useEffect, useState } from "react";
 import Modal from "./modal";
-
-import messagesData from "./demo.json";
+import messagesData from "@/data/messages.json";
+import arrow from "../../../public/data/buttonspngs/arrow.png";
 
 export default function Messages() {
   const modalRef = useRef<HTMLDialogElement>(null);
@@ -24,22 +24,58 @@ export default function Messages() {
   };
 
   return (
-    <div className={styles.messages}>
-      {messagesData.map((message, index) => (
-        <div key={index}>
-          <h2>{message.heading}</h2>
-          <div className={index % 2 === 0 ? styles.info : styles.infoReverse} style={{ height: imgHeight || 'auto' }}>
-            <img ref={imgRef} src="Director.png" alt="" onLoad={() => setImgHeight(imgRef.current?.clientHeight || null)} />
+
+
+    <>
+
+    <div className={styles.wrapper}>
+
+      <div className={styles.unexpendable}>
+      { messagesData.messages.map((message, index) => (
+        <div key={index} className={styles.message}>
+          <div className={styles.title}>{message.title}</div>
+
+          <div className={styles.content}>
+
+          
+
+          <div className={index % 2 === 0 ? styles.info : styles.infoReverse} >
+
+          <div className={styles.profilephoto}>
+            <img src={message.image} alt={message.title} />
+            
+            </div>
             <div className={styles.para}>
-              <p>{message.summary}</p>
-              <button onClick={() => openModal(message.heading, message.info)}>
-                READ MORE &mdash;&mdash;&mdash;&gt;
+              <div className={styles.summary}>{message.summary}</div>
+              <button onClick={() => openModal(message.title, message.info)} className={styles.readmore}>
+                READ MORE 
+                <div className={styles.arrow}>
+                <img src={messagesData.arrow} alt="" />
+                </div>
               </button>
             </div>
           </div>
+
+
+          </div>
+
         </div>
-      ))}
+      ))
+    }
+
       {selectedMessage && <Modal ref={modalRef} heading={selectedMessage.heading} info={selectedMessage.info}></Modal>}
+      
+      </div>
     </div>
+
+
+  </>
+
+
+
   );
 }
+
+
+
+

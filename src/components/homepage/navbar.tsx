@@ -3,7 +3,7 @@ import styles from "@/css/navbar.module.css"
 
 
 
-export default function Navbar(props:any ) {
+export default function Navbar(props: any) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.unexpendable}>
@@ -17,38 +17,39 @@ export default function Navbar(props:any ) {
         </div>
 
         <div className={styles.modals}>
-        <ul>
+          <ul>
 
-        {
+            {
 
-          props.buttons.map((val: any)=>{
-            {let abc = val.ismodal
-              if(abc){
-                return <li className={styles.modalbutton} key={val.id}>{val.title}<img src={val.modalbutton} className={styles.dropdown} ></img></li>
+              props.buttons.map((val: any,index:any) => {
+                {
+                  let abc = val.ismodal
+                  if (abc) {
+                    return <li className={styles.modalbutton} key={index}>{val.title}<img src={val.modalbutton} className={styles.dropdown} ></img></li>
+                  }
+                  else {
+                    return <li className={styles.modalbutton} key={index}>{val.title}</li>
+                  }
+
+                }
               }
-              else{
-                return <li className={styles.modalbutton} key={val.id}>{val.title}</li>
-              }
-            
-          }
-        }
-        
-        )
-          
-        }
+
+              )
+
+            }
 
 
-        </ul>
+          </ul>
 
         </div>
 
-       <div className={styles.menu}>
+        <div className={styles.menu}>
 
-        <div className={styles.topbar}></div>
-        <div className={styles.midbar}></div>
-        <div className={styles.lowbar}></div>
+          <div className={styles.topbar}></div>
+          <div className={styles.midbar}></div>
+          <div className={styles.lowbar}></div>
 
-       </div>
+        </div>
 
 
 
