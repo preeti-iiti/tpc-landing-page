@@ -11,7 +11,7 @@ const Modal = forwardRef<HTMLDialogElement, ModalProps>(({ heading, info }, ref)
     <div className={style.modal}>
       <dialog className={style.modal} ref={ref}>
         <div className={style.close}>
-          <button onClick={() => ref.current?.close()}> X</button>
+          <button onClick={() => ref.current?.close()}>x</button>
         </div>
         <div className={style.top}>
           <section className={style.heading}>
