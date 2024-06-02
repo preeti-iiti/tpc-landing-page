@@ -7,6 +7,10 @@ interface ModalProps {
 }
 
 const Modal = forwardRef<HTMLDialogElement, ModalProps>(({ heading, info }, ref) => {
+
+
+  if (ref !== null){
+
   return (
     <div className={style.modal}>
       <dialog className={style.modal} ref={ref}>
@@ -28,6 +32,7 @@ const Modal = forwardRef<HTMLDialogElement, ModalProps>(({ heading, info }, ref)
       </dialog>
     </div>
   );
+}
 });
 
 Modal.displayName = 'ModalComponent';
