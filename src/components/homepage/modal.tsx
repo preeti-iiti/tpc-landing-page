@@ -30,4 +30,6 @@ const Modal = forwardRef<HTMLDialogElement, ModalProps>(({ heading, info }, ref)
   );
 });
 
+Modal.displayName = 'ModalComponent';
+
 export default Modal;
