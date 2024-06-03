@@ -72,12 +72,13 @@
     font-size: 5rem;
     font-weight: bold;
     padding-inline: 10px;
+   
 
 }
 
 .image {
     /* overflow: hidden; */
-    
+    height: min-content;
     /* width: min-content; */
     background: linear-gradient(to bottom , #0487D2 , #02456C);
 
