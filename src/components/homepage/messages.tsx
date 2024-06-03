@@ -8,10 +8,10 @@ import arrow from "../../../public/data/buttonspngs/arrow.png";
 
 export default function Messages() {
   const modalRef = useRef<HTMLDialogElement>(null);
-  const [selectedMessage, setSelectedMessage] = useState<{ heading: string; info: string } | null>(null);
+  const [selectedMessage, setSelectedMessage] = useState<{ heading: string; info: string; photo: string} | null>(null);
 
-  const openModal = (heading: string, info: string) => {
-    setSelectedMessage({ heading, info });
+  const openModal = (heading: string, info: string, photo:string) => {
+    setSelectedMessage({ heading, info, photo });
     modalRef.current?.showModal();
   };
 
@@ -39,7 +39,7 @@ export default function Messages() {
                   </div>
                   <div className={styles.para}>
                     <div className={styles.summary}>{message.summary}</div>
-                    <button onClick={() => openModal(message.title, message.info)} className={styles.readmore}>
+                    <button onClick={() => openModal(message.title, message.info, message.image)} className={styles.readmore}>
                       READ MORE
                       <div className={styles.arrow}>
                         <img src={messagesData.arrow} alt="" />
@@ -55,7 +55,7 @@ export default function Messages() {
           ))
           }
 
-          {selectedMessage && <Modal heading={selectedMessage.heading} info={selectedMessage.info} ref={modalRef}></Modal>}
+          {selectedMessage && <Modal photo ={selectedMessage.photo} heading={selectedMessage.heading} info={selectedMessage.info} ref={modalRef}></Modal>}
 
         </div>
       </div>
