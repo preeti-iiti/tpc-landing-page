@@ -30,7 +30,8 @@
 display: flex;
 gap: 0.5rem;
 align-items: center;
-width: 20rem;
+width: auto;
+/* background-color: turquoise; */
 }
 
 .name{
@@ -55,7 +56,7 @@ width: 20rem;
     height: 4rem;
 }
 .modals{
-    width: 70%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -92,7 +93,7 @@ width: 20rem;
     height: 2rem;
     /* background-color: aqua; */
     display: none;
-    margin-right: 20px;
+    margin-right: 5px;
     
 
 }
@@ -129,7 +130,7 @@ transition: .3s ease;
 }
 
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1100px){
 
 
 .modals{
@@ -142,6 +143,26 @@ transition: .3s ease;
     position: relative;
 }
 
+
+
+}
+
+
+@media only screen and (max-width: 490px){
+
+    .english{
+       font-size: 0.7;
+    }
+    .hindi{
+        font-size: 0.4;
+    }
+    .partition{
+        display: none;
+    }
+    .tpc , .iiti{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
 
 }

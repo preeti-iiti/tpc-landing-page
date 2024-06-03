@@ -11,8 +11,8 @@ export default function Navbar(props: any) {
         <div className={styles.logo}>
           <img src={props.logo} alt="image" className={styles.iitilogo} />
           <div className={styles.name}>
-            <span className={styles.tpc}>Training and Placement Cell</span>
-            <span className={styles.iiti}>Indian Institute of technology, Indore</span>
+            <div className={styles.tpc}><span className={styles.hindi}>प्रशिक्षण एवं प्लेसमेंट सेल</span><span className={styles.partition}> | </span><span className={styles.english}>Training and Placement Cell</span></div>
+            <div className={styles.iiti}><span className={styles.hindi}>भारतीय प्रौद्योगिकी संस्थान, इंदौर</span><span className={styles.partition}> | </span><span className={styles.english}>Indian Institute of technology, Indore</span></div>
           </div>
         </div>
 
