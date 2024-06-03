@@ -42,7 +42,7 @@ export default function Messages() {
                     <button onClick={() => openModal(message.title, message.info, message.image)} className={styles.readmore}>
                       READ MORE
                       <div className={styles.arrow}>
-                        <img src={messagesData.arrow} alt="" />
+                        <img src={messagesData.arrow} alt="open" />
                       </div>
                     </button>
                   </div>
