@@ -12,14 +12,14 @@ export default function PortalForm() {
 <div className={styles.login}>
   <h1>TPC PORTAL </h1>
   <div className={styles.button}>
-    <button>
+    <div>
       <a href="">STUDENT</a>
       <a href="">LOGIN  &mdash;&mdash;&mdash;&gt;</a>
-    </button>
-    <button>
+    </div>
+    <div>
       <a className={styles.gradientText} href="">RECRUITER</a>
       <a  className={styles.gradientText} href="">LOGIN  &mdash;&mdash;&mdash;&gt;</a>
-    </button>
+    </div>
   
   </div>
   <div className={styles.lines}></div>
