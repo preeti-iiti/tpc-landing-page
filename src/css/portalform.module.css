@@ -1,0 +1,144 @@
+
+
+.unexpandable {
+    display: flex;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+ 
+    width: 50%;
+}
+
+.info h2 {
+    padding: 0.5rem;
+    color: #FF8000;
+    border: 1px solid #FF8000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.info p {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.login {
+    width: 50%;
+}
+
+.login h1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: #0A75BE;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.button {
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+}
+
+.button button {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+    background-image: linear-gradient(to bottom, #0487D2, #115398);
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 17px;
+    width: 11rem;
+    margin: 0.5rem; /* Add margin for spacing in smaller screens */
+}
+
+.button button a:first-child {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.button button:last-child{
+    border: 2px solid;
+    border-radius: 17px;
+    border-image: linear-gradient(to right, #0487D2, #115398) 1;
+    background: linear-gradient(to right, #0487D2, #115398);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.button  button:last-child a:last-child{
+  font-weight: 600;
+
+}
+
+.lines{
+    
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    background-color: rgb(255, 0, 55);
+    height: 0;
+    /* width: 10vw; */
+    border-bottom: 1px solid #FF9326;
+
+}
+.login > .lines:nth-child(3) {
+margin-top: 0.5rem;
+width: 40vw;
+}
+.login > .lines:nth-child(4) {
+    margin-top: 1rem;
+   width: 25vw; 
+}
+
+
+.login > .lines:nth-child(5) {
+    margin-top: 1.5rem;
+    width: 30vw;
+
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+
+    .lines{
+        display: none;
+    }
+    .unexpandable {
+        height: auto; /* Adjust height for smaller screens */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info, .login {
+        width: 100%; /* Full width for smaller screens */
+        text-align: center; /* Center-align text for smaller screens */
+    }
+
+    .button {
+        flex-direction: column;
+        align-items: center; /* Stack buttons vertically on smaller screens */
+    }
+
+    .button button {
+        width: 11rem; /* Adjust button width for smaller screens */
+    }
+}
