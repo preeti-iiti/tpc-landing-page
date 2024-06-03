@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
 .modal{
     font-family: "Inter", serif;
-    /* background-color: rgba(0, 0, 0, 0.9); */
-    /* color: white; */
-    /* border-top: linear-gradient(to bottom, #0387D2, #105297); */
+
 }
 
 .modal dialog {
     width: 70vw;
+    
 }
 
 
@@ -38,46 +39,64 @@
 .top {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 1rem 1rem 0 1rem;
+    justify-content:space-between;
+    padding: 0rem 1rem 0 1rem;
     color: hsl(0, 0%, 100%);
+    padding-inline: 5% 10%;
+
+  
+    
+    
 }
 
 .heading {
     display: flex;
-    flex-direction: column;
     gap: 0.5rem;
-    /* justify-content: space-between; */
     color: hsl(0, 0%, 100%);
+    flex-direction: column;
+
 }
 
 .heading h2 {
-    color: rgb(28, 27, 27);
-    font-size: 1.4rem;
-    color: #000000;
+
+    font-size: 3rem;
+    color: transparent;
     font-weight: bold;
+    background: linear-gradient(to right , #0487D2 , #02456C);
+    background-clip: text;
 }
 
 .heading h1 {
     color: hsl(0, 0%, 100%);
-    background-color: rgb(28, 27, 27);
-    font-size: 1.7rem;
+    background: linear-gradient(to right , #0487D2 , #02456C);
+    font-size: 5rem;
     font-weight: bold;
+    padding-inline: 10px;
 
 }
 
 .image {
-    overflow: hidden;
-    height: 9rem;
-    width: 9rem;
-    border-radius: 50%;
-    border: 5px solid #5BBCFF;
+    /* overflow: hidden; */
+    
+    /* width: min-content; */
+    background: linear-gradient(to bottom , #0487D2 , #02456C);
+
+    
+}
+.image img{
+    
+    width: auto;
+    scale: 0.95;
 }
 
+
 .info {
-    padding: 0 1rem;
+    padding-inline: 4rem;
     font-family: "Arvo", serif;
     font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    padding-top: 20px;
     
 }
 
@@ -86,22 +105,84 @@
 }
 
 
-@media only screen and (max-width: 768px){
-.modal dialog{
-    width: 80vw;
-}
+
+   
 
 
-
-}
-
-@media only screen and (max-width: 425px){
-    .modal dialog{
-        width: 90vw;
-    }
-    
-    
-    
-    }
     
 
+    @media only screen and (max-width: 1350px){
+        .modal dialog{
+            width: 80vw;
+        }
+        
+        .heading h1{
+            font-size: 4rem;
+        }
+        
+        
+        }
+
+        
+
+        @media only screen and (max-width: 1010px){
+           
+            .top{
+                flex-direction: column;
+                align-items: center;
+            }
+            .heading{
+                flex-direction: row;
+                justify-content: center;
+                
+            }
+            .heading h2{
+                font-size: 5vw;
+            }
+            .heading h1{
+                font-size: 5vw;
+            }
+            .image{
+               
+                scale: 0.8;
+            }
+
+            .info{
+                padding: 0;
+                padding-inline: 20px;
+                text-align: center;
+            }
+            
+            
+            }
+
+
+            @media only screen and (max-width: 768px){
+                .modal dialog{
+                    width: 80vw;
+                }
+
+                .info{
+                    font-size: 1.1rem;
+                    line-height: 2rem;
+                }
+
+                
+                
+                
+                }
+                
+                @media only screen and (max-width: 425px){
+                    .modal dialog{
+                        width: 90vw;
+                    }
+
+                    .info{
+                        font-size: 1rem;
+                        line-height: 1.5rem;
+                    }
+                    
+                    
+                    
+                    }
+                    

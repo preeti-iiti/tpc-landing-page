@@ -16,7 +16,9 @@ const Modal = forwardRef<HTMLDialogElement, ModalProps>(({ photo, heading, info 
   if (ref !== null) {
 
     return (
+
       <div className={style.modal}>
+        <div className="container">
         <dialog className={style.modal} ref={dialogRef}>
           <div className={style.close}>
             <button onClick={() => dialogRef.current?.close()}><img src = {image.backbutton} alt="x" className={style.backbutton}></img></button>
@@ -27,13 +29,14 @@ const Modal = forwardRef<HTMLDialogElement, ModalProps>(({ photo, heading, info 
               <h1>{heading.slice(8)}</h1>
             </section>
             <section className={style.image}>
-              <img src={photo} alt={heading} />
+              <div><img src={photo} alt={heading} /></div>
             </section>
           </div>
           <div className={style.info}>
             {info}
           </div>
         </dialog>
+        </div>
       </div>
     );
   }
