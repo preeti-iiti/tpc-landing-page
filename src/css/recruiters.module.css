@@ -1,0 +1,25 @@
+.button {
+    position: relative; /* Add relative positioning to enable absolute positioning for pseudo-element */
+    color: white;
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    border-radius: 70px;
+    font-size: 2rem;
+    background-image: linear-gradient(to right, #0487D2, #115398);
+    /* Hide overflowing gradient */
+    border: none; /* Remove border from the button */
+}
+
+/* Add a pseudo-element to create the border gradient effect */
+.button::after {
+    content: '';
+    position: absolute;
+    top: -2px; /* Adjust to your liking */
+    left: -2px; /* Adjust to your liking */
+    right: -2px; /* Adjust to your liking */
+    bottom: -2px; /* Adjust to your liking */
+    background-image: linear-gradient(to bottom, #0487D2, #115398);
+    border-radius: inherit;
+    z-index: -1; /* Ensure the pseudo-element is behind the button's content */
+}
