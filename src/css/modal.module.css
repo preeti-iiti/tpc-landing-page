@@ -62,7 +62,7 @@
     font-size: 3rem;
     color: transparent;
     font-weight: bold;
-    background: linear-gradient(to right , #0487D2 , #02456C);
+    background: linear-gradient(to left , #0487D2 , #02456C);
     background-clip: text;
 }
 
