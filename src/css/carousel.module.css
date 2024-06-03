@@ -1,0 +1,41 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 10px;
+}
+
+
+
+.unexpandable {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 10px;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+  
+}
+
+.location{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.location div{
+    font-size: 1.3rem;
+    color: rgba(254, 146, 38, 0.55);
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+}

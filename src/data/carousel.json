@@ -1,0 +1,29 @@
+{
+
+    "images": [
+
+     
+        
+        "./data/dummycarousel/image1.png",
+        "./data/dummycarousel/image2.png",
+        "./data/dummycarousel/image3.png",
+        "./data/dummycarousel/image4.png",
+        "./data/dummycarousel/image5.png"
+
+    ],
+
+
+    "locationicon": "./data/buttonspngs/locationicon.png"
+
+
+
+
+
+
+
+
+
+
+
+
+}

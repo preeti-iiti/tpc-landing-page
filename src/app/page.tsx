@@ -6,13 +6,14 @@ import Messages from "@/components/homepage/messages"
 import Footer from "@/components/homepage/footer"
 import FooterData from "@/data/footer.json";
 import NavbarData from "@/data/navbar.json";
+import CarouselData from "@/data/carousel.json"
 
 export default function Home() {
   return (
    <>
    
    <Navbar {...NavbarData} />
-   <Carousel />
+   <Carousel {...CarouselData}/>
    <PortalForm />
    <Recruiters />
    <Messages />
