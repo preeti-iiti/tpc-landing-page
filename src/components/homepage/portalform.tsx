@@ -6,20 +6,20 @@ export default function PortalForm() {
      
       <div className={styles.unexpandable}> 
 <div className={styles.info}>
-  <h2>STUDENT'S PLACEMENT OFFICE</h2>
-  <p>Students' Placement Office of IIT Indore, is the organization which handles all activities related to the campus placement of the graduating batch.</p>
+  <h2>STUDENT&#39;S PLACEMENT OFFICE</h2>
+  <p>Students&#39; Placement Office of IIT Indore, is the organization which handles all activities related to the campus placement of the graduating batch.</p>
 </div>
 <div className={styles.login}>
   <h1>TPC PORTAL </h1>
   <div className={styles.button}>
-    <div>
+    <button>
       <a href="">STUDENT</a>
       <a href="">LOGIN  &mdash;&mdash;&mdash;&gt;</a>
-    </div>
-    <div>
+    </button>
+    <button>
       <a className={styles.gradientText} href="">RECRUITER</a>
       <a  className={styles.gradientText} href="">LOGIN  &mdash;&mdash;&mdash;&gt;</a>
-    </div>
+    </button>
   
   </div>
   <div className={styles.lines}></div>
