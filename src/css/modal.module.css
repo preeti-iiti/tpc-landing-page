@@ -43,7 +43,7 @@
     padding: 0rem 1rem 0 1rem;
     color: hsl(0, 0%, 100%);
     padding-inline: 5% 10%;
-
+    gap: 20px;
   
     
     
@@ -68,21 +68,32 @@
 
 .heading h1 {
     color: hsl(0, 0%, 100%);
-    background: linear-gradient(to right , #0487D2 , #02456C);
-    font-size: 5rem;
+    /* background: linear-gradient(to right , #0487D2 , #02456C); */
+    font-size: 3vw;
     font-weight: bold;
     padding-inline: 10px;
    
 
 }
 
+.heading h1 div{
+
+    background: linear-gradient(to right , #0487D2 , #02456C);
+   width: auto;
+   text-wrap: wrap;
+
+}
+
 .image {
     /* overflow: hidden; */
-    height: min-content;
-    /* width: min-content; */
-    background: linear-gradient(to bottom , #0487D2 , #02456C);
+    display: flex;
+    align-items: center;
 
     
+}
+.image div{
+    background: linear-gradient(to bottom , #0487D2 , #02456C);
+    scale: 1.1;
 }
 .image img{
     
@@ -118,11 +129,10 @@
         }
         
         .heading h1{
-            font-size: 4rem;
+            font-size:  3vw;
         }
-        
-        
-        }
+
+    }
 
         
 

@@ -26,7 +26,7 @@ const Modal = forwardRef<HTMLDialogElement, ModalProps>(({ photo, heading, info 
           <div className={style.top}>
             <section className={style.heading}>
               <h2>From the</h2>
-              <h1>{heading.slice(8)}</h1>
+              <h1><div>{heading.slice(8)}</div></h1>
             </section>
             <section className={style.image}>
               <div><img src={photo} alt={heading} /></div>
