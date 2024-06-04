@@ -3,6 +3,7 @@
 
 import { useState, useEffect } from "react"
 import styles from "@/css/carousel.module.css"
+import React, { Component, MouseEvent } from 'react';
 
 export default function Carousel(props: any) {
 
@@ -44,10 +45,17 @@ export default function Carousel(props: any) {
               {props.images.map((image: string, index: number) => {
 
                 if (index === currentIndex) {
-                  return <div className={styles.activedot} key={index}>.</div>
-                }
+                  return (
+                    <button onClick={() => setCurrentIndex(index)} >
+                  <div className={styles.activedot} key={index}>.</div>
+                  </button>
+              )}
                 else {
-                  return <div className={styles.inactivedot} key={index}>.</div>
+                  return(
+                  <button onClick={() => setCurrentIndex(index)} >
+                 <div className={styles.inactivedot} key={index}>.</div>
+                  </button>
+                  )
                 }})}
 
             </div>
@@ -58,7 +66,9 @@ export default function Carousel(props: any) {
 
           <div className={styles.sidebar}>
               {props.images.map((image: string, index: number) => (
-                <img key={index} alt="gallery" src={image} style={{ display: index === currentIndex ? "none" : "block" }} />
+                <button onClick={() => setCurrentIndex(index)} style={{ display: index === currentIndex ? "none" : "block" } }>
+                <img key={index} alt="gallery" src={image}  />
+                </button>
               ))
 
               }
