@@ -44,10 +44,10 @@ export default function Carousel(props: any) {
               {props.images.map((image: string, index: number) => {
 
                 if (index === currentIndex) {
-                  return <div className={styles.activedot}>.</div>
+                  return <div className={styles.activedot} key={index}>.</div>
                 }
                 else {
-                  return <div className={styles.inactivedot}>.</div>
+                  return <div className={styles.inactivedot} key={index}>.</div>
                 }})}
 
             </div>
