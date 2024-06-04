@@ -19,7 +19,7 @@ export default function Carousel(props: any) {
     }, 5000)
 
     return () => clearInterval(intervalId);
-  }, [])
+  }, [props.images.length])
 
   return (
     <>
