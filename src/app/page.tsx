@@ -7,6 +7,7 @@ import Footer from "@/components/homepage/footer"
 import FooterData from "@/data/footer.json";
 import NavbarData from "@/data/navbar.json";
 import CarouselData from "@/data/carousel.json"
+import RecruitersData from "@/data/ourrecruiters.json"
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
    <Navbar {...NavbarData} />
    <Carousel {...CarouselData}/>
    <PortalForm />
-   <Recruiters />
+   <Recruiters {...RecruitersData}/>
    <Messages />
    <Footer {...FooterData}/>
 
