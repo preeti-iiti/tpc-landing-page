@@ -49,8 +49,8 @@ export default function Footer(props: any) {
             <span className={styles.stay}>STAY CONNECTED</span>
             <div className={styles.socialmedia}>
 
-            {props.stayconnected.map((val: any)=>{
-              return <div key={val.id} ><a href={val.link} target="_blank"><img src={val.logo} alt={val.title} className={styles.logos}></img></a></div>
+            {props.stayconnected.map((val: any, index:any)=>{
+              return <div key={index} ><a href={val.link} target="_blank"><img src={val.logo} alt={val.title} className={styles.logos}></img></a></div>
           })}
             
             </div>

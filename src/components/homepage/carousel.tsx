@@ -46,13 +46,13 @@ export default function Carousel(props: any) {
 
                 if (index === currentIndex) {
                   return (
-                    <button onClick={() => setCurrentIndex(index)} >
+                    <button onClick={() => setCurrentIndex(index)} key={index}>
                   <div className={styles.activedot} key={index}>.</div>
                   </button>
               )}
                 else {
                   return(
-                  <button onClick={() => setCurrentIndex(index)} >
+                  <button onClick={() => setCurrentIndex(index)} key={index} >
                  <div className={styles.inactivedot} key={index}>.</div>
                   </button>
                   )
@@ -66,7 +66,7 @@ export default function Carousel(props: any) {
 
           <div className={styles.sidebar}>
               {props.images.map((image: string, index: number) => (
-                <button onClick={() => setCurrentIndex(index)} style={{ display: index === currentIndex ? "none" : "block" } }>
+                <button key={index} onClick={() => setCurrentIndex(index)} style={{ display: index === currentIndex ? "none" : "block" } }>
                 <img key={index} alt="gallery" src={image}  />
                 </button>
               ))
