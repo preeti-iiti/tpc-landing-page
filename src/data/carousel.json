@@ -4,11 +4,11 @@
 
      
         
-        "./data/dummycarousel/image1.png",
-        "./data/dummycarousel/image2.png",
-        "./data/dummycarousel/image3.png",
-        "./data/dummycarousel/image4.png",
-        "./data/dummycarousel/image5.png"
+        "./data/carousel/1.jpg",
+        "./data/carousel/2.jpg",
+        "./data/carousel/3.jpg",
+        "./data/carousel/4.png",
+        "./data/carousel/5.jpg"
 
     ],
 

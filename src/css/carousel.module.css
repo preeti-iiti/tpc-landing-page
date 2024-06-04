@@ -87,14 +87,23 @@
     gap: 20px;
     width: 10%;
     justify-content: space-between;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
 
-.sidebar img{
+.sidebar button{
     width: 100%;
-    height: 10vh;
+    height: 20%;
     object-fit: cover;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
 
+.sidebar img{
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -107,13 +116,22 @@
         flex-direction: row;
         width: 95%;
         gap: 5px;
+        height: 30vh;
+        overflow: visible;
+        justify-content: space-between;
+        
     }
-    .sidebar img{
-        width: 25%;
-        height: 10vh;
+
+    .sidebar button{
+        width: 20%;
+        height: 100%;
         object-fit: cover;
-    
     }
+
+
+
+
+    
     .gallery{
         flex-direction: row;
         gap: 10px;
