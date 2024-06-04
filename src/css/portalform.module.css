@@ -29,12 +29,12 @@ margin-top: 50px;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
- 
-    width: 55%;
+    width: 50%;
+    
 }
 
 .info h2 {
-    padding: 0.5rem;
+    padding: 0.7rem;
     color: #FF8000;
     border: 1px solid #FFB366;
     width: 100%;
@@ -53,6 +53,7 @@ margin-top: 50px;
 .info p {
     font-size: 1.3rem;
     font-weight: bold;
+    word-wrap: break-word;
 }
 
 .login {
@@ -63,6 +64,7 @@ margin-top: 50px;
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     font-size: 3rem;
     color: #0A75BE;
     font-weight: 500;
@@ -79,12 +81,16 @@ margin-top: 50px;
 
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    flex-wrap: nowrap; /* Enable wrapping for smaller screens */
+
+    
 }
 
 .button button {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: left;
     padding: 0.5rem 1rem;
     background-image: linear-gradient(to bottom, #0487D2, #115398);
     font-size: 1rem;
@@ -98,6 +104,9 @@ margin-top: 50px;
 .button button a:first-child {
     font-size: 1.5rem;
     font-weight: 800;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
 }
 
 .button button:last-child{
@@ -112,10 +121,14 @@ margin-top: 50px;
     color: transparent;
     
 }
-.button  button:last-child a:last-child{
+.button  button a:last-child{
   font-weight: 600;
+  display: flex;
+    width: 100%;
+    justify-content: flex-start;
 
 }
+
 
 .lines1{
     
@@ -190,4 +203,27 @@ margin-top: 50px;
     .info h2{
         font-size: 1.1rem;
     }
+}
+
+
+@media (max-width: 450px) {
+
+
+
+    .button button a:first-child {
+        font-size: 1.3rem;
+        font-weight: 800;
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+   
+    
+   
+
+
+
+
+
 }
