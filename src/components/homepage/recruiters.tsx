@@ -25,7 +25,7 @@ export default function Recruiters(props: any) {
 
         props.logos.map((logo: any , index :any) => {
           return (
-            <div className={styles.logos}>
+            <div className={styles.logos} key={index}>
               <img src={logo} alt={logo.alt} key={index} />
             </div>  
           );
