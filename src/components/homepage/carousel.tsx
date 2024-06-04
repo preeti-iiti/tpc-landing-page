@@ -38,7 +38,7 @@ export default function Carousel(props: any) {
           <div className={styles.carousel}>
 
           <div className={styles.gallery}>
-            <img src={props.images[currentIndex]} />
+            <img src={props.images[currentIndex]} alt="tpc images" />
             <div className={styles.dots}>
 
               {props.images.map((image: string, index: number) => {
@@ -58,7 +58,7 @@ export default function Carousel(props: any) {
 
           <div className={styles.sidebar}>
               {props.images.map((image: string, index: number) => (
-                <img key={index} src={image} style={{ display: index === currentIndex ? "none" : "block" }} />
+                <img key={index} alt="gallery" src={image} style={{ display: index === currentIndex ? "none" : "block" }} />
               ))
 
               }
