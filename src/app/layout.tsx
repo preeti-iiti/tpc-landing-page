@@ -11,7 +11,7 @@ import NavbarData from "@/data/navbar.json";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Students' Placement Office, IIT Indore",
+  title: "Training and Placement Cell, IIT Indore",
   description: "Students' Placement Office of IIT Indore, is the organization which handles all activities related to the campus placement of the graduating batch.",
 };
 

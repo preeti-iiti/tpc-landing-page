@@ -7,7 +7,7 @@ export default function PortalForm() {
       <div className={styles.unexpandable}>
 
         <div className={styles.info}>
-          <h2>STUDENT&#39;S PLACEMENT OFFICE</h2>
+          <h2>TRAINING AND PLACEMENT CELL</h2>
           <p>Students&#39; Placement Office of IIT Indore, is the organization which handles all activities related to the campus placement of the graduating batch.</p>
         </div>
         <div className={styles.login}>
