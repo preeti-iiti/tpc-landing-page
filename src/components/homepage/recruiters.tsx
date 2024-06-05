@@ -32,7 +32,7 @@ export default function Recruiters(props: any) {
 
         }
 
-      )};
+      )}
       
 
       </div>  
