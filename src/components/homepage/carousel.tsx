@@ -31,10 +31,7 @@ export default function Carousel(props: any) {
         <div className={styles.unexpandable}>
 
 
-          <div className={styles.location}>
-            <img src={props.locationicon} alt="located at" className={styles.icon} />
-            <div>IIT, INDORE</div>
-          </div>
+         
 
           <div className={styles.carousel}>
 
