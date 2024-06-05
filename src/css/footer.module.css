@@ -216,8 +216,8 @@ transition: .3s ease;
     }
     .textcontent{
         justify-content: flex-start;
-        align-items: center;
-        text-align: center;
+        align-items: left;
+        text-align: left;
         font-size: 0.9rem;
         
     }
