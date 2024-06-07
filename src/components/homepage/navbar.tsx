@@ -1,9 +1,14 @@
+"use client"
 import styles from "@/css/navbar.module.css"
-
+import React, { useState ,useEffect, useRef } from 'react'
 
 
 
 export default function Navbar(props: any) {
+
+
+
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.unexpendable}>

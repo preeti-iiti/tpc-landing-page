@@ -71,14 +71,14 @@ width: auto;
     display: flex;
     list-style: none;
     justify-content: space-around;
-    font-size: 0.7rem;
+    font-size: min(1vw,0.9rem)
 }
 .modals ul li{
     margin: 2px;
 }
 
 .modalbutton{
-
+ 
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -147,7 +147,6 @@ transition: .3s ease;
     flex-direction: column;
     position: relative;
 }
-
 
 
 }

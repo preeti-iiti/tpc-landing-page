@@ -8,6 +8,8 @@ import Footer from "@/components/homepage/footer"
 import FooterData from "@/data/footer.json";
 import NavbarData from "@/data/navbar.json";
 
+import Faculty from "@/pages/faculty"
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,7 +26,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
       <Navbar {...NavbarData} />
+      <div style={{height: "5rem"}}></div>
         {children}
+        {/* <Faculty/> */}
         <Footer {...FooterData}/>
         </body>
     </html>
