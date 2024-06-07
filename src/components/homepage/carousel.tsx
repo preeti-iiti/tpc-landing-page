@@ -2,7 +2,7 @@
 
 
 import { useState, useEffect } from "react"
-import styles from "@/css/carousel.module.css"
+import styles from "@/css/homepage/carousel.module.css"
 import React, { Component, MouseEvent } from 'react';
 
 export default function Carousel(props: any) {

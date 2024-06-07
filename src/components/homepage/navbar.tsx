@@ -1,5 +1,5 @@
 "use client"
-import styles from "@/css/navbar.module.css"
+import styles from "@/css/homepage/navbar.module.css"
 import React, { useState ,useEffect, useRef } from 'react'
 
 

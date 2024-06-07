@@ -1,5 +1,5 @@
 import React, { forwardRef, useImperativeHandle } from 'react';
-import style from "@/css/modal.module.css"
+import style from "@/css/homepage/modal.module.css"
 import {image} from  "@/data/imageacess.json"
 
 

@@ -1,4 +1,4 @@
-import styles from "@/css/recruiters.module.css";
+import styles from "@/css/homepage/recruiters.module.css";
 
 
 

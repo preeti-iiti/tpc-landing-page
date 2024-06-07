@@ -1,4 +1,4 @@
-import styles from "@/css/footer.module.css"
+import styles from "@/css/homepage/footer.module.css"
 
 
 export default function Footer(props: any) {

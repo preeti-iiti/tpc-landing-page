@@ -1,10 +1,10 @@
 "use client"
 
-import styles from "@/css/messages.module.css";
+import styles from "@/css/homepage/messages.module.css";
 import { useRef, useEffect, useState } from "react";
 import Modal from "./modal";
 import messagesData from "@/data/messages.json";
-import arrow from "../../../public/data/buttonspngs/arrow.png";
+
 
 export default function Messages() {
   const modalRef = useRef<HTMLDialogElement>(null);
