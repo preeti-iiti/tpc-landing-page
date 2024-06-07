@@ -162,7 +162,9 @@
             .info{
                 padding: 0;
                 padding-inline: 20px;
-                text-align: center;
+                justify-content: center;
+                text-align: justify;
+
             }
             
             
