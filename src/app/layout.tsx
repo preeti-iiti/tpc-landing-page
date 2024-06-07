@@ -3,9 +3,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import Link from 'next/link';
 
-import Navbar from "@/components/homepage/navbar"
-import Footer from "@/components/homepage/footer"
+import Navbar from "@/app/navbar"
+import Footer from "@/app/footer"
 import FooterData from "@/data/footer.json";
 import NavbarData from "@/data/navbar.json";
 
