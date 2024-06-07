@@ -54,6 +54,7 @@ margin-top: 50px;
     font-size: 1.3rem;
     font-weight: bold;
     word-wrap: break-word;
+    text-align: justify;
 }
 
 .login {
