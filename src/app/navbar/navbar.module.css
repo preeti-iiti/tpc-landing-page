@@ -1,12 +1,11 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 
-.wrapper{
+.wrapper {
     width: 100%;
     height: 5rem;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.85);
     display: flex;
 
     position: fixed;
@@ -15,70 +14,77 @@
 
     justify-content: center;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.442);
-    transition: .3s ease;
+
 }
-.unexpendable{
+
+.unexpendable {
     max-width: 1440px;
     width: 100%;
     display: flex;
     flex-direction: row;
     position: relative;
-    margin: 10px;
-    gap: 1rem;
+    margin-inline: 10px;
+    gap: 0;
     justify-content: space-between;
     align-items: center;
-    /* background-color: aqua; */
 }
 
-.logo{
-display: flex;
-gap: 0.5rem;
-align-items: center;
-width: auto;
-/* background-color: turquoise; */
+.logo {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: auto;
+
 }
 
-.name{
+.name {
     display: flex;
     flex-direction: column;
     gap: 3px;
 }
 
 
-.tpc{
+.tpc {
     color: black;
     font-size: 0.9rem;
     font-weight: 700;
 
 }
-.iiti{
+
+.iiti {
     color: black;
     font-size: 0.6rem;
 }
 
-.iitilogo{
+.iitilogo {
     width: auto;
     height: 4rem;
 }
-.modals{
-    width: 60%;
+
+.modals {
+    width: auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-}
-.modals ul{
-    width: 100%;
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    font-size: min(1vw,0.9rem)
-}
-.modals ul li{
-    margin: 2px;
+
 }
 
-.modalbutton{
- 
+.modals ul {
+    display: flex;
+    list-style: none;
+    font-size: min(1vw, 0.9rem);
+    /* background-color: aqua; */
+}
+
+.modals ul li {
+    margin: 2px;
+    /* background-color: bisque; */
+    padding-inline: 1.4vw;
+    font-size: 0.8rem;
+    
+}
+
+.modalbutton {
+
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -86,62 +92,107 @@ width: auto;
     gap: 4px;
 }
 
-.dropdown{
+.dropdown {
     width: 10px;
     height: 10px;
 }
 
 
 
-.menu{
+.menu {
     width: 2rem;
     height: 2rem;
     /* background-color: aqua; */
     display: none;
     margin-right: 5px;
-    
+
 
 }
 
-.topbar{
-width: 100%;
-height: 1px;
-border: 1px solid black;
-transition: .3s ease;
-}
-.midbar{
-width: 100%;
-height: 1px;
-border: 1px solid black;
-transition: .3s ease;
-}
-.lowbar{
-width: 100%;
-height: 1px;
-border: 1px solid black;
-transition: .3s ease;
+.topbar {
+    width: 100%;
+    height: 1px;
+    border: 1px solid black;
+    transition: .3s ease;
 }
 
-.menu:hover > .midbar{
+.midbar {
+    width: 100%;
+    height: 1px;
+    border: 1px solid black;
+    transition: .3s ease;
+}
+
+.lowbar {
+    width: 100%;
+    height: 1px;
+    border: 1px solid black;
+    transition: .3s ease;
+}
+
+.menu:hover>.midbar {
     width: 60%;
     transform: translateX(0.8rem);
 
 }
-.menu:hover > .lowbar{
+
+.menu:hover>.lowbar {
     width: 30%;
     transform: translateX(1.4rem);
 
 
 }
+@media only screen and (max-width: 1290px) {
 
 
-@media only screen and (max-width: 1100px){
+  
+    .tpc{
+        font-size: 0.8rem;
+    }
+    .iiti{
+        font-size: 0.6rem;
+    }
+    .modals ul li {
+        padding: 0.6rem;
+    }
+    /* .partition {
+        display: none;
+    } */
+
+    /* .tpc,
+    .iiti {
+        display: flex;
+        flex-direction: column-reverse;
+    } */
 
 
-.modals{
-    display: none;
+
 }
-.menu{
+@media only screen and (max-width: 1160px) {
+
+
+  
+    .tpc{
+        font-size: 0.8rem;
+    }
+    .iiti{
+        font-size: 0.6rem;
+    }
+    .modals ul li {
+        padding: 0.6rem;
+        font-size: 0.7rem;
+    }
+   
+
+
+
+}
+@media only screen and (max-width: 1085px) {
+
+    .modals{
+        display: none;
+    }
+    .menu{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -152,20 +203,27 @@ transition: .3s ease;
 }
 
 
-@media only screen and (max-width: 490px){
+@media only screen and (max-width: 450px) {
 
-    .english{
-       font-size: 0.7;
+    .english {
+        font-size: 0.7;
     }
-    .hindi{
+
+    .hindi {
         font-size: 0.4;
     }
-    .partition{
+
+    .partition {
         display: none;
     }
-    .tpc , .iiti{
+
+    .tpc,
+    .iiti {
         display: flex;
         flex-direction: column-reverse;
+    }
+    .name{
+        gap: 1px;
     }
 
 
