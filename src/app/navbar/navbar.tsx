@@ -1,8 +1,8 @@
 "use client"
-import styles from "@/css/homepage/navbar.module.css"
+import styles from "./navbar.module.css"
 import Link from "next/link";
 import React, { useState ,useEffect, useRef } from 'react'
-
+import Image from 'next/image'
 
 
 export default function Navbar(props: any) {
@@ -16,7 +16,7 @@ export default function Navbar(props: any) {
 
         <div className={styles.logo}>
           <Link href="/">
-          <img src={props.logo} alt="iit indore" className={styles.iitilogo} />
+          <Image width={50} height={50} src={props.logo} alt="iit indore" className={styles.iitilogo} />
           </Link>
 
           <div className={styles.name}>

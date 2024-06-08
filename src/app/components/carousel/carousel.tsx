@@ -2,8 +2,9 @@
 
 
 import { useState, useEffect } from "react"
-import styles from "@/css/homepage/carousel.module.css"
+import styles from "./carousel.module.css"
 import React, { Component, MouseEvent } from 'react';
+import Image from 'next/image'
 
 export default function Carousel(props: any) {
 
@@ -36,7 +37,10 @@ export default function Carousel(props: any) {
           <div className={styles.carousel}>
 
           <div className={styles.gallery}>
-            <img src={props.images[currentIndex]} alt="tpc images" />
+
+          <Image src={props.images[currentIndex]} width={500}
+      height={500} alt="tpc images" />
+
             <div className={styles.dots}>
 
               {props.images.map((image: string, index: number) => {

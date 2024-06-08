@@ -1,7 +1,7 @@
 import React, { forwardRef, useImperativeHandle } from 'react';
-import style from "@/css/homepage/modal.module.css"
+import style from "./modal.module.css"
 import {image} from  "@/data/imageacess.json"
-
+import Image from 'next/image'
 
 interface ModalProps {
   heading: string;
@@ -29,7 +29,7 @@ const Modal = forwardRef<HTMLDialogElement, ModalProps>(({ photo, heading, info 
               <h1><div>{heading.slice(8)}</div></h1>
             </section>
             <section className={style.image}>
-              <div><img src={photo} alt={heading} /></div>
+              <div><Image width={350} height={500} src={photo} alt={heading} /></div>
             </section>
           </div>
           <div className={style.info}>

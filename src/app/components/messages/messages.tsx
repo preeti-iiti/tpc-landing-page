@@ -1,9 +1,10 @@
 "use client"
 
-import styles from "@/css/homepage/messages.module.css";
+import styles from "./messages.module.css";
 import { useRef, useEffect, useState } from "react";
-import Modal from "./modal";
-import messagesData from "@/data/messages.json";
+import Modal from "../modal/modal";
+import messagesData from "./messages.json";
+import Image from 'next/image'
 
 
 export default function Messages() {
@@ -23,7 +24,7 @@ export default function Messages() {
       <div className={styles.wrapper}>
 
         <div className={styles.unexpendable}>
-          {messagesData.messages.map((message, index) => (
+          {messagesData.messages.map((message:any , index:any) => (
             <div key={index} className={styles.message}>
               <div className={styles.title}>{message.title}</div>
 
@@ -34,7 +35,7 @@ export default function Messages() {
                 <div className={index % 2 === 0 ? styles.info : styles.infoReverse} >
 
                   <div className={styles.profilephoto}>
-                    <img src={message.image} alt={message.title} />
+                    <Image width= {200} height = {200} src={message.image} alt={message.title} />
 
                   </div>
                   <div className={styles.para}>
@@ -42,7 +43,7 @@ export default function Messages() {
                     <button onClick={() => openModal(message.title, message.info, message.image)} className={styles.readmore}>
                       READ MORE
                       <div className={styles.arrow}>
-                        <img src={messagesData.arrow} alt="open" />
+                        <Image width={100} height={10} src={messagesData.arrow} alt="open" />
                       </div>
                     </button>
                   </div>

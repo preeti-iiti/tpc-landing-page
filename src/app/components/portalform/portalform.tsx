@@ -1,4 +1,4 @@
-import styles from "@/css/homepage/portalform.module.css"
+import styles from "./portalform.module.css"
 
 export default function PortalForm() {
   return (

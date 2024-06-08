@@ -4,11 +4,12 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import Link from 'next/link';
+import Image from 'next/image'
 
-import Navbar from "@/app/navbar"
-import Footer from "@/app/footer"
-import FooterData from "@/data/footer.json";
-import NavbarData from "@/data/navbar.json";
+import Navbar from "./navbar/navbar"
+import Footer from "./footer/footer"
+import FooterData from "./footer/footer.json";
+import NavbarData from "./navbar/navbar.json";
 
 
 const inter = Inter({ subsets: ["latin"] });

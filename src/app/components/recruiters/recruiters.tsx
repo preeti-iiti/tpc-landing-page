@@ -1,7 +1,7 @@
-import styles from "@/css/homepage/recruiters.module.css";
+import styles from "./recruiters.module.css";
 
 
-
+import Image from 'next/image'
 
 
 export default function Recruiters(props: any) {
@@ -26,7 +26,7 @@ export default function Recruiters(props: any) {
         props.logos.map((logo: any , index :any) => {
           return (
             <div className={styles.logos} key={index}>
-              <img src={logo} alt={logo.alt} key={index} />
+              <Image width={100} height={50} src={logo} alt={logo.alt} key={index} />
             </div>  
           );
 

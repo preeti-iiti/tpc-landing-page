@@ -1,11 +1,11 @@
 
-import Carousel from "@/components/homepage/carousel"
-import PortalForm from "@/components/homepage/portalform"
-import Recruiters from "@/components/homepage/recruiters"
-import Messages from "@/components/homepage/messages"
+import Carousel from "./components/carousel/carousel"
+import PortalForm from "./components/portalform/portalform"
+import Recruiters from "./components/recruiters/recruiters"
+import Messages from "./components/messages/messages"
 
-import CarouselData from "@/data/carousel.json"
-import RecruitersData from "@/data/ourrecruiters.json"
+import CarouselData from "./components/carousel/carousel.json"
+import RecruitersData from "./components/recruiters/ourrecruiters.json"
 
 export default function Home() {
   return (

@@ -1,7 +1,7 @@
 {
 
 
-    "logo" : "./data/logo/iiti.png",
+    "logo" : "/data/logo/iiti.png",
 
     "buttons" : [
 
@@ -13,31 +13,31 @@
             {
 
                 "title": "About IITI",
-                "link": "/aboutiiti"
+                "link": "/aboutus/aboutiitindore"
 
             },
             {
 
                 "title": "Academic Programs",
-                "link": "/academicprograms"
+                "link": "/aboutus/academicprograms"
 
             },
             {
 
                 "title": "Why Recruit from IITI",
-                "link": "/whyrecruit"
+                "link": "/aboutus/whyrecruit"
 
             },
             {
 
                 "title": "Student Activities",
-                "link": "/studentactivities"
+                "link": "/aboutus/studentactivities"
 
             },
             {
 
                 "title": "Achievements",
-                "link": "/achievements"
+                "link": "/aboutus/achievements"
 
             }
 
@@ -56,13 +56,13 @@
                 {
     
                     "title": "FAQs",
-                    "link": "/studentfaqs"
+                    "link": "/studentscorner/studentfaqs"
     
                 },
                 {
     
                     "title": "Student Login",
-                    "link": "/studentlogin"
+                    "link": "/studentscorner/studentlogin"
     
                 }
     
@@ -80,43 +80,43 @@
                     {
         
                         "title": "Brochure",
-                        "link": "/brochure"
+                        "link": "/recruiterscorner/brochure"
         
                     },
                     {
         
                         "title": "Timelines",
-                        "link": "/timelines"
+                        "link": "/recruiterscorner/timelines"
         
                     },
                     {
         
                         "title": "Demographics",
-                        "link": "/demographics"
+                        "link": "/recruiterscorner/demographics"
         
                     },
                     {
         
                         "title": "FAQs",
-                        "link": "/recruiterfaqs"
+                        "link": "/recruiterscorner/recruiterfaqs"
         
                     },
                     {
         
                         "title": "AIPC Guidelines",
-                        "link": "/aipcguidelines"
+                        "link": "/recruiterscorner/aipcguidelines"
         
                     },
                     {
         
                         "title": "Facilities",
-                        "link": "/facilities"
+                        "link": "/recruiterscorner/facilities"
         
                     },
                     {
         
                         "title": "Recruiter Login",
-                        "link": "/recruiterlogin"
+                        "link": "/recruiterscorner/recruiterlogin"
         
                     }
         
@@ -140,37 +140,37 @@
                 {
     
                     "title": "About T&P Cell",
-                    "link": "/abouttpc"
+                    "link": "/contactus/abouttpc"
     
                 },
                 {
     
                     "title": "Staff & Team",
-                    "link": "/staffandteam"
+                    "link": "/contactus/staffandteam"
     
                 },
                 {
     
                     "title": "Faculty",
-                    "link": "/faculty"
+                    "link": "/contactus/faculty"
     
                 },
                 {
     
                     "title": "Contacts",
-                    "link": "/contacts"
+                    "link": "/contactus/contacts"
     
                 },
                 {
     
                     "title": "How to Reach IITI?",
-                    "link": "/reachiiti"
+                    "link": "/contactus/reachiiti"
     
                 },
                 {
     
                     "title": "Developed By",
-                    "link": "/developedby"
+                    "link": "/contactus/developedby"
     
                 }
     
