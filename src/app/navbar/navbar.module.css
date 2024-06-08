@@ -100,8 +100,8 @@
 
 
 .menu {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     /* background-color: aqua; */
     display: none;
     margin-right: 5px;
@@ -132,13 +132,13 @@
 
 .menu:hover>.midbar {
     width: 60%;
-    transform: translateX(0.8rem);
+    transform: translateX(0.6rem);
 
 }
 
 .menu:hover>.lowbar {
     width: 30%;
-    transform: translateX(1.4rem);
+    transform: translateX(1.05rem);
 
 
 }
