@@ -3,7 +3,7 @@ import styles from "./navbar.module.css"
 import Link from "next/link";
 import React, { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
-
+import Dropdown from "./components/dropdown/dropdown"
 
 export default function Navbar(props: any) {
 
@@ -28,10 +28,22 @@ export default function Navbar(props: any) {
               {
                   let abc = val.ismodal
                   if (abc) {
-                    return <li className={styles.modalbutton} key={index}><Link href="/aboutus/aboutiitindore">{val.title}</Link><Link href="/aboutus/aboutiitindore"><img src={val.modalbutton} className={styles.dropdown} alt="\/"></img></Link></li>
+                    return <>
+                    
+                    <li className={styles.modalbutton} key={index}>
+                      <div className={styles.headlink}>
+                     {val.title}
+                      <Image src={val.modalbutton} width={4} height={4} className={styles.dropdown} alt="\/" />
+                      </div>
+                      <div className={styles.droplist}>
+                      <Dropdown {...val}  />
+                      </div>
+                    </li>
+                    </>
+                   
                   }
                   else {
-                    return <li className={styles.modalbutton} key={index}>{val.title}</li>
+                    return <li className={styles.modalbutton} key={index}><Link href="/">{val.title}</Link></li>
                   }
 
               }})}

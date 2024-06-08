@@ -1,0 +1,24 @@
+.menu{
+    height: auto;
+    width:max-content;
+    border-radius: 9px;
+    border: 2px solid #0487D2;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-block: 10px;
+    gap: 10px;
+}
+
+.menu ul li{
+    text-align: left;
+    font-size: 0.8rem;
+}
