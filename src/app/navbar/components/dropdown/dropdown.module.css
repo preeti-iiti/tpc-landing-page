@@ -21,4 +21,11 @@
 .menu ul li{
     text-align: left;
     font-size: 0.8rem;
+    transition: .3s ease;
+}
+
+
+.menu ul li:hover{
+    scale: 1.1;
+    transition: 0s ease;
 }

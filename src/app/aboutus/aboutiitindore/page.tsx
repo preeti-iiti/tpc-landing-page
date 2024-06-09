@@ -3,7 +3,7 @@ export default function AboutIITIndore() {
      <>
      
   
-    <h1>About IIT Indore</h1>
+    <div  className="w-96 border-2">About IIT Indore</div>
   
    
      </>
