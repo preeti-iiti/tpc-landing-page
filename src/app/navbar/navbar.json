@@ -54,14 +54,14 @@
     
                 {
     
-                    "title": "FAQs",
-                    "link": "/studentscorner/faqs"
+                    "title": "Student Login",
+                    "link": "/studentscorner/studentlogin"
     
                 },
                 {
     
-                    "title": "Student Login",
-                    "link": "/studentscorner/studentlogin"
+                    "title": "FAQs",
+                    "link": "/studentscorner/faqs"
     
                 }
     
@@ -80,6 +80,13 @@
         
                         "title": "Brochure",
                         "link": "/recruiterscorner/brochure"
+        
+                    },
+                    
+                    {
+        
+                        "title": "Recruiter Login",
+                        "link": "/recruiterscorner/recruiterlogin"
         
                     },
                     {
@@ -110,12 +117,6 @@
         
                         "title": "Facilities",
                         "link": "/recruiterscorner/facilities"
-        
-                    },
-                    {
-        
-                        "title": "Recruiter Login",
-                        "link": "/recruiterscorner/recruiterlogin"
         
                     }
         
@@ -154,12 +155,7 @@
                     "link": "/contactus/faculty"
     
                 },
-                {
-    
-                    "title": "Contacts",
-                    "link": "/contactus/contacts"
-    
-                },
+                
                 {
     
                     "title": "How to Reach IITI?",

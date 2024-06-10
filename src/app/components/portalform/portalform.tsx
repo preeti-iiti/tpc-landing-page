@@ -8,7 +8,7 @@ export default function PortalForm() {
 
         <div className={styles.info}>
           <h2>TRAINING AND PLACEMENT CELL</h2>
-          <p>Students&#39; Placement Office of IIT Indore, is the organization which handles all activities related to the campus placement of the graduating batch.</p>
+          <p>Training and Placement Cell IIT Indore, is the organization which handles all activities related to the campus placement of the graduating batch.</p>
         </div>
         <div className={styles.login}>
           <h1>TPC PORTAL </h1>
