@@ -4,10 +4,15 @@
     "logo" : "/data/logo/iiti.png",
     "buttons" : [
 
-
         {
-        "title": "ABOUT US",
-        "modal" : [
+            "title": "Home",
+            "drop" : [  ],
+            "isdrop" : false,
+            "link": "/"
+        },
+        {
+        "title": "About Us",
+        "drop" : [
 
             {
 
@@ -45,12 +50,12 @@
 
         ],
         "modalbutton" : "/data/buttonspngs/dropdownbutton.png",
-        "ismodal" : true
+        "isdrop" : true
         },
         
         {
-            "title": "STUDENTS' CORNER",
-            "modal" : [
+            "title": "Students' Corner",
+            "drop" : [
     
                 {
     
@@ -69,12 +74,12 @@
     
             ],
             "modalbutton" : "/data/buttonspngs/dropdownbutton.png",
-            "ismodal" : true
+            "isdrop" : true
         },
 
         {
-                "title": "RECRUTIERS' CORNER",
-                "modal" : [
+                "title": "Recruiters' Corner",
+                "drop" : [
         
                     {
         
@@ -124,18 +129,19 @@
         
                 ],
                 "modalbutton" : "/data/buttonspngs/dropdownbutton.png",
-                "ismodal" : true
+                "isdrop" : true
         },
 
         {
-            "title": "EXTERNAL OPPORTUNITIES",
-            "modal" : [  ],
-            "ismodal" : false
+            "title": "External Opportunities",
+            "drop" : [  ],
+            "isdrop" : false,
+            "link": "/externalopportunities"
         },
 
         {
-            "title": "CONTACT US",
-            "modal" : [
+            "title": "Contact Us",
+            "drop" : [
     
                 {
     
@@ -173,7 +179,7 @@
     
             ],
             "modalbutton" : "/data/buttonspngs/dropdownbutton.png",
-            "ismodal" : true
+            "isdrop" : true
         }
 
 

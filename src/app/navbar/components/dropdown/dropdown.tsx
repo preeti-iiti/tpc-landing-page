@@ -1,45 +1,42 @@
 
-import styles from "./dropdown.module.css"
+import React from "react";
+import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button, RadioGroup, Radio} from "@nextui-org/react";
+
 import Link from "next/link";
-import React, { useState, useEffect, useRef } from 'react'
-import Image from 'next/image'
+export default function DropdownUI(props: any) {
 
+  return(
 
-export default function Dropdown(props: any) {
+<Dropdown shouldBlockScroll={false} >
+<DropdownTrigger>
+  <Button 
+    color= "default"
+    variant="light"
+    className="text-sm"
 
+  >
+    {props.children}
+  </Button>
+</DropdownTrigger>
+<DropdownMenu 
+  aria-label="Dropdown Variants"
+  color= "default"
+    variant="light"
+>
 
-
-
-  return (
-
-    <div className={styles.menu}>
-    <ul>
-    {props.modal.map((val: any, index: any) => {
-              {
-                  return(
-
-                    <li>
-                    
-                    <Link href={val.link}>{val.title}</Link>
-                  
-                    </li>
-
-
-                  )
-
-
-
-
-
-                  
-
-              }})}
-    </ul>
+{props.drop.map((item:any, index:any) => (
     
-    
-    
-    </div>
-   
+<DropdownItem  key={index} href={item.link} >{item.title}</DropdownItem>
+
+  ))}
+
+  
+</DropdownMenu>
+</Dropdown>
+
+
 
   );
+
+
 }

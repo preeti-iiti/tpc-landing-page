@@ -1,99 +1,97 @@
 "use client"
 import React from "react";
 import useState from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button, Dropdown} from "@nextui-org/react";
 import styles from "./navbar.module.css"
 import Image from "next/image";
+import Drop from "./components/dropdown/dropdown"
 
 export default function NavbarUI(props:any) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
-  ];
 
   return (
-    // <div className={styles.wrapper}>
-    // <div className={styles.unexpendable}>
-    
+ 
+
 
     
-    <Navbar onMenuOpenChange={setIsMenuOpen} isBordered={true} >
-      <NavbarContent justify="start">
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
-        />
-        <NavbarBrand>
-          <div className={styles.logo}>
-           <Link href="/"><Image width={50} height={50} src={props.logo} alt="iit indore" className={styles.iitilogo} /></Link>
-          <div className={styles.name}>
-             <div className={styles.tpc}><Link href="/"><span className={styles.hindi}>प्रशिक्षण एवं नियोजन कक्ष</span></Link><span className={styles.partition}> | </span><Link href="/"><span className={styles.english}>Training and Placement Cell</span></Link></div>
-             <div className={styles.iiti}><Link href="/"><span className={styles.hindi}>भारतीय प्रौद्योगिकी संस्थान, इंदौर</span></Link><span className={styles.partition}> | </span><Link href="/"><span className={styles.english}>Indian Institute of technology, Indore</span></Link></div>
-           </div>
-         </div>
+    <Navbar onMenuOpenChange={setIsMenuOpen} isBordered={true} className=" w-full overflow-hidden h-[5rem] justify-center">
+      <NavbarContent justify="start" className=" overflow-hidden ">
         
-        </NavbarBrand>
+      
+
+ <Link href="/"><Image width={50} height={50} src={props.logo} alt="iit indore" className={styles.iitilogo} /></Link>
+ {/* <div className="flex"><Link href="/"><span className={styles.hindi}>प्रशिक्षण एवं नियोजन कक्ष</span></Link><span className={styles.partition}> | </span><Link href="/"><span className={styles.english}>Training and Placement Cell</span></Link></div> */}
+
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Features
+      <NavbarContent className="hidden lg:flex gap-1" justify="center">
+      {props.buttons.map((item:any, index:any) => (
+
+          <NavbarMenuItem key={`${item}-${index}`}>
+           
+           {item.isdrop ? <Drop {...item}>{item.title}</Drop> : <Button 
+          color= "default"
+          variant="light"
+          
+        >
+     <Link href={item.link} className=" text-sm" >
+     
+          <div className=" text-gray-950">{item.title}</div>
           </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Customers
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
-          </Link>
-        </NavbarItem>
+        </Button>}
+              
+          
+          </NavbarMenuItem>
+        ))}
+
+        
       </NavbarContent>
 
-      <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
+      
+      {/* <NavbarContent justify="end">
+        
         <NavbarItem>
           <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
+            Contact Us
           </Button>
         </NavbarItem>
+      </NavbarContent> */}
+      <NavbarContent justify="end">
+        
+      <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="lg:hidden"
+        />
+        
       </NavbarContent>
 
-      <NavbarMenu>
-        {menuItems.map((item, index) => (
+
+      <NavbarMenu >
+
+      {props.buttons.map((item:any, index:any) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
-              color={
-                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-              }
+              
               className="w-full"
               href="#"
               size="lg"
-            >
-              {item}
+              >
+
+              <div className=" capitalize">{item.title}</div>
             </Link>
+
+
+
           </NavbarMenuItem>
         ))}
+
+
       </NavbarMenu>
     </Navbar>
 
-    //  </div>
-    //  </div>
+   
+  
   );
 }
 
@@ -116,13 +114,13 @@ export default function NavbarUI(props:any) {
 //     <div className={styles.wrapper}>
 //       <div className={styles.unexpendable}>
 
-//         <div className={styles.logo}>
-//           <Link href="/"><Image width={50} height={50} src={props.logo} alt="iit indore" className={styles.iitilogo} /></Link>
-//           <div className={styles.name}>
-//             <div className={styles.tpc}><Link href="/"><span className={styles.hindi}>प्रशिक्षण एवं नियोजन कक्ष</span></Link><span className={styles.partition}> | </span><Link href="/"><span className={styles.english}>Training and Placement Cell</span></Link></div>
-//             <div className={styles.iiti}><Link href="/"><span className={styles.hindi}>भारतीय प्रौद्योगिकी संस्थान, इंदौर</span></Link><span className={styles.partition}> | </span><Link href="/"><span className={styles.english}>Indian Institute of technology, Indore</span></Link></div>
-//           </div>
-//         </div>
+        // <div className={styles.logo}>
+        //   <Link href="/"><Image width={50} height={50} src={props.logo} alt="iit indore" className={styles.iitilogo} /></Link>
+        //   <div className={styles.name}>
+        //     <div className={styles.tpc}><Link href="/"><span className={styles.hindi}>प्रशिक्षण एवं नियोजन कक्ष</span></Link><span className={styles.partition}> | </span><Link href="/"><span className={styles.english}>Training and Placement Cell</span></Link></div>
+        //     <div className={styles.iiti}><Link href="/"><span className={styles.hindi}>भारतीय प्रौद्योगिकी संस्थान, इंदौर</span></Link><span className={styles.partition}> | </span><Link href="/"><span className={styles.english}>Indian Institute of technology, Indore</span></Link></div>
+        //   </div>
+        // </div>
 
 //         <div className={styles.modals}>
 //           <ul>

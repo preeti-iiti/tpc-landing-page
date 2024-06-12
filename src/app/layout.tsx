@@ -38,7 +38,7 @@ export default function RootLayout({
       <body className={inter.className}>
 
       <Navbar {...NavbarData} />
-      <div style={{height: "5rem"}}></div>
+
         {children}
         <Footer {...FooterData}/>
  
