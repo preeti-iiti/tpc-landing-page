@@ -40,12 +40,13 @@ export default function Messages() {
                   </div>
                   <div className={styles.para}>
                     <div className={styles.summary}>{message.summary}</div>
-                    <button onClick={() => openModal(message.title, message.info, message.image)} className={styles.readmore}>
+                    {/* <button onClick={() => openModal(message.title, message.info, message.image)} className={styles.readmore}>
                       READ MORE
                       <div className={styles.arrow}>
                         <Image width={100} height={10} src={messagesData.arrow} alt="open" />
                       </div>
-                    </button>
+                    </button> */}
+                    <Modal {...message} ></Modal>
                   </div>
                 </div>
 

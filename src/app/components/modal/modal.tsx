@@ -1,47 +1,49 @@
-import React, { forwardRef, useImperativeHandle } from 'react';
-import style from "./modal.module.css"
-import {image} from  "@/data/imageacess.json"
-import Image from 'next/image'
+import React from "react";
+import styles from "./modal.module.css";
+import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, RadioGroup, Radio} from "@nextui-org/react";
 
-interface ModalProps {
-  heading: string;
-  info: string;
-  photo: string;
+export default function ModalUI(props:any) {
+  const {isOpen, onOpen, onOpenChange} = useDisclosure();
+
+
+  return (
+    <div className="flex flex-col gap-2">
+      <Button radius="full" className="bg-gradient-to-tr from-[#0488D3] to-[#115398] text-white shadow-lg" onPress={onOpen}>Read More</Button>
+      <Modal
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        scrollBehavior="inside"
+        size="5xl"
+        backdrop="opaque"
+      >
+        <ModalContent >
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">
+                <div className="flex flex-row gap-3">
+                  <div>
+                {props.title.slice(0, 8)}
+                  </div>
+               <div className="">
+                {props.title.slice(8) }
+               </div>
+                </div>
+              </ModalHeader>
+              <ModalBody>
+                {props.info}
+              </ModalBody>
+              <ModalFooter>
+                <Button color="danger" variant="light" onPress={onClose}>
+                  Close
+                </Button>
+                {/* <Button color="primary" onPress={onClose}>
+                  Action
+                </Button> */}
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
+    </div>
+  );
 }
-
-const Modal = forwardRef<HTMLDialogElement, ModalProps>(({ photo, heading, info }, ref) => {
-
-  const dialogRef = ref as React.MutableRefObject<HTMLDialogElement | null>;
-
-  if (ref !== null) {
-
-    return (
-
-      <div className={style.modal}>
-        <div className="container">
-        <dialog className={style.modal} ref={dialogRef}>
-          <div className={style.close}>
-            <button onClick={() => dialogRef.current?.close()}><img src = {image.backbutton} alt="x" className={style.backbutton}></img></button>
-          </div>
-          <div className={style.top}>
-            <section className={style.heading}>
-              <h2>From the</h2>
-              <h1><div>{heading.slice(8)}</div></h1>
-            </section>
-            <section className={style.image}>
-              <div><Image width={250} height={300} src={photo} alt={heading} /></div>
-            </section>
-          </div>
-          <div className={style.info}>
-            {info}
-          </div>
-        </dialog>
-        </div>
-      </div>
-    );
-  }
-});
-
-Modal.displayName = 'ModalComponent';
-
-export default Modal;
