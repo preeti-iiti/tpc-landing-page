@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./modal.module.css";
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, RadioGroup, Radio} from "@nextui-org/react";
+import Image from 'next/image'
 
 export default function ModalUI(props:any) {
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
@@ -29,7 +30,10 @@ export default function ModalUI(props:any) {
                </div>
                 </div>
               </ModalHeader>
-              <ModalBody>
+              <ModalBody className="flex flex-col gap-5 items-center">
+                <div className=" border-3 border-[#0488D3]">
+                  <Image src={props.image} width={200} height={300} alt={props.title} ></Image>
+                </div>
                 {props.info}
               </ModalBody>
               <ModalFooter>
