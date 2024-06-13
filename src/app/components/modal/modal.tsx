@@ -13,7 +13,7 @@ export default function ModalUI(props:any) {
       <Modal
         isOpen={isOpen}
         onOpenChange={onOpenChange}
-        scrollBehavior="inside"
+        scrollBehavior="outside"
         size="5xl"
         backdrop="opaque"
       >

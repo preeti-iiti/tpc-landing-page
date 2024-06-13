@@ -5,6 +5,7 @@ import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, Navbar
 import styles from "./navbar.module.css"
 import Image from "next/image";
 import Drop from "./components/dropdown/dropdown"
+import Accord from "./components/accordion/accordion"
 
 export default function NavbarUI(props:any) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -15,15 +16,15 @@ export default function NavbarUI(props:any) {
 
 
     
-    <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="2xl" isBordered={true} className=" w-full overflow-hidden h-[5rem]">
+    <Navbar onMenuOpenChange={setIsMenuOpen}  maxWidth="2xl" isBordered={true} className=" w-full overflow-hidden h-[5rem]">
         <NavbarContent justify="start" className=" overflow-hidden gap-[0.5rem]">
        
           <Link href="/"><Image width={60} height={45} src={props.logo} alt="iit indore" className={styles.iitilogo} /></Link>
              {/* <div className="flex"><Link href="/"><span className={styles.hindi}>प्रशिक्षण एवं नियोजन कक्ष</span></Link><span className={styles.partition}> | </span><Link href="/"><span className={styles.english}>Training and Placement Cell</span></Link></div> */}
             
-            <div className=" w-[14rem] h-[4rem]  overflow-hidden flex flex-col justify-center gap-0">
-            <Link href="/" color="foreground"><div className=" text-[1rem] font-bold">Training and Placement Cell</div></Link>
-            <Link href="/" color="foreground"><div className=" text-[0.6rem]">Indian Institute of Technology, Indore </div></Link>
+            <div className=" h-[4rem]  overflow-hidden flex flex-col justify-center gap-0">
+            <Link href="/" color="foreground"><div className= {styles.tpc}>Training and Placement Cell</div></Link>
+            <Link href="/" color="foreground"><div className={styles.iiti}>Indian Institute of Technology, Indore </div></Link>
 
             </div>
 
@@ -39,6 +40,8 @@ export default function NavbarUI(props:any) {
           </NavbarMenuItem>
           
         ))}
+
+      
 
       </NavbarContent>
 
@@ -64,22 +67,11 @@ export default function NavbarUI(props:any) {
 
       <NavbarMenu >
 
-      {props.buttons.map((item:any, index:any) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              
-              className="w-full"
-              href="#"
-              size="lg"
-              >
+     
 
-              <div className=" capitalize">{item.title}</div>
-            </Link>
-
-
-
-          </NavbarMenuItem>
-        ))}
+        <NavbarMenuItem className=" my-10">
+          <Accord {...props} />
+        </NavbarMenuItem>
 
 
       </NavbarMenu>
