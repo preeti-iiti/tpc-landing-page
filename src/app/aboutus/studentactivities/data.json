@@ -1,0 +1,39 @@
+{
+    "activities": [
+        {
+            "img": "/data/logo/iiti.png",
+            "title": "Fluxus",
+            "description": "IIT Indore's Annual Techno-Cultural Festival endeavors to promote technical innovation and artistic spirit among each and every individual. Fluxus has seen elating performances from both Indian and global artists alike."
+        },
+        {
+            "img": "/data/logo/iiti.png",
+            "title": "Research and Industrial Conclave",
+            "description": "Held in January, with an exciting theme each year, this event brings together esteemed experts from diverse domains to foster innovation and knowledge exchange."
+        },
+        {
+            "img": "/data/logo/iiti.png",
+            "title": "E-Summit",
+            "description": "The event features inspiring speakers, interactive sessions, and opportunities for networking, showcasing ideas, and connecting with mentors. With a unique theme every year, E-Summit addresses the challenges of decision-making in entrepreneurship, emphasizing the need to make informed choices amidst many options for success."
+        },
+        {
+            "img": "/data/logo/iiti.png",
+            "title": "TEDxIITIndore",
+            "description": "A day-long event wherein the speakers, leaders and champions of their respective fields give inspirational speeches based on the theme chosen for that year. This provides food for thought for the audience and nurtures their ideas."
+        },
+        {
+            "img": "/data/logo/iiti.png",
+            "title": "Model United Nations, IIT Indore",
+            "description": "MUN focuses on giving a stage to youthful, budding pioneers and aims to address some of the grave issues of the world. It endeavors to promote healthy conversation and discussion on different conflicts and obstructions from a young perspective and give reasonable and attainable fixes to the same."
+        },
+        {
+            "img": "/data/logo/iiti.png",
+            "title": "T vs M",
+            "description": "It’s a platform where the worlds of technology and management meet, collide, and intertwine in the most creative and artistic ways. This event aims to bring together our IIT Indore and IIM Indore communities for an unforgettable evening of entertainment, innovation and inspiration."
+        },
+        {
+            "img": "/data/logo/iiti.png",
+            "title": "Sports",
+            "description": "IIT Indore conducts various sports events like Josh(for freshers), Shaurya (inter-hostel event), Lakshya (annual inter-college sports meet) and General Championship (year-long sports event). IIT Indore has received the tremendous responsibility of hosting the 38th Inter IIT Aquatics meet and co-host the 57th Inter IIT Sports meet in collaboration with IIT Kanpur as the host."
+        }
+    ]
+}

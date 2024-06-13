@@ -1,0 +1,17 @@
+{
+    "faq":
+    [
+{
+    "Question":"What is the difference between a web designer and a web developer?",
+    "Answer":"Web designers are responsible for the look and feel of a website. Web developers are responsible for the functionality of a website."
+},
+{
+    "Question":"What is the difference between a front-end developer and a back-end developer?",
+    "Answer":"Front-end developers are responsible for the look and feel of a website. Back-end developers are responsible for the functionality of a website."
+
+},{
+    "Question":"What is the difference between a web designer and a web developer?",
+    "Answer":"Web designers are responsible for the look and feel of a website. Web developers are responsible for the functionality of a website."
+}
+    ]
+}
