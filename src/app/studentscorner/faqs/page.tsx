@@ -10,7 +10,6 @@ export default function StudentFAQS() {
      <>
      
       <Faq ></Faq>
-    <h1>Student FAQS</h1>
   
    
      </>

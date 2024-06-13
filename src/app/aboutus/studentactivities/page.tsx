@@ -1,18 +1,16 @@
 
 
 
-
-
+import Activities from './studentactivities';
+import Gymkhana from './gymkhana';
 
 
 export default function StudentActivities() {
     return (
      <>
-     
-  
-    <h1>Student Activities</h1>
-  
-   
+    
+  <Activities></Activities> 
+  <Gymkhana></Gymkhana>
      </>
       
     );
