@@ -8,7 +8,7 @@ export default function Gymkhana() {
         <div>
             <h1 className={styles.H1}> Students Gymkhana</h1>
             <p>
-            The Student Gymkhana at IIT Indore is led by the Senate, consisting of executives and councillors. Elected representatives focus on fostering student development and leadership through coordinating events and maximizing individual potential. Numerous clubs and groups cater to diverse co-curricular interests."
+            The Student Gymkhana at IIT Indore is led by the Senate, consisting of executives and councillors. Elected representatives focus on fostering student development and leadership through coordinating events and maximizing individual potential. Numerous clubs and groups cater to diverse co-curricular interests.
             </p>
         </div>
         <h2>Tech clubs</h2>
