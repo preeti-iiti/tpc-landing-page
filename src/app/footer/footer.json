@@ -3,12 +3,12 @@
         {
             "title": "linkedin",
         "link": "https://www.linkedin.com/company/training-and-placement-cell-iit-indore/",
-        "logo" : "./data/logo/linkedin.png"
+        "logo" : "/data/logo/linkedin.png"
         },
         {
             "title": "twitter",
         "link": "https://twitter.com/iitindore?lang=en",
-        "logo" : "./data/logo/twitterlogo.png"
+        "logo" : "/data/logo/twitterlogo.png"
         }
         ],
     "quicklinks": [
