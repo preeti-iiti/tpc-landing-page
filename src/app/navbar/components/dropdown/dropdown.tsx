@@ -1,6 +1,7 @@
 
 import React from "react";
 import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button, RadioGroup, Radio} from "@nextui-org/react";
+import styles from "./dropdown.module.css";
 
 import Link from "next/link";
 export default function DropdownUI(props: any) {
@@ -22,11 +23,12 @@ export default function DropdownUI(props: any) {
   aria-label="Dropdown Variants"
   color= "default"
     variant="light"
+     
 >
 
 {props.drop.map((item:any, index:any) => (
     
-<DropdownItem  key={index} href={item.link} >{item.title}</DropdownItem>
+<DropdownItem className={styles.menuitem}  key={index} href={item.link} >{item.title}</DropdownItem>
 
   ))}
 

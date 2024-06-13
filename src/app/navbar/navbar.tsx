@@ -15,37 +15,31 @@ export default function NavbarUI(props:any) {
 
 
     
-    <Navbar onMenuOpenChange={setIsMenuOpen} isBordered={true} className=" w-full overflow-hidden h-[5rem] justify-center">
-      <NavbarContent justify="start" className=" overflow-hidden ">
-        
-      
+    <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="2xl" isBordered={true} className=" w-full overflow-hidden h-[5rem]">
+        <NavbarContent justify="start" className=" overflow-hidden gap-[0.5rem]">
+       
+          <Link href="/"><Image width={60} height={45} src={props.logo} alt="iit indore" className={styles.iitilogo} /></Link>
+             {/* <div className="flex"><Link href="/"><span className={styles.hindi}>प्रशिक्षण एवं नियोजन कक्ष</span></Link><span className={styles.partition}> | </span><Link href="/"><span className={styles.english}>Training and Placement Cell</span></Link></div> */}
+            
+            <div className=" w-[14rem] h-[4rem]  overflow-hidden flex flex-col justify-center gap-0">
+            <Link href="/" color="foreground"><div className=" text-[1rem] font-bold">Training and Placement Cell</div></Link>
+            <Link href="/" color="foreground"><div className=" text-[0.6rem]">Indian Institute of Technology, Indore </div></Link>
 
- <Link href="/"><Image width={50} height={50} src={props.logo} alt="iit indore" className={styles.iitilogo} /></Link>
- {/* <div className="flex"><Link href="/"><span className={styles.hindi}>प्रशिक्षण एवं नियोजन कक्ष</span></Link><span className={styles.partition}> | </span><Link href="/"><span className={styles.english}>Training and Placement Cell</span></Link></div> */}
+            </div>
 
       </NavbarContent>
 
-      <NavbarContent className="hidden lg:flex gap-1" justify="center">
+      <NavbarContent  justify="end" className="hidden lg:flex gap-0.5">
       {props.buttons.map((item:any, index:any) => (
 
           <NavbarMenuItem key={`${item}-${index}`}>
            
-           {item.isdrop ? <Drop {...item}>{item.title}</Drop> : <Button 
-          color= "default"
-          variant="light"
-          
-        >
-     <Link href={item.link} className=" text-sm" >
-     
-          <div className=" text-gray-950">{item.title}</div>
-          </Link>
-        </Button>}
+           {item.isdrop ? <Drop {...item}>{item.title}</Drop> : <Button color= "default" variant="light"> <Link href={item.link} className=" text-sm" > <div className=" text-gray-950">{item.title}</div></Link></Button>}
               
-          
           </NavbarMenuItem>
+          
         ))}
 
-        
       </NavbarContent>
 
       
@@ -57,14 +51,15 @@ export default function NavbarUI(props:any) {
           </Button>
         </NavbarItem>
       </NavbarContent> */}
-      <NavbarContent justify="end">
+
+
         
-      <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="lg:hidden"
-        />
-        
-      </NavbarContent>
+        <NavbarMenuToggle
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            className="lg:hidden"
+          />
+  
+
 
 
       <NavbarMenu >
