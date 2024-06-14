@@ -16,7 +16,7 @@ export default function NavbarUI(props:any) {
 
 
     
-    <Navbar onMenuOpenChange={setIsMenuOpen}  maxWidth="2xl" isBordered={true} className=" w-full overflow-hidden h-[5rem]">
+    <Navbar onMenuOpenChange={setIsMenuOpen} isBlurred={false} maxWidth="2xl" isBordered={true} className=" w-full overflow-hidden h-[5rem]">
         <NavbarContent justify="start" className=" overflow-hidden gap-[0.5rem]">
        
           <Link href="/"><Image width={60} height={45} src={props.logo} alt="iit indore" className={styles.iitilogo} /></Link>
