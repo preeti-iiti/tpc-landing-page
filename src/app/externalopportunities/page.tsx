@@ -50,15 +50,11 @@ export default function ExternalOpportunities() {
 
 
     return (
-     <>
+     <div>
 
-<div className={styles.wrapper}>
-
-<div className={styles.unexpendable}>
      
      <div className={styles.title}>
         <div className={styles.header}>External Job Opportunities</div>
-   
     </div>
 
    
@@ -78,8 +74,8 @@ export default function ExternalOpportunities() {
     </Table>
 
     
-    </div></div>
-     </>
+
+     </div>
       
     );
   }     

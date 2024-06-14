@@ -26,14 +26,6 @@ export default function Carousel(props: any) {
   return (
     <>
 
-
-      <div className={styles.wrapper}>
-
-        <div className={styles.unexpandable}>
-
-
-         
-
           <div className={styles.carousel}>
 
           <div className={styles.gallery}>
@@ -80,9 +72,7 @@ export default function Carousel(props: any) {
 
 
 
-        </div>
-
-      </div>
+       
 
 
     </>

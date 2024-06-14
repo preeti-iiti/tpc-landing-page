@@ -21,9 +21,7 @@ export default function Messages() {
 
     <>
 
-      <div className={styles.wrapper}>
 
-        <div className={styles.unexpendable}>
           {messagesData.messages.map((message:any , index:any) => (
             <div key={index} className={styles.message}>
               <div className={styles.title}>{message.title}</div>
@@ -59,8 +57,7 @@ export default function Messages() {
 
           {selectedMessage && <Modal photo ={selectedMessage.photo} heading={selectedMessage.heading} info={selectedMessage.info} ref={modalRef}></Modal>}
 
-        </div>
-      </div>
+      
 
 
     </>

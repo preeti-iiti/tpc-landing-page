@@ -39,7 +39,12 @@ export default function RootLayout({
 
       <Navbar {...NavbarData} />
 
+      <div className="wrapper">
+      <div className="unexpendable">
         {children}
+        </div>
+        </div>
+        
         <Footer {...FooterData}/>
  
         </body>

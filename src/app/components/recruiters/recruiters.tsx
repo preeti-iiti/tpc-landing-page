@@ -13,9 +13,7 @@ export default function Recruiters(props: any) {
 
     <>
 
-<div className={styles.wrapper}>
 
-<div className={styles.unexpandable}>
 
       <button className={styles.button}>OUR RECRUITERS</button>
 
@@ -36,9 +34,7 @@ export default function Recruiters(props: any) {
       
 
       </div>  
-      </div>
-
-      </div>
+    
     </>
  
     )

@@ -9,9 +9,6 @@ export default function AdminLogin() {
 <>
 
 
-<div className={styles.wrapper}>
-
-<div className={styles.unexpendable}>
 
     <div className={styles.title}>
         <div className={styles.F}>Admin Login</div>  
@@ -19,10 +16,7 @@ export default function AdminLogin() {
 
 
 
-    </div>
-
-
-    </div>
+    
 
 
 
