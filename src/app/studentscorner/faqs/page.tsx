@@ -14,7 +14,7 @@ export default function StudentFAQS() {
 
 <div className={styles.unexpendable}>
       <div className={styles.title}>
-        <div className="header1">Frequently Asked Questions</div>  <div className={styles.student}>By Students</div>
+        <div className="header2">Frequently Asked Questions <span className={styles.student}>By Students</span> </div>  
         </div>
 
       <Faq ></Faq>

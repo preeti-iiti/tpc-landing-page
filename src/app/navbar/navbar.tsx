@@ -43,7 +43,7 @@ export default function NavbarUI(props:any) {
 
           <NavbarMenuItem key={`${item}-${index}`}>
            
-           {item.isdrop ? <Drop {...item}>{item.title}</Drop> : <Button color= "primary" variant="light"> <Link href={item.link} className=" text-sm" > <div >{item.title}</div></Link></Button>}
+           {item.isdrop ? <Drop {...item}>{item.title}</Drop> : <Button color= "primary" variant="light" className=" hover:font-bold"> <Link href={item.link} className=" text-sm" > <div >{item.title}</div></Link></Button>}
               
           </NavbarMenuItem>
           
