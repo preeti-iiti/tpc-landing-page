@@ -84,8 +84,8 @@
                     {
         
                         "title": "Brochure",
-                        "link": "/recruiterscorner/brochure"
-        
+                        "link": "/data/pdf/brochure.pdf",
+                        "target" : "_blank"
                     },
                     
                     {
@@ -115,7 +115,8 @@
                     {
         
                         "title": "AIPC Guidelines",
-                        "link": "/recruiterscorner/aipcguidelines"
+                        "link": "https://aipciits.com/guidelines/",
+                        "target" : "_blank"
         
                     },
                     {
