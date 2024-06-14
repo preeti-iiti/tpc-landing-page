@@ -53,3 +53,42 @@ body {
   
   /* background-color: aqua; */
 }
+
+.header1{
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  background: linear-gradient(to right , #115398, #0488D3);
+  -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  /* color: #0488D3; */
+  position: relative;
+  transition: .3s ease;
+
+}
+
+.header1:hover{
+  word-spacing: 1.1rem; 
+  letter-spacing: 1.1rem;
+  filter: brightness(150%) ;
+  transform: translateX(10px);
+}
+
+
+.header2 {
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  background: linear-gradient(to right , #115398, #0488D3);
+ 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  /* color: #0488D3; */
+
+  transition: .3s ease;
+}
+.header2:hover {
+  font-size: 2rem;
+  filter: brightness(150%);
+}

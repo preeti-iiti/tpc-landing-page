@@ -54,7 +54,7 @@ export default function ExternalOpportunities() {
 
      
      <div className={styles.title}>
-        <div className={styles.header}>External Job Opportunities</div>
+        <div className="header2">External Job Opportunities</div>
     </div>
 
    

@@ -14,7 +14,7 @@ export default function RecruiterFAQS() {
 
 <div className={styles.unexpendable}>
       <div className={styles.title}>
-        <div className={styles.F}>Frequently Asked Questions</div>  <div className={styles.student}>By Recruiters</div>
+        <div className="header1">Frequently Asked Questions</div>  <div className={styles.student}>By Recruiters</div>
         </div>
 
       <Faq ></Faq>

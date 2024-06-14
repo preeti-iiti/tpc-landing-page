@@ -6,6 +6,7 @@ import styles from "./navbar.module.css"
 import Image from "next/image";
 import Drop from "./components/dropdown/dropdown"
 import Accord from "./components/accordion/accordion"
+import {Divider} from "@nextui-org/react";
 
 export default function NavbarUI(props:any) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -16,16 +17,23 @@ export default function NavbarUI(props:any) {
 
 
     
-    <Navbar onMenuOpenChange={setIsMenuOpen} isBlurred={false} maxWidth="2xl" isBordered={true} className=" w-full overflow-hidden h-[5rem]">
+    <Navbar onMenuOpenChange={setIsMenuOpen} isBlurred={false} maxWidth="2xl" isBordered={true} className=" w-full overflow-hidden h-[6rem]">
         <NavbarContent justify="start" className=" overflow-hidden gap-[0.5rem]">
        
           <Link href="/"><Image width={60} height={45} src={props.logo} alt="iit indore" className={styles.iitilogo} /></Link>
              {/* <div className="flex"><Link href="/"><span className={styles.hindi}>प्रशिक्षण एवं नियोजन कक्ष</span></Link><span className={styles.partition}> | </span><Link href="/"><span className={styles.english}>Training and Placement Cell</span></Link></div> */}
             
-            <div className=" h-[4rem]  overflow-hidden flex flex-col justify-center gap-0">
+            <div className=" h-[5rem]  overflow-hidden flex flex-col justify-center gap-[0rem]">
+              <div className={styles.block1}>
             <Link href="/" color="foreground"><div className= {styles.tpc}>Training and Placement Cell</div></Link>
+            <Link href="/" color="foreground"><div className= {styles.divider1}>&nbsp; | &nbsp;</div></Link>
+            <Link href="/" color="foreground"><div className= {`${styles.tpc} ${styles.hindi}`}>प्रशिक्षण एवं नियोजन कक्ष</div></Link>
+            </div>
+            <div className={styles.block2}>
             <Link href="/" color="foreground"><div className={styles.iiti}>Indian Institute of Technology, Indore </div></Link>
-
+            <Link href="/" color="foreground"><div className={styles.divider2}>&nbsp; | &nbsp;</div></Link>
+            <Link href="/" color="foreground"><div className={`${styles.iiti} ${styles.hindi}`}>भारतीय प्रौद्योगिकी संस्थान, इंदौर </div></Link>
+            </div>
             </div>
 
       </NavbarContent>
@@ -35,7 +43,7 @@ export default function NavbarUI(props:any) {
 
           <NavbarMenuItem key={`${item}-${index}`}>
            
-           {item.isdrop ? <Drop {...item}>{item.title}</Drop> : <Button color= "default" variant="light"> <Link href={item.link} className=" text-sm" > <div className=" text-gray-950">{item.title}</div></Link></Button>}
+           {item.isdrop ? <Drop {...item}>{item.title}</Drop> : <Button color= "primary" variant="light"> <Link href={item.link} className=" text-sm" > <div >{item.title}</div></Link></Button>}
               
           </NavbarMenuItem>
           

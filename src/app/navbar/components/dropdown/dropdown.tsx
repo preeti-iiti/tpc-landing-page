@@ -11,7 +11,7 @@ export default function DropdownUI(props: any) {
 <Dropdown shouldBlockScroll={false} >
 <DropdownTrigger>
   <Button 
-    color= "default"
+    color= "primary"
     variant="light"
     className="text-sm"
 
