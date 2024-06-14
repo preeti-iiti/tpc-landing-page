@@ -1,5 +1,6 @@
 import styles from "./footer.module.css"
-
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Footer(props: any) {
   return (
@@ -50,7 +51,7 @@ export default function Footer(props: any) {
             <div className={styles.socialmedia}>
 
             {props.stayconnected.map((val: any, index:any)=>{
-              return <div key={index} ><a href={val.link} target="_blank"><img src={val.logo} alt={val.title} className={styles.logos}></img></a></div>
+              return <div key={index} ><Link href={val.link} target="_blank"><Image width={50} height={50} src={val.logo} alt={val.title} className={styles.logos} /></Link></div>
           })}
             
             </div>

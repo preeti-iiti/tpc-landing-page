@@ -5,7 +5,7 @@ import Faq from "./faqUI/faq";
 import styles from "./studentfaq.module.css"
 
 
-export default function StudentFAQS() {
+export default function RecruiterFAQS() {
     return (
      <>
 
@@ -14,7 +14,7 @@ export default function StudentFAQS() {
 
 <div className={styles.unexpendable}>
       <div className={styles.title}>
-        <div className={styles.F}>Frequently Asked Questions</div>  <div className={styles.student}>By Students</div>
+        <div className={styles.F}>Frequently Asked Questions</div>  <div className={styles.student}>By Recruiters</div>
         </div>
 
       <Faq ></Faq>

@@ -1,0 +1,54 @@
+.wrapper {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-block: 20px;
+
+}
+
+.unexpendable {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  /* background-color: aqua; */
+}
+
+
+
+
+.header {
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  background: linear-gradient(to right , #115398, #0488D3);
+ 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  /* color: #0488D3; */
+
+  transition: .3s ease;
+}
+.header:hover {
+  font-size: 2rem;
+  filter: brightness(150%);
+}
+
+.title {
+
+
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin: 10px;
+  width: 100%;
+  justify-content: flex-start;
+
+
+}

@@ -28,7 +28,7 @@ export default function DropdownUI(props: any) {
 
 {props.drop.map((item:any, index:any) => (
     
-<DropdownItem className={styles.menuitem}  key={index} href={item.link} >{item.title}</DropdownItem>
+<DropdownItem className={styles.menuitem}  key={index} href={item.link} target={item.target} >{item.title}</DropdownItem>
 
   ))}
 
