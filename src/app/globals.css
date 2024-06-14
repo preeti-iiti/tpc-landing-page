@@ -23,6 +23,7 @@ body {
   color: black;
   background: #FBFBFD;;
   font-family: Poppins;
+
   
 }
 
@@ -42,15 +43,16 @@ body {
   justify-content: center;
   margin-block: 20px;
 
+
 }
 .unexpendable{
   max-width: 1440px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  position: relative;
   gap: 100px;
-  
+  padding: 0;
+  margin: 0;
   /* background-color: aqua; */
 }
 
@@ -76,19 +78,19 @@ body {
 
 
 .header2 {
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: capitalize;
   font-weight: bold;
   background: linear-gradient(to right , #115398, #0488D3);
- 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
   /* color: #0488D3; */
-
+  filter: brightness(150%);
   transition: .3s ease;
 }
+
 .header2:hover {
-  font-size: 2.5rem;
-  filter: brightness(150%);
+  font-size: 3.5rem;
+
 }

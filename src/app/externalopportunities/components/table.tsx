@@ -22,7 +22,7 @@ export default function TableUI(props: any) {
             {(columnKey) => 
             <TableCell>
                 
-                {columnKey === "link" ? <Button href={getKeyValue(item, columnKey)} color="danger" startContent={<AnchorIcon/>} isIconOnly={true} variant="light"></Button> : <div>{getKeyValue(item, columnKey)}</div>}
+                {columnKey === "link" ? <Link href={getKeyValue(item, columnKey)}> <Button  color="danger" startContent={<AnchorIcon/>} isIconOnly={true} variant="light"></Button></Link> : <div>{getKeyValue(item, columnKey)}</div>}
                 
 
             </TableCell>}
