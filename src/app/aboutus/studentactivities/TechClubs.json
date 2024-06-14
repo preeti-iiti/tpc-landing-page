@@ -1,0 +1,74 @@
+{
+    "techClubs": [
+        {
+            "title": "Google Developer Student Club",
+            "link": "",
+            "img": "/data/Gymkhana/Tech/GDSC_Club.png"
+        },
+        {
+            "title": "Programming Club",
+            "link": "",
+            "img": "/data/Gymkhana/Tech/Pclub.png"
+        },
+        {
+            "title": "The Aeromodelling club",
+            "link": "",
+            "img": "/data/Gymkhana/Tech/Aeromodelling_Club.jpg"
+        },
+        {
+            "title": "Electronics Club",
+            "link": "",
+            "img": "/data/Gymkhana/Tech/Electronics_Club.png"
+        },
+        {
+            "title": "IEEE",
+            "link": "",
+            "img": "/data/Gymkhana/Tech/IEEE_Club.png"
+        },
+        {
+            "title": "Robotics Club",
+            "link": "",
+            "img": "/data/Gymkhana/Tech/Robotics_Club.jpg"
+        },
+        {
+            "title": "CAE Club",
+            "link": "",
+            "img": "/data/Gymkhana/Tech/CAE_Club.png"
+        },
+        {
+            "title": "Cynaptics Club",
+            "link": "",
+            "img": "/data/Gymkhana/Tech/Cynaptics_Club.jpg"
+        },
+        {
+            "title": "Concrete Club",
+            "link": "",
+            "img": "/data/Gymkhana/Tech/Concreate_Club.jpg"
+        },
+        {
+            "title": "Astronomy Club",
+            "link": "",
+            "img": "/data/Gymkhana/Tech/Astronomy_Club.jpg"
+        },
+        {
+            "title": "Intelligent Vehicle Design and Control Club",
+            "link": "",
+            "img": "/data/Gymkhana/Tech/IVDC_Club.jpg"
+        },
+        {
+            "title": "CFA Club (Consulting, Finance and Analytics)",
+            "link": "",
+            "img": "/data/Gymkhana/Tech/CFA_Club.jpg"
+        },
+        {
+            "title": "Metacryst",
+            "link": "",
+            "img": "/data/Gymkhana/Tech/MetaCryst.png"
+        },
+        {
+            "title": "Quantum Computing",
+            "link": "",
+            "img": "/data/Gymkhana/Tech/Quantum_Computing.jpg"
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "culturalClubs": [
+        {
+            "title": "Kalakriti Club (Fine arts)",
+            "link": "",
+            "img": "/data/Gymkhana/Cultural/Kalakriti_Club.png"
+        },
+        {
+            "title": "The Music Club",
+            "link": "",
+            "img": "/data/Gymkhana/Cultural/Music_Club.jpg"
+        },
+        {
+            "title": "D_alphazcrew Club (Dance)",
+            "link": "",
+            "img": "/data/Gymkhana/Cultural/D_Alpha_Crewz.jpg"
+        },
+        {
+            "title": "Mystic Hues",
+            "link": "",
+            "img": "/data/Gymkhana/Cultural/Mystichues.png"
+        },
+        {
+            "title": "Aaina club (Dramatics)",
+            "link": "",
+            "img": "/data/Gymkhana/Cultural/Aaina_Club.png"
+        },
+        {
+            "title": "Literary Club",
+            "link": "",
+            "img": "/data/Gymkhana/Cultural/Literary_Club.jpg"
+        },
+        {
+            "title": "Prakrati Club (Wildlife)",
+            "link": "",
+            "img": "/data/Gymkhana/Cultural/Prakriti.jpg"
+        },
+        {
+            "title": "Cinephiles (Movie Making)",
+            "link": "",
+            "img": "/data/Gymkhana/Cultural/Cinephiles_Club.jpg"
+        },
+        {
+            "title": "Debating Society",
+            "link": "",
+            "img": "/data/Gymkhana/Cultural/Debsoc.jpg"
+        },
+        {
+            "title": "Avana Club (Social Welfare)",
+            "link": "",
+            "img": "/data/Gymkhana/Cultural/Avana_Club.png"
+        },
+        {
+            "title": "VLR",
+            "link": "",
+            "img": "/data/Gymkhana/Cultural/VLR.png"
+        }
+    ]
+}
