@@ -9,6 +9,7 @@ import styles from "./admin.module.css";
 import Image from "next/image"
 import Link from "next/link";
 
+
 export default function AdminLogin() {
     const [isVisible, setIsVisible] = React.useState(false);
 
@@ -131,7 +132,11 @@ export default function AdminLogin() {
 
         <div className={styles.form}>
 
-        <Input type="username"  isClearable label="Username" color="default" variant="flat" size="md" className="w-[80%] to-blue-500" radius="sm" />
+        <Input type="username"  isClearable label="Username" color="default" variant="flat" size="md" className="w-[80%] to-blue-500" radius="sm" endContent={
+            <div className="pointer-events-none flex items-center">
+              <span className="text-default-400 text-small">@iiti.ac.in</span>
+            </div>
+          } />
         <Input label="Password" variant="flat" radius="sm" color="default" endContent={
         <button className="focus:outline-none" type="button" onClick={toggleVisibility} >
           {isVisible ? (
