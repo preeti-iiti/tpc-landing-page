@@ -78,7 +78,7 @@ body {
 
 
 .header2 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform: capitalize;
   font-weight: bold;
   background: linear-gradient(to right , #115398, #0488D3);
@@ -93,4 +93,11 @@ body {
 .header2:hover {
   font-size: 3.5rem;
 
+}
+
+.para{
+
+  text-align: justify;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
 }
