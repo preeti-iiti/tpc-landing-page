@@ -6,6 +6,7 @@ import {Input,Button} from "@nextui-org/react";
 import {EyeFilledIcon} from "./EyeFilledIcon";
 import {EyeSlashFilledIcon} from "./EyeSlashFilledIcon";
 import styles from "./admin.module.css";
+import Image from "next/image"
 import Link from "next/link";
 
 export default function AdminLogin() {
@@ -18,12 +19,15 @@ export default function AdminLogin() {
 <>
 
 
+<div className={styles.backgroundmob}>
 
+</div>
 
         <div className={styles.background}>
-
-
+     
         <div className={styles.grid}>
+        <Image src="/data/logo/iiti.png" height={80} width={80} alt="TPC IITI" className=" absolute top-[15px] left-[30px] z-99999"></Image>
+
                             <div className={styles.bganim}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
@@ -33,6 +37,9 @@ export default function AdminLogin() {
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
+                            <div className={styles.gridblock}>N</div>
+                            <div className={styles.gridblock}>E</div>
+                            <div className={styles.gridblock}>L</div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
@@ -41,24 +48,34 @@ export default function AdminLogin() {
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
+                            <div className={styles.gridblock}>I</div>
+                            <div className={styles.gridblock}>N</div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
+                            <div className={styles.gridblock}>P</div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
+                            <div className={styles.gridblock}>N</div>
+                            <div className={styles.gridblock}>T</div>
                             <div className={styles.gridblock}></div>
+                            
                             <div className={styles.gridblock}></div>
+                            <div className={styles.gridblock}>L</div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
+                            <div className={styles.gridblock}>G</div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
+                            <div className={styles.gridblock}>T</div>
+                            <div className={styles.gridblock}>A</div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
@@ -68,6 +85,9 @@ export default function AdminLogin() {
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
+                            <div className={styles.gridblock}>R</div>
+                            <div className={styles.gridblock}>C</div>
+                            <div className={styles.gridblock}>C</div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
@@ -76,6 +96,9 @@ export default function AdminLogin() {
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
+                            <div className={styles.gridblock}>A</div>
+                            <div className={styles.gridblock}>E</div>
+                            <div className={styles.gridblock}>E</div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
@@ -84,41 +107,24 @@ export default function AdminLogin() {
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
+                            <div className={styles.gridblock}>I</div>
+                            <div className={styles.gridblock}>M</div>
+                            <div className={styles.gridblock}>L</div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
                             <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
-                            <div className={styles.gridblock}></div>
+                            <div className={styles.gridblock}>T</div>
+                            <div className={styles.gridblock}>P</div>
+                            <div className={styles.gridblock}>C</div>
 
                             </div>
 
+        
 
         <div className={styles.content}>
-
+      
          <div className={styles.title}>
         <div className={styles.header2}>Admin Login</div>  
         </div>

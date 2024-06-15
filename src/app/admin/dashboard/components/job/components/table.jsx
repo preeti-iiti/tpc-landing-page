@@ -8,8 +8,8 @@ import {columns, users} from "./data";
 
 const statusColorMap = {
   active: "success",
-  paused: "danger",
-  vacation: "warning",
+  expired: "danger",
+  unknown: "warning",
 };
 
 export default function TableUI() {

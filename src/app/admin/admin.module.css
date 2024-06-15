@@ -27,7 +27,7 @@
   top: -7.3rem;
   left: 0;
   background-color: black;
-  z-index: 1000000;
+  z-index: 1000;
   display: flex;
  justify-content: center;
  align-items: center;
@@ -46,6 +46,7 @@
   /* background-color: ; */
   gap: 0.3vw;
   overflow: hidden;
+
 }
 
 .gridblock {
@@ -53,12 +54,25 @@
   transition: 1s ease;
   /* border-radius: 100px; */
   background-color: rgb(23, 23, 23);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+  color: #115398;
+  line-height: 1rem;
+
 }
+
+
 
 .gridblock:hover {
   /* background-color: rgba(163,40,24); */
   transition: none;
-
+  color: white;
+  font-size: 5rem;
   background-color: #0488D3;
 }
 
@@ -118,3 +132,69 @@
 
 }
 
+
+@media screen and (max-width: 840px) {
+  .backgroundmob
+{
+  width: 100vw;
+  height: 120vh;
+  position: absolute;
+  top: -7.3rem;
+  left: 0;
+  background-color: black;
+  z-index: 1000;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+  
+
+}
+.grid{
+  height: 120vh;
+  top: 0;
+}
+}
+
+@media screen and (max-width: 472px) {
+  .backgroundmob
+{
+  width: 100vw;
+  height: 130vh;
+  position: absolute;
+  top: -7.3rem;
+  left: 0;
+  background-color: black;
+  z-index: 1000;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+  
+
+}
+.grid{
+  height: 130vh;
+  top: 0;
+}
+}
+
+@media screen and (max-width: 472px) {
+  .backgroundmob
+{
+  width: 100vw;
+  height: 165vh;
+  position: absolute;
+  top: -7.3rem;
+  left: 0;
+  background-color: black;
+  z-index: 1000;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+  
+
+}
+.grid{
+  height: 165vh;
+  top: 0;
+}
+}

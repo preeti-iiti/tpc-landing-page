@@ -8,6 +8,8 @@ export default function Job() {
 <>
       <TableUI></TableUI>
 
+      <div className='header2 m-3 text'>Post New Job</div>
+
 </>
 
 
