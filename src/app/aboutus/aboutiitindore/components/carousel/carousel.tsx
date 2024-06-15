@@ -30,7 +30,7 @@ export default function Carousel(props: any) {
 
           <div className={styles.gallery}>
     <div className={styles.shadow}>
-          <Image isZoomed isBlurred src={props.images[currentIndex]} alt="tpc images" className={styles.displaypic}/>
+          <Image isZoomed  src={props.images[currentIndex]} alt="tpc images" className={styles.displaypic}/>
           </div>
             <div className={styles.dots}>
 
