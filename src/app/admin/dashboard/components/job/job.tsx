@@ -1,8 +1,12 @@
+import React from 'react';
+import TableUI from './components/table';
+
+
 export default function Job() {
 
     return(
 <>
-        <h1>job</h1>
+      <TableUI></TableUI>
 
 </>
 
