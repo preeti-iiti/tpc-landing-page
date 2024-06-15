@@ -105,12 +105,12 @@ export default function AboutIITIndore() {
 
         <div className={styles.cardgrid}>
 
-          {data.research.map((item) => {
+          {data.research.map((item,index) => {
 
               return(
 
 
-                <Card isFooterBlurred className="h-[15rem] w-[20rem] transition-all duration-300 ease-in-out ">
+                <Card key={index} isFooterBlurred className="h-[15rem] w-[20rem] transition-all duration-300 ease-in-out ">
       
                 <Image
                 isZoomed
@@ -166,7 +166,7 @@ export default function AboutIITIndore() {
           {data.infrabody.map((item,index) => {
             return(
 
-              <div className={` flex gap-[50px] ${ index%2 === 0  ? "flex-row" : "flex-row-reverse"  } ${ index === 0  ? "mt-[30px]" : "" } max-[770px]:flex-col max-[770px]:gap-[0px]  items-center w-[100%]   `  }  >
+              <div key={index} className={` flex gap-[50px] ${ index%2 === 0  ? "flex-row" : "flex-row-reverse"  } ${ index === 0  ? "mt-[30px]" : "" } max-[770px]:flex-col max-[770px]:gap-[0px]  items-center w-[100%]   `  }  >
                 
                 <Carouselsm { ...item} />
 
