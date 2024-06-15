@@ -2,9 +2,9 @@
 import React from "react";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import styles from "./faq.module.css";
-import data from '../faq.json';
 
-export default function Faq() {
+
+export default function Faq(props:any) {
 
 
   return (
@@ -12,7 +12,7 @@ export default function Faq() {
       
       <Accordion selectionMode="single"  variant="splitted" fullWidth={true} >
 
-        {data.faq.map((item, index) => (
+        {props.faq.map((item:any, index:any) => (
           <AccordionItem
             key={index}
             aria-label={`Accordion ${index + 1}`}
