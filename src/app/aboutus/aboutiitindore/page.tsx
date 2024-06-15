@@ -6,6 +6,8 @@ import data from "./data.json"
 import Link from 'next/link';
 import { Button } from '@nextui-org/react';
 import {Tabs, Tab, Card, CardBody, CardHeader} from "@nextui-org/react";
+import {Listbox, ListboxItem} from "@nextui-org/react";
+import {ListboxWrapper} from "./ListBoxWrapper";
 
 export default function AboutIITIndore() {
 
@@ -36,7 +38,7 @@ export default function AboutIITIndore() {
         </div>
 
         <div className={styles.intro}>
-        <div className="header2 leading-normal">IIT Indore</div>
+        <div className="header2 leading-normal">About IITI</div>
           {data.intro}
           <Link href={data.iitihome} target="_blank">
       <Button color="primary" variant="flat"
@@ -56,8 +58,8 @@ export default function AboutIITIndore() {
         {data.academicsstarter}
       </div>
     
-    <div className=" flex flex-row justify-between items-start">
-      <div className="flex w-[50vw] flex-col my-[2rem] justify-center ">
+    <div className=" flex flex-row justify-between items-start w-[100%]">
+      <div className="flex w-[60%] flex-col my-[2rem] justify-center ">
       <Tabs aria-label="Dynamic tabs" items={tabs} radius="md" color="secondary">
         {(item) => (
           <Tab key={item.id} title={item.label}>
@@ -72,14 +74,19 @@ export default function AboutIITIndore() {
         )}
       </Tabs>
     </div>  
+        <div className="flex w-[40%] flex-col my-[2rem] justify-center items-center">
+    <ListboxWrapper>
 
-    <div className="flex h-[15rem] justify-center items-center w-[30vw]"> 
-    <Link href="https://academic.iiti.ac.in/" target="_blank">
-      <Button color="primary" variant="flat"
-      radius="full" className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg text-[1.5rem] h-[5rem] uppercase font-bold">
-         IITI Academics
-      </Button></Link> 
-      
+      <Listbox
+        aria-label="Example with disabled actions" 
+        disabledKeys={["Quick Links"]}
+        
+      >
+        <ListboxItem key="Quick Links">Quick Links</ListboxItem>
+        <ListboxItem key="iitiacad" className="text-danger" variant="flat" color="primary" href="https://academic.iiti.ac.in/" target="_blank">IITI Academics Home</ListboxItem>
+        <ListboxItem key="acad" className="text-danger" variant="flat" color="primary" href="/aboutus/academicprograms">Academic Programs</ListboxItem>
+      </Listbox>
+      </ListboxWrapper>
       </div>
       </div>
 
