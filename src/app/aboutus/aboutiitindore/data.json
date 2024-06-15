@@ -35,7 +35,85 @@
 , "infrastructure" : "The IIT Indore campus is spread over a sprawling area with modern infrastructure, including:"
 
 
+, "infrabody" : [
 
+    {
+
+        "images": [
+    
+         
+            
+            "/data/carouseliiti/acad/classroom1.jpeg"
+            
+        ],
+    
+        "title" : "Academic Buildings",
+    
+        "description" : "Equipped with advanced classrooms, lecture halls, and labs."
+       
+    
+    
+    },
+    {
+
+        "images": [
+    
+         
+            
+            "/data/carouseliiti/lib/lrc1.jpeg"
+    
+        ],
+    
+        "title" : "Central Library",
+    
+        "description" : "A vast collection of books, journals, and digital resources, supporting academic and research activities."
+    
+    },
+    {
+
+        "images": [
+    
+         
+            
+            "/data/carouseliiti/hostel/hostel1.jpg"
+    
+        ],
+    
+        "title" : "Hostels and Housing",
+    
+        "description" : "Comfortable accommodation facilities for students, faculty, and staff."
+   
+    
+    },
+    {
+
+        "images": [
+    
+         
+            
+            "/data/carouseliiti/facil/sprts1.jpeg"
+    
+        ],
+    
+        "title" : "Recreational Facilities",
+    
+        "description" : "Sports complexes, gymnasiums, and cultural centers to promote extracurricular activities."
+  
+    }
+
+
+
+
+
+
+],
+
+
+ "faculty" : "The faculty at IIT Indore comprises experienced and distinguished professors, many of whom are recognized for their contributions to their respective fields. The faculty members are actively involved in research, publishing in reputed journals, and participating in international conferences."
+,
+ "student" : "Life at IIT Indore is vibrant and diverse, with numerous student clubs and organizations catering to a wide range of interests, including technical, cultural, and sports activities. Annual events like Fluxus (the cultural fest) and Concours (the tech fest) are highly anticipated, providing students with opportunities to showcase their talents and interact with peers from other institutions."
+,
+ "industry" : "IIT Indore maintains strong ties with the industry, facilitating internships, collaborative projects, and placements. The institute's placement cell works tirelessly to ensure that students have access to job opportunities in leading companies across various sectors. Graduates from IIT Indore have secured positions in top-tier firms globally, reflecting the institute's commitment to excellence in education and professional development."
 
 
 

@@ -1,6 +1,8 @@
 "use client";
 import Carousel from "./components/carousel/carousel";
+import Carouselsm from "./components/carouselsm/carouselsm";
 import CarouselData from "./components/carousel/carousel.json";
+
 import styles from "./aboutiiti.module.css"
 import data from "./data.json"
 import Link from 'next/link';
@@ -9,6 +11,7 @@ import {Tabs, Tab, Card, CardBody, CardHeader} from "@nextui-org/react";
 import {Listbox, ListboxItem} from "@nextui-org/react";
 
 import {CardFooter, Image} from "@nextui-org/react";
+import { color } from "framer-motion";
 
 export default function AboutIITIndore() {
 
@@ -61,7 +64,7 @@ export default function AboutIITIndore() {
     
     <div className={` flex flex-row justify-between items-start w-[100%] ${styles.academicquery} `}>
       <div className="flex  flex-col my-[2rem] justify-center max-[945px]:my-0 ">
-      <Tabs aria-label="Dynamic tabs" items={tabs} radius="md" color="secondary">
+      <Tabs aria-label="Dynamic tabs" items={tabs} radius="md" color="secondary" className={styles.tabname}>
         {(item) => (
           <Tab key={item.id} title={item.label}>
             <Card>
@@ -157,20 +160,73 @@ export default function AboutIITIndore() {
       <div className={styles.questitle}>Infrastructure</div>
 
 
-<div className="para">{data.infrastructure}</div>
+      <div className="para">{data.infrastructure}</div>
+
+
+          {data.infrabody.map((item,index) => {
+            return(
+
+              <div className={` flex gap-[50px] ${ index%2 === 0  ? "flex-row" : "flex-row-reverse"  } ${ index === 0  ? "mt-[30px]" : "" } max-[770px]:flex-col max-[770px]:gap-[0px]  items-center w-[100%]   `  }  >
+                
+                <Carouselsm { ...item} />
+
+                <div className=" h-[25vh] flex flex-col items-start justify-center max-[770px]:justify-start w-[100%]">
+                  <div className="header2">{item.title}</div>
+                  <div className="para">{item.description}</div>
+                </div>
+
+              </div>
+              
+            );
+
+          })}
+
+
+      
+
 
 
       <div className={styles.questitle}>Faculty</div>
-
-
-
+<div className=" flex max-[770px]:flex-col">
+          <div className="para w-[80%] max-[770px]:w-[100%]">{data.faculty}</div>
+<div className=" w-[20%] h-[10rem] flex items-center justify-center max-[770px]:w-[100%]">
+      <Link href="/contactus/faculty" >
+      <Button color="primary" variant="flat"
+      radius="full" className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg text-[1.5rem] h-[5rem] uppercase font-bold ">
+        Faculties
+      </Button></Link> 
+      </div>
+      </div>
       <div className={styles.questitle}>Student Life</div>
+      <div className=" flex max-[770px]:flex-col">
+          <div className="para w-[80%] max-[770px]:w-[100%]">{data.student}</div>
+<div className=" w-[20%] h-[10rem] flex items-center justify-center max-[770px]:w-[100%]">
+      <Link href="/aboutus/studentactivities" >
+      <Button color="primary" variant="flat"
+      radius="full" className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg text-[1.5rem] h-[5rem] uppercase font-bold ">
+        Activities
+      </Button></Link> 
+      </div>
+      </div>
+        
+
+
 
 
 
       <div className={styles.questitle}>Industry Collaboration and Placements</div>
 
-
+      <div className=" flex max-[770px]:flex-col">
+          <div className="para w-[80%] max-[770px]:w-[100%]">{data.industry}</div>
+<div className=" w-[20%] h-[10rem] flex items-center justify-center max-[770px]:w-[100%]">
+      <Link href="/" >
+      <Button color="primary" variant="flat"
+      radius="full" className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg text-[1.5rem] h-[5rem] uppercase font-bold ">
+       Recruiters
+      </Button></Link> 
+      </div>
+      </div>
+        
 
       </div>
       <div className="header2 leading-normal mt-16">Conclusion</div>

@@ -1,0 +1,120 @@
+
+
+.carousel{
+    display: flex;
+
+    flex-direction: row;
+    min-width: 30vw;
+    justify-content: flex-start;
+    /* background-color: aqua; */
+    align-items: center;
+    margin-inline: 10px;
+    margin-block: 20px;
+
+}
+
+
+.displaypic{
+    width: 30vw;
+    height: 25vh;
+
+}
+
+
+
+
+.activedot{
+    color: black;
+    font-weight: 900;
+}
+
+.inactivedot{
+    color: rgba(0, 0, 0, 0.462);
+    font-weight: 700;
+}
+
+
+
+
+
+.dots{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+/* .sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 10%;
+    justify-content: space-between;
+    overflow-y: scroll;
+    scrollbar-width: none;
+} */
+
+
+/* .sidebar button{
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+} */
+
+/* .sidebar img{
+    height: 100%;
+    width: 100%;
+} */
+
+
+/* @media (max-width: 768px) {
+
+    .carousel{
+        flex-direction: column;
+    }
+    .sidebar{
+        flex-direction: row;
+        width: 95%;
+        gap: 5px;
+        height: 20%;
+        overflow: visible;
+        justify-content: space-between;
+        
+    }
+
+    .sidebar button{
+        width: 20%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+
+
+    
+    .gallery{
+        flex-direction: row;
+        gap: 10px;
+        width: 97%;
+    }
+    .dots{
+        flex-direction: column;
+        gap: 2px;
+    }
+}
+    */
+
+
+    @media (max-width: 770px) {
+        .carousel{
+            width: 70vw;
+        }
+        .displaypic{
+            width: 70vw;
+        }
+
+    }

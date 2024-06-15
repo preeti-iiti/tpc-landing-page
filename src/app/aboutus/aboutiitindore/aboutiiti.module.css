@@ -66,6 +66,16 @@
   
 }
 
+.infra{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.tabname button{
+  font-size: 1rem;
+
+}
 @media screen and (max-width: 1024px){
     .cardgrid{
         grid-template-columns: repeat(2,1fr);
@@ -82,9 +92,11 @@
    }
    .tabcontent{
     width: 90vw;
+ 
    }
    .quick{
     width: 90vw;
+
    }
    .wrapper{
     max-width: 90vw;
@@ -107,5 +119,10 @@
 @media screen and (max-width: 690px){
     .cardgrid{
         grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (max-width: 620px){
+    .tabname button{
+      font-size: 2.4vw;
     }
 }
