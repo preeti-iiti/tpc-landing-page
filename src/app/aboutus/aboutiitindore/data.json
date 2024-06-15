@@ -11,14 +11,28 @@
        
         
 
-      "academicsend" :  "The curriculum at IIT Indore emphasizes both theoretical knowledge and practical application, encouraging students to engage in research projects and internships."
+    "academicsend" :  "The curriculum at IIT Indore emphasizes both theoretical knowledge and practical application, encouraging students to engage in research projects and internships."
+,
+    "reasearchstarting" : "IIT Indore has made significant strides in research and development, establishing itself as a hub for innovation. The institute boasts numerous research centers and labs equipped with state-of-the-art facilities, fostering an environment conducive to cutting-edge research. Key research areas include:"
+,
 
+    "research" : [
+        {"title":"Nanotechnology",
+        "link":"/data/research/nanotech.png"
+    },
+        {"title":"Artificial Intelligence and Machine Learning",
+    "link":"/data/research/ai.png"},
+        {"title":"Renewable Energy",
+    "link":"/data/research/renew.png"},
+        {"title":"Biomedical Engineering",
+    "link":"/data/research/biomedical.png"},
+       {"title":"Environmental Science and Engineering",
+    "link":"/data/research/evs.png"}
+    ],
 
+    "reaseachend" : "The institute also collaborates with various national and international organizations, enhancing its research capabilities and providing students and faculty with opportunities to work on globally relevant projects."
 
-
-    
-
-
+, "infrastructure" : "The IIT Indore campus is spread over a sprawling area with modern infrastructure, including:"
 
 
 

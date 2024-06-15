@@ -7,7 +7,8 @@ import Link from 'next/link';
 import { Button } from '@nextui-org/react';
 import {Tabs, Tab, Card, CardBody, CardHeader} from "@nextui-org/react";
 import {Listbox, ListboxItem} from "@nextui-org/react";
-import {ListboxWrapper} from "./ListBoxWrapper";
+
+import {CardFooter, Image} from "@nextui-org/react";
 
 export default function AboutIITIndore() {
 
@@ -58,14 +59,14 @@ export default function AboutIITIndore() {
         {data.academicsstarter}
       </div>
     
-    <div className=" flex flex-row justify-between items-start w-[100%]">
-      <div className="flex w-[60%] flex-col my-[2rem] justify-center ">
+    <div className={` flex flex-row justify-between items-start w-[100%] ${styles.academicquery} `}>
+      <div className="flex  flex-col my-[2rem] justify-center max-[945px]:my-0 ">
       <Tabs aria-label="Dynamic tabs" items={tabs} radius="md" color="secondary">
         {(item) => (
           <Tab key={item.id} title={item.label}>
             <Card>
               <CardBody className=" text-justify para ">
-                <div className=" w-[48vw]">
+                <div className={ `w-[48vw] ${styles.tabcontent}`} >
                 {item.content}
                 </div>
               </CardBody>
@@ -75,18 +76,18 @@ export default function AboutIITIndore() {
       </Tabs>
     </div>  
         <div className="flex w-[40%] flex-col my-[2rem] justify-center items-center">
-    <ListboxWrapper>
+        <div className={`w-full max-w-[400px] border-small px-1 py-2 rounded-small border-default-200 dark:border-default-100 ${styles.wrapper}`}>
 
       <Listbox
         aria-label="Example with disabled actions" 
         disabledKeys={["Quick Links"]}
-        
+        className={styles.quick}
       >
         <ListboxItem key="Quick Links">Quick Links</ListboxItem>
         <ListboxItem key="iitiacad" className="text-danger" variant="flat" color="primary" href="https://academic.iiti.ac.in/" target="_blank">IITI Academics Home</ListboxItem>
         <ListboxItem key="acad" className="text-danger" variant="flat" color="primary" href="/aboutus/academicprograms">Academic Programs</ListboxItem>
       </Listbox>
-      </ListboxWrapper>
+      </div>
       </div>
       </div>
 
@@ -97,11 +98,66 @@ export default function AboutIITIndore() {
 
       <div className={styles.questitle}>Research And Innovation</div>
 
+        <div className="para">{data.reasearchstarting}</div>
+
+        <div className={styles.cardgrid}>
+
+          {data.research.map((item) => {
+
+              return(
 
 
+                <Card isFooterBlurred className="h-[15rem] w-[20rem] transition-all duration-300 ease-in-out ">
+      
+                <Image
+                isZoomed
+                  alt="Woman listing to music"
+                  className="w-[20rem] h-[15rem] object-cover rounded-lg"
+                  src={item.link}
+                />
+             <CardFooter className="absolute bg-white/30 text-[0.73rem] bottom-0 border-t-1 border-zinc-100/50 z-10 justify-center text-center h-[2.5rem] hover:h-[15rem] hover:text-[2rem] hover:font-bold transition-all duration-300 ease-in-out">
+        <div>
+          <p className=" text-white ">{item.title}</p>
+      
+        </div>
+        {/* <Button className="text-tiny" color="primary" radius="full" size="sm">
+          Notify Me
+        </Button> */}
+             </CardFooter>
+                 </Card>
+
+              //   <Card
+              //   isFooterBlurred
+              //   radius="lg"
+              //   className="border-none h-[10rem] w-[15rem]"
+                
+              // >
+              //   <Image
+              //     alt="Woman listing to music"
+              //     className="w-[15rem] h-[10rem] object-cover rounded-lg"
+              //     src={item.link}
+              //   />
+              //   <CardFooter className="justify-center  before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
+              //     <p className="text-tiny text-white/80">{item.title}</p>
+              //     {/* <Button className="text-tiny text-white bg-black/20" variant="flat" color="default" radius="lg" size="sm">
+              //       Notify me
+              //     </Button> */}
+              //   </CardFooter>
+              // </Card>
+                
+              );
+
+          })}
+
+
+        </div>
+
+          <div className="para"> {data.reaseachend}</div>
 
       <div className={styles.questitle}>Infrastructure</div>
 
+
+<div className="para">{data.infrastructure}</div>
 
 
       <div className={styles.questitle}>Faculty</div>
