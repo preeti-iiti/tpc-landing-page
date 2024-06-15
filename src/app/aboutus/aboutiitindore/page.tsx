@@ -53,10 +53,10 @@ export default function AboutIITIndore() {
 
 
       <div className="para">
-        {data.academics[0]}
+        {data.academicsstarter}
       </div>
     
-    <div className=" flex flex-row-reverse justify-between items-start">
+    <div className=" flex flex-row justify-between items-start">
       <div className="flex w-[50vw] flex-col my-[2rem] justify-center ">
       <Tabs aria-label="Dynamic tabs" items={tabs} radius="md" color="secondary">
         {(item) => (
@@ -81,6 +81,10 @@ export default function AboutIITIndore() {
       </Button></Link> 
       
       </div>
+      </div>
+
+      <div className="para">
+        {data.academicsend}
       </div>
 
 
