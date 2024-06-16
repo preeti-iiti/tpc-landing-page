@@ -3,6 +3,16 @@
 .wrapper{
 font-family: 'Poppins', sans-serif;
 margin: 1rem 1.5rem;
+justify-content: center;
+display: flex;
+flex-direction: column;
+
+gap: 30px;
+}
+
+
+.questitle:hover{
+  filter: brightness(150%);
 }
 .wrapper h1{
     font-size: 2rem;
@@ -25,22 +35,46 @@ margin: 1rem 1.5rem;
     gap: 4rem;
     padding: 0;
     margin: 0;
-    justify-content: center;
+    place-items: center;
    
 }
-.table a{
-    display: flex;
-    text-decoration: none;
-align-items: center;
-    justify-content: space-between;
 
-    color: black;
+.card{
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #aaa, -2px -2px 5px #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
 }
+
+
+
+/* 
+.button {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    
+  } */
+  
+ 
+
 .table div{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
+
+    padding: 0.3rem;
     row-gap: 1rem;
    justify-content: space-between;
    
@@ -53,9 +87,48 @@ align-items: center;
     object-fit: contain; 
     transition: transform 0.2s ease ;
 }
-.table div:hover img{
-    transform: scale(1.1);
+
+
+.insta{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 600px;
+    background: linear-gradient(45deg, rgba(237,190,66),rgba(220,64,68),rgba(193,40,138),rgba(106,18,154));
+    z-index: 10;
+    transition: .5s ease;
     
+   display: flex;
+   justify-content: center;
+
+   align-items: center;
+   align-content: center;
+   
+
+}
+.insta div{
+    display: flex;
+   justify-content: center;
+
+   align-items: center;
+   align-content: center;
+   transform: translateY(10px);
+
+}
+.insta div img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain; 
+    transition: transform 0.2s ease ;
+    scale: 0.7;
+}
+
+.card:hover .insta{
+    top: 0;
+}
+.insta:hover{
+    top: 0;
 }
 
 

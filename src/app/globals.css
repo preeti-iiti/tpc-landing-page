@@ -52,7 +52,7 @@ body {
   flex-direction: column;
   gap: 100px;
   padding: 0;
-  margin: 0;
+
   padding-inline: 1rem;
   /* background-color: aqua; */
 }
@@ -115,10 +115,30 @@ body {
   filter: brightness(150%);
   transition: .3s ease;
 }
+.questitle{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: linear-gradient(to right , #115398, #0488D3);
+  -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+  /* margin-top: 3rem; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: .3s ease;
+ 
+}
+
+.questitle:hover{
+filter: brightness(150%);
+}
 
 
-@media (max-width: 425px) {
+@media (max-width: 440px) {
   .unexpendable{
     gap: 50px;
+    padding: 2rem;
   }
 }

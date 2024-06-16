@@ -1,0 +1,74 @@
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3,  1fr);
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    place-items: center;
+    background-color: #FBFBFD;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.card{
+    padding: 20px;
+    border-radius: 5px 100px 20px 40px;
+    /* border: 1px solid black; */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 375px;
+    height: 400px;
+    object-fit: cover;
+    
+}
+
+.image{
+    border-radius: 5px 100px 20px 40px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: linear-gradient(to right, rgb(141, 58, 217),rgb(200, 58, 121));
+    border-radius: 5px 100px 20px 40px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+   opacity: 0;
+   z-index: 10;
+   transition: .7s ease;
+   
+}
+
+.overlay:hover{
+   opacity: 1;
+
+}
+
+.card:hover .overlay{
+    opacity: 1;
+
+}
+
+
+@media screen and (max-width: 1185px){
+    .cardContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 800px){
+    .cardContainer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

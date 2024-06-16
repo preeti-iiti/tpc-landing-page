@@ -1,7 +1,8 @@
 
 import React from 'react';
-import styles from './studentactivities.module.css';
+import styles from './activities.module.css';
 import data from './data.json';
+import {Image} from "@nextui-org/image";
 
 export default function Activities() {
     return (
@@ -9,9 +10,13 @@ export default function Activities() {
             <div className={styles.cardContainer}>
                 {data.activities.map((activity, index) => (
                     <div key={index} className={styles.card}>
-                        <img src={activity.img} alt={activity.title} className={styles.image} />
-                        <h3 className={styles.title}>{activity.title}</h3>
-                        <p className={styles.description}>{activity.description}</p>
+                       
+                        <Image   src={activity.img} alt={activity.title} className={styles.image}  />
+                   
+                        {/* <h3 className={styles.title}>{activity.title}</h3> */}
+                   
+
+                        <div className={`para text-[0.8rem] ${styles.overlay} text-white`}><div className=' font-bold text-[1rem]'>{activity.title}</div>{activity.description} </div>
                     </div>
                 ))}
             </div>
