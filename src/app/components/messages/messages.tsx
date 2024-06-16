@@ -24,7 +24,7 @@ export default function Messages() {
 
           {messagesData.messages.map((message:any , index:any) => (
             <div key={index} className={styles.message}>
-              <div className={styles.title}>{message.title}</div>
+              <div className={` header3 text-[2rem] w-[100%] hover:text-[2.5rem]`}>{message.title}</div>
 
               <div className={styles.content}>
 
