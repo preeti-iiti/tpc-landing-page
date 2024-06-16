@@ -12,15 +12,18 @@ return(
             <section className={styles.table}>
                 
                 {props.Clubs.map((club: { img: string; title: string; link: string; }, index: number) => (
+
                     <div className={styles.card} key={index}>
                         <Image src={club.img} alt={club.title} />
                         <div className=" text-[0.8rem] font-semibold">{club.title}</div>
                         
+                        <Link href={club.link} target='_blank'>
                         <div className={styles.insta}>
                         <div>
                        <Image src={data.insta} className=' brightness-0 invert-[1] ' />
                        </div>
                         </div>
+                        </Link>
                     </div>
                 ))}
             

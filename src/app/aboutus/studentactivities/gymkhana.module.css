@@ -94,6 +94,7 @@ gap: 30px;
     height: 100%;
     width: 100%;
     top: 600px;
+    left: 0px;
     background: linear-gradient(45deg, rgba(237,190,66),rgba(220,64,68),rgba(193,40,138),rgba(106,18,154));
     z-index: 10;
     transition: .5s ease;
