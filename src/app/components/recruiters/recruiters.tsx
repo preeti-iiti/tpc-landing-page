@@ -11,7 +11,7 @@ export default function Recruiters(props: any) {
 
   return (
 
-    <>
+    <div>
 
 
 
@@ -35,7 +35,7 @@ export default function Recruiters(props: any) {
 
       </div>  
     
-    </>
+    </div>
  
     )
 }

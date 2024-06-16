@@ -102,3 +102,23 @@ body {
     letter-spacing: 0.1rem;
     line-height: 2rem;
 }
+
+.header3 {
+
+  text-transform: capitalize;
+  font-weight: bold;
+  background: linear-gradient(to right , #115398, #0488D3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  /* color: #0488D3; */
+  filter: brightness(150%);
+  transition: .3s ease;
+}
+
+
+@media (max-width: 425px) {
+  .unexpendable{
+    gap: 50px;
+  }
+}

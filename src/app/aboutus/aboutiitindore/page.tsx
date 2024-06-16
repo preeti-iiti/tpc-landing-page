@@ -171,7 +171,7 @@ export default function AboutIITIndore() {
                 <Carouselsm { ...item} />
 
                 <div className=" h-[25vh] flex flex-col items-start justify-center max-[770px]:justify-start w-[100%]">
-                  <div className="header2">{item.title}</div>
+                  <div className="header3 text-[2rem]">{item.title}</div>
                   <div className="para">{item.description}</div>
                 </div>
 

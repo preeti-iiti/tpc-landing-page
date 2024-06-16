@@ -2,31 +2,40 @@
 
 .carousel{
     display: flex;
-    width: 100%;
+
     flex-direction: row;
-    gap: 20px;
-    height: 50vh;
-    justify-content: center;
+   width: 100%;
+    justify-content:space-around;
+    /* background-color: aqua; */
+    align-items: flex-start;
+    /* margin-inline: 10px; */
+    /* background-color: red; */
+
 }
 
-
-
-.location{
+.shadow{
     display: flex;
-    gap: 10px;
+
+    flex-direction: row;
+   width: 70vw;
+   max-width: 1200px;
+    justify-content: flex-start;
+    /* background-color: aqua; */
     align-items: center;
-    
+    /* margin-inline: 10px; */
+    /* background-color: aqua; */
+    /* padding: 10px 0px 10px 10px; */
+    margin-inline: 10px;
+    margin-top: 10px;
+
+}
+.displaypic{
+    width: 70vw;
+    height: 50vh;
 }
 
-.location div{
-    font-size: 1.3rem;
-    color: rgba(254, 146, 38, 0.55);
-}
 
-.icon{
-    width: 20px;
-    height: 20px;
-}
+
 
 .activedot{
     color: black;
@@ -38,17 +47,9 @@
     font-weight: 700;
 }
 
-.gallery{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
 
-}
-.gallery img{
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-}
+
+
 
 .dots{
     display: flex;
@@ -62,62 +63,131 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 10%;
+    width: 240px;
+    
+    height: 52vh;
     justify-content: space-between;
     overflow-y: scroll;
     scrollbar-width: none;
+    /* background-color: aqua; */
+    padding: 10px;
 }
 
 
-.sidebar button{
-    width: 100%;
-    height: 20%;
+
+
+.shadow2{
+    display: flex;
+
+    flex-direction: row;
+   width: 240px;
+  
+
+   height: 100px;
+    justify-content: flex-start;
+    /* background-color: aqua; */
+    align-items: center;
+    /* margin-inline: 10px; */
+    /* background-color: purple; */
+}
+
+.thumbimg{
+    width: 170px;
+    max-width: 190px;
+    height: 100px;
     object-fit: cover;
-    border: none;
-    background-color: white;
-    cursor: pointer;
-}
+    border-radius: 5px;
 
-.sidebar img{
-    height: 100%;
-    width: 100%;
 }
 
 
 @media (max-width: 768px) {
 
-    .carousel{
-        flex-direction: column;
-    }
-    .sidebar{
-        flex-direction: row;
-        width: 95%;
-        gap: 5px;
-        height: 20%;
-        overflow: visible;
-        justify-content: space-between;
-        
-    }
+   
+.carousel{
+    display: flex;
 
-    .sidebar button{
-        width: 20%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-
-
-
+    flex-direction: column;
+   width: 100%;
+    justify-content:center;
+ 
+    align-items: center;
+   
     
-    .gallery{
-        flex-direction: row;
-        gap: 10px;
-        width: 97%;
-    }
+
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.shadow{
+    display: flex;
+
+    flex-direction: row;
+   width: 85vw;
+
+    justify-content: center;
+    /* background-color: aqua; */
+    align-items: center;
+    /* margin-inline: 10px; */
+    /* background-color: aqua; */
+    /* padding: 10px 0px 10px 10px; */
+    /* margin-inline: 10px; */
+    margin-top: 10px;
+
+}
+.displaypic{
+    width: 85vw;
+    height: 40vh;
+}
+
     .dots{
         flex-direction: column;
         gap: 2px;
     }
 
+    .sidebar{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 100%; 
+        height: 80px;
+        justify-content: center;
+        overflow-y: scroll;
+        scrollbar-width: none;
+
+        padding: 10px;
+        padding-inline: 20px;
+       
+    }
+    
+    
+    
+    
+    .shadow2{
+        display: flex;
+    
+        flex-direction: row;
+       width: 20vw;
    
+    
+       height: 60px;
+        justify-content: flex-start;
+        /* background-color: aqua; */
+        align-items: center;
+        /* margin-inline: 10px; */
+        /* background-color: purple; */
+    }
+    
+    .thumbimg{
+        width: 20vw;
+    
+        height: 60px;
+        object-fit: cover;
+        border-radius: 5px;
+    
+    }
 }
+   
