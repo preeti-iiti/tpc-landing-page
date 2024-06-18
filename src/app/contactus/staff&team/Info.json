@@ -1,0 +1,56 @@
+{
+    "Info": [
+        {
+            "name": "Prof. Pavan Kumar Kankar",
+            "position": "Professor, Mechanical Engineering",
+            "department": "Professor-In-Charge, Training and Placement Cell",
+            "email": "head-tmp@iiti.ac.in",
+            "phone": "0731-660",
+            "extension": "3413",
+            "mobile": "",
+            "social": {
+                "linkedin": "https://linkedin.com/in/prof-pavan-kumar-kankar",
+                "twitter": "https://twitter.com/prof_pavan_kankar"
+            }
+        },
+        {
+            "name": "Mr. Pushpak Kumar Pemma",
+            "position": "Placement Officer",
+            "department": "Training and Placement Cell, IIT Indore",
+            "email": "placementofficer@iiti.ac.in",
+            "phone": "0731-660",
+            "extension": "3572",
+            "mobile": "+91-9000431899",
+            "social": {
+                "facebook": "https://facebook.com/pushpak.kumar.pemma",
+                "instagram": "https://instagram.com/pushpak.pemma"
+            }
+        },
+        {
+            "name": "Ms. Apeksha Rajpurohit",
+            "position": "Assistant Placement Officer",
+            "department": "Training and Placement Cell, IIT Indore",
+            "email": "apo@iiti.ac.in",
+            "phone": "0731-660",
+            "extension": "3431",
+            "mobile": "+91-9660537489",
+            "social": {
+                "linkedin": "https://linkedin.com/in/apeksha-rajpurohit",
+                "twitter": "https://twitter.com/apeksha_rajpurohit"
+            }
+        },
+        {
+            "name": "Ms. Preeti Sharma",
+            "position": "Jr. Tech. Superintendent",
+            "department": "Training and Placement Cell, IIT Indore",
+            "email": "managerplacement@iiti.ac.in",
+            "phone": "0731-660",
+            "extension": "3430",
+            "mobile": "+91-9644448860",
+            "social": {
+                "linkedin": "https://linkedin.com/in/preeti-sharma",
+                "twitter": "https://twitter.com/preeti_sharma"
+            }
+        }
+    ]
+}
