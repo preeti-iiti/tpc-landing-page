@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import styles from './ContactCard.module.css';
-import info from './info.json';
+import info from './Info.json';
 
 const ContactCard: React.FC = () => {
     console.log("Info data: ", info.Info); // Add this line
