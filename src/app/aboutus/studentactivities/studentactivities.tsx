@@ -19,7 +19,7 @@ export default function Activities() {
                         <Link href={activity.link} target='_blank'>
                         <div className={`para text-[0.8rem] ${styles.overlay} text-white`}><div className=' font-bold text-[1rem]'>{activity.title}</div>{activity.description}
                         
-                        <Image src={data.insta} width={40} className=' brightness-0 invert-[1] relative left-[150px]' />
+                        <Image src={data.insta} alt="insta" width={40} className=' brightness-0 invert-[1] relative left-[150px]' />
                          </div>
                          </Link>
                     </div>

@@ -2,6 +2,8 @@
 import React from 'react';
 import styles from './ContactCard.module.css';
 import info from './Info.json';
+import {Image} from "@nextui-org/image";
+import Link from 'next/link';
 
 const ContactCard: React.FC = () => {
     console.log("Info data: ", info.Info); // Add this line
@@ -11,12 +13,12 @@ const ContactCard: React.FC = () => {
             {info.Info.map((person, index) => (
                 <div key={index} className={styles.card}>
                     <div className={styles.imageContainer}>
-                        <img src="/data/logo/iiti.png" alt={person.name} className={styles.profileImage} />
+                        <Image src="/data/logo/iiti.png" alt={person.name} className={styles.profileImage} />
                         <div className={styles.socialContainer}>
                             {Object.entries(person.social).map(([platform, url]) => (
-                                <a href={url} key={platform} className={styles[platform]} target="_blank" rel="noopener noreferrer">
+                                <Link href={url} key={platform} className={styles[platform]} target="_blank" rel="noopener noreferrer">
                                     <i className={`fab fa-${platform}`}></i>
-                                </a>
+                                </Link>
                             ))}
                         </div>
                     </div>

@@ -20,7 +20,7 @@ return(
                         <Link href={club.link} target='_blank'>
                         <div className={styles.insta}>
                         <div>
-                       <Image src={data.insta} className=' brightness-0 invert-[1] ' />
+                       <Image src={data.insta} alt="instagram" className=' brightness-0 invert-[1] ' />
                        </div>
                         </div>
                         </Link>

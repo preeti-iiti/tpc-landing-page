@@ -320,7 +320,7 @@ export default function AcademicPrograms() {
      <div className=" w-[100%] flex justify-end">
      <Link href="/aboutus/achievements">
      <Button  className={` ${styles.goldenbtn} flex justify-center m-[5px] text-white h-[5rem] w-[300px] `}>
-   <div className={` text-[1.2rem] uppercase font-bold`}>Students' Achievements</div>
+   <div className={` text-[1.2rem] uppercase font-bold`}>Students	&#39; Achievements</div>
      </Button>  
      </Link>
 
