@@ -299,8 +299,8 @@ export default function AcademicPrograms() {
       <div className="header3">{datametal.title2}</div>
 
       <div className={styles.grid}>
-      {datametal.skills.map((item) => (
-        <div className=" flex justify-center m-[3px]   border-1 border-[#00000066] p-[10px] rounded-[20px] bg-white hover:bg-[#00000020]">{item}</div>
+      {datametal.skills.map((item,index) => (
+        <div key={index} className=" flex justify-center m-[3px]   border-1 border-[#00000066] p-[10px] rounded-[20px] bg-white hover:bg-[#00000020]">{item}</div>
       ))}
       <Button color="danger" variant="light" className=" flex justify-center m-[5px] ">
     <div className={`para `}>etc</div>
