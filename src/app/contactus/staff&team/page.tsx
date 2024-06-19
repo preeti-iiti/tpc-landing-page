@@ -59,7 +59,9 @@ export default function StaffTeam() {
       
       <div className={styles.cardContainer}>
       {data.teampg.map((item,index) => (
-        <FacultyProfile2 {...item}></FacultyProfile2>
+   
+        <FacultyProfile2 key={index} {...item}></FacultyProfile2>
+
       ))}
     
     </div>

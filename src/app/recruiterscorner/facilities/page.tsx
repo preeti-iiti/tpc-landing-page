@@ -23,16 +23,16 @@ export default function Facilities() {
             <Button color="danger" variant="light" size="lg">
             <div className={`para my-3 text-wrap`}>{key}</div>
           </Button>
-         {val.map((item) => (
+         {val.map((item,index) => (
 
-            <>
+            <div key={index}>
             <div className="header3">
             {item.title}
             </div>
             <div className="para">
             {item.descp}
             </div>
-            </>
+            </div>
 
          ))}
       </>
