@@ -86,7 +86,7 @@ export default function AcademicPrograms() {
     <div className="para">{datacse.mid}</div>
 
    
-    <Button color="danger" variant="light">
+    <Button color="danger" variant="light" size="lg">
     <div className={`para my-3 text-wrap`}>{datacse.ug.title}</div>
       </Button>  
         <div className={styles.grid}>
@@ -98,7 +98,7 @@ export default function AcademicPrograms() {
       </Button> 
       </div>
 
-      <Button color="danger" variant="light">
+      <Button color="danger" variant="light" size="lg">
     <div className={`para my-3 text-wrap`}>{datacse.pg.title}</div>
       </Button>  
         <div className={styles.grid}>
@@ -115,7 +115,7 @@ export default function AcademicPrograms() {
 
       <div className="para">{dataelec.starter}</div>
       
-      <Button color="danger" variant="light">
+      <Button color="danger" variant="light" size="lg">
     <div className={`para my-3 text-wrap`}>{dataelec.title}</div>
       </Button>  
       
@@ -145,7 +145,7 @@ export default function AcademicPrograms() {
       <div className="para">{datamech.para1}</div>
       <div className="para">{datamech.para2}</div>
 
-      <Button color="danger" variant="light">
+      <Button color="danger" variant="light" size="lg">
     <div className={`para my-3 text-wrap`}>{datamech.title1}</div>
       </Button>  
 
@@ -158,7 +158,7 @@ export default function AcademicPrograms() {
       </Button>  
       </div>
 
-      <Button color="danger" variant="light">
+      <Button color="danger" variant="light" size="lg">
     <div className={`para my-3 text-wrap`}>{datamech.pgspecial}</div>
       </Button>  
 
@@ -203,7 +203,7 @@ export default function AcademicPrograms() {
 
 <div className="para">{datacivil.starter}</div>
 
-      <Button color="danger" variant="light">
+      <Button color="danger" variant="light" size="lg">
     <div className={`para my-3 text-wrap`}>Top Courses Offered by the Department</div>
       </Button>  
 
@@ -220,7 +220,7 @@ export default function AcademicPrograms() {
 
 <div className="para">{datacivil.mid}</div>
 
-<Button color="danger" variant="light">
+<Button color="danger" variant="light" size="lg">
     <div className={`para my-3 text-wrap`}>Technical Skills</div>
       </Button> 
 
@@ -241,7 +241,7 @@ export default function AcademicPrograms() {
 
 
 
-      <Button color="danger" variant="light">
+      <Button color="danger" variant="light" size="lg">
     <div className={`para my-3 text-wrap`}>Soft Skills</div>
       </Button> 
 
@@ -267,7 +267,7 @@ export default function AcademicPrograms() {
 
       <div className="header3">{datametal.title}</div>
 
-      <Button color="danger" variant="light">
+      <Button color="danger" variant="light" size="lg">
     <div className={`para my-3 text-wrap`}>B Tech</div>
       </Button> 
 
@@ -281,7 +281,7 @@ export default function AcademicPrograms() {
       </Button>  
       </div>
 
-      <Button color="danger" variant="light">
+      <Button color="danger" variant="light" size="lg">
     <div className={`para my-3 text-wrap`}>M Tech</div>
       </Button> 
 

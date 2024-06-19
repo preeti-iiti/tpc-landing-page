@@ -4,17 +4,18 @@ import facultyInfo from './facultyInfo.json';
 
 export default function FacultyProfile(props:any){
     return (
-        <div className={styles.cardContainer}>
-            {Object.entries(props).map(([key, value]) => (
-                <div  key={key} className={styles.card}>
+        
+           
+                <div className={styles.card}>
                     <div className={styles.info}>
-                        <h2>{key}</h2>
-                        <p>{props[key]}</p>
+                        <h2>{props.name}</h2>
+                        <p>{props.dep}</p>
+                        <p>{props.phone}</p>
                        
                     </div>
                 </div>
-            ))}
-        </div>
+       
+        
     );
 };
 

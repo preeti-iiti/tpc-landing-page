@@ -10,7 +10,7 @@ export default function Facilities() {
      <>
      
   
-    <h1>Facilities</h1>
+    <div className="header2">Facilities</div>
   
    
      </>
