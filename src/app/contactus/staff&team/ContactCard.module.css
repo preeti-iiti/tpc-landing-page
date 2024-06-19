@@ -48,6 +48,7 @@
     border-radius: 10px;
     text-align: center;
     overflow: hidden;
+      border-bottom: 4px solid #0073e696;
   }
   
   .card:hover .cardside.front {
@@ -83,10 +84,7 @@
 }
 
 .socialContainer {
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
+    
     display: flex;
     gap: 10px;
 }
@@ -100,7 +98,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.3s;
+    transition:  0.3s ease;
+    opacity: 0.2;
 }
 
 .socialContainer a:hover {

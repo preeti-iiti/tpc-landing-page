@@ -28,9 +28,15 @@ const ContactCard: React.FC = () => {
                     </div>
                     </div>
                     <div className={`${styles.cardside} ${styles.back}`}>
-                    <div className=" flex w-[100%] h-[100%] justify-center items-center">
+                    <div className=" flex flex-col w-[100%] h-[100%] justify-around items-center">
                         <Image src="/data/logo/iiti.png" alt={person.name} width={250} className={styles.embeded} />
-                        
+                        <div className={styles.socialContainer}>
+                            {Object.entries(person.social).map(([platform, url]) => (
+                                <a href={url} key={platform} className={styles[platform]} target="_blank" rel="noopener noreferrer">
+                                    <i className={`fab fa-${platform}`}></i>
+                                </a>
+                            ))}
+                        </div>
                     </div>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 
 
 import ContactCard from "./ContactCard";
-import FacultyProfile from "./FacultyProfile";
+
 
 
 
@@ -14,10 +14,8 @@ export default function StaffTeam() {
   
    <ContactCard></ContactCard>
 
-   <div className="header3"></div>
-    <FacultyProfile></FacultyProfile>
+    
      </div>
-      
     );
   }
   
