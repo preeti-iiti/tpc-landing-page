@@ -6,19 +6,64 @@
 }
 
 .card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    perspective: 150rem;
+    position: relative;
+    height: 30rem;
     width: 300px;
-    text-align: center;
-    transition: transform 0.2s;
-}
+    margin: 2rem;
+    box-shadow: none;
+    background: none;
+    border-radius: 10px;
+  }
+  
+  .cardside {
+    height: 30rem;
+    border-radius: 15px;
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    background: #fff;
 
-.card:hover {
+    border-radius: 10px;
+    text-align: center;
+
+  }
+  
+  .cardside.back {
+    transform: rotateY(-180deg);
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    /* border-top: 4px solid #0073e6; */
+  }
+  
+  .cardside.front {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .card:hover .cardside.front {
+    transform: rotateY(180deg);
+  }
+  
+  .card:hover .cardside.back {
+    transform: rotateY(0deg);
+  }
+
+
+
+/* .card:hover {
     transform: scale(1.05);
     border-top: 4px solid #0073e6;
-}
+}  */
 
 .imageContainer {
     position: relative;
@@ -89,4 +134,11 @@
 
 .instagram {
     background-color: #e4405f;
+}
+
+
+.embeded{
+    
+    filter: grayscale(100%) opacity(0.2);
+    
 }

@@ -12,6 +12,8 @@ const ContactCard: React.FC = () => {
         <div className={styles.cardContainer}>
             {info.Info.map((person, index) => (
                 <div key={index} className={styles.card}>
+                    <div className={`${styles.cardside} ${styles.front}`}>
+                     
                     <div className={styles.imageContainer}>
                         <Image src="/data/logo/iiti.png" alt={person.name} className={styles.profileImage} />
                         
@@ -23,6 +25,13 @@ const ContactCard: React.FC = () => {
                         <p>Email: <a href={`mailto:${person.email}`}>{person.email}</a></p>
                         <p>Phone: {person.phone} (Extn. {person.extension})</p>
                         {person.mobile && <p>Mobile: {person.mobile}</p>}
+                    </div>
+                    </div>
+                    <div className={`${styles.cardside} ${styles.back}`}>
+                    <div className=" flex w-[100%] h-[100%] justify-center items-center">
+                        <Image src="/data/logo/iiti.png" alt={person.name} width={250} className={styles.embeded} />
+                        
+                    </div>
                     </div>
                 </div>
             ))}

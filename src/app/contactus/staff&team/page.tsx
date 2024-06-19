@@ -13,6 +13,8 @@ export default function StaffTeam() {
     <div className="header2">Staff And Team</div>
   
    <ContactCard></ContactCard>
+
+   <div className="header3"></div>
     <FacultyProfile></FacultyProfile>
      </div>
       
