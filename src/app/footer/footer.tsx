@@ -6,7 +6,7 @@ export default function Footer(props: any) {
   return (
     <>
 
-      <div className={styles.wrapper}>
+      <div className={styles.wrapper} id="footer">
 
         <div className={styles.unexpendable}>
 
@@ -15,7 +15,7 @@ export default function Footer(props: any) {
           
             <div className={styles.text}>
 
-            <div className={styles.section}>
+            <div className={styles.section} >
             <span className={styles.textheader}>Quick Links</span>
             <div className={styles.textcontent}>
                 {props.quicklinks.map((val: any,index:any)=>{

@@ -23,7 +23,7 @@ body {
   color: black;
   background: #FBFBFD;;
   font-family: Poppins;
-
+  scroll-behavior: smooth;
   
 }
 

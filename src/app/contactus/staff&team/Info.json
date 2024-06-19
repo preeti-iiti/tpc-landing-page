@@ -53,4 +53,131 @@
             }
         }
     ]
-}
+,
+    "teamug":[
+        {
+            "Agrima Bundela":"9354201077",
+            "G Aakash":"8281545699",
+            "Mihir Patel":"6354336973",
+            "Prajakta Darade":"9022406734"
+        },
+        {
+            "Anurag Das":"8787635592",
+            "Ishaan Mittal":"9971260556",
+            "Mansi Choudhary":"8420994387",
+            "Prakhar Goel":"8178782328"
+        },
+        {
+            "Abhishek Ranjan":"9523248823",
+            "Monil Pitliya":"9116612623",
+            "Pulkit Gupta":"8267939100",
+            "Sai Abhinav":"8143941409"
+        },
+        {
+            "Ananya Pathak":"9179053456",
+            "Prachee Yadav":"9589098768",
+            "Pranjal Jaiswal":"9918490730",
+            "Tanvi Warvadekar":"8179602363"
+        },
+        {
+            "Anshu Ratan":"9973438636",
+            "Tarun Soni":"7007323641"
+        }
+       
+
+
+
+    ]
+,
+    "teampg":[
+
+        {
+            "dep":"CSE (M.S. Research)",
+            "name":"Aditi Roa S",
+            "phone":"8095152355"
+        },
+        {
+            "dep":"CSE(M.Tech)",
+            "name":"S Deepak Raam",
+            "phone":"7795195088"
+        },{
+            "dep":"EE(M.S. Research)",
+            "name":"Anand Kachale",
+            "phone":"9011820196"
+        },{
+            "dep":"EE(M.tech VDN)",
+            "name":"Atharv Limaye",
+            "phone":"6265762982"
+        },{
+            "dep":"EE(M.tech CSP)",
+            "name":"Saish Kajrolkar",
+            "phone":"9834053674"
+        },{
+            "dep":"Mechanical (M.tech AM)",
+            "name":"G.T. Manoj Krishna",
+            "phone":"9110793311"
+        },{
+            "dep":"Mechanical (M.tech MSD)",
+            "name":"Rasika Kalokhe",
+            "phone":"9604322720"
+        },{
+            "dep":"Mechanical (M.tech MSD)",
+            "name":"Varade Tejas Deelip",
+            "phone":"9403316388"
+        },{
+            "dep":"Mechanical (M.tech AOLT)",
+            "name":"Vivek Ranjan Singh",
+            "phone":"7470900964"
+        },{
+            "dep":"MEMS (M.tech ME)",
+            "name":"Aditya Girge",
+            "phone":"9404149459"
+        },{
+            "dep":"MEMS (M.tech MSE)",
+            "name":"Sourabh Goswami",
+            "phone":"8403855652"
+        },{
+            "dep":"Civil (M.tech SE)",
+            "name":"Aditya Bhandakkar",
+            "phone":"9075232410"
+        },{
+            "dep":"Civil (M.tech WCS)",
+            "name":"Nakka Naveen Kumar",
+            "phone":"7702003707"
+        },{
+            "dep":"CEVITS (M.tech EVT)",
+            "name":"Dhruv Gavande",
+            "phone":"9284601350"
+        },{
+            "dep":"BSBE (M.tech BE)",
+            "name":"Advait Sohani",
+            "phone":"8975289476"
+        },{
+            "dep":"DAASE (M.tech SE)",
+            "name":"Katta Rajat",
+            "phone":"6300775706"
+        },{
+            "dep":"Physics (M.Sc)",
+            "name":"Divyansh Mishra",
+            "phone":"6264657794"
+        },{
+            "dep":"Chemistry (M.Sc)",
+            "name":"Dhairya Kumar Srivastava",
+            "phone":"9125676452"
+        },{
+            "dep":"Mathematics (M.Sc)",
+            "name":"Anshul",
+            "phone":"9350761297"
+        }
+
+    ]
+
+
+
+
+
+
+
+
+    }
+
