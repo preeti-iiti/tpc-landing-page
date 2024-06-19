@@ -14,13 +14,7 @@ const ContactCard: React.FC = () => {
                 <div key={index} className={styles.card}>
                     <div className={styles.imageContainer}>
                         <Image src="/data/logo/iiti.png" alt={person.name} className={styles.profileImage} />
-                        <div className={styles.socialContainer}>
-                            {Object.entries(person.social).map(([platform, url]) => (
-                                <Link href={url} key={platform} className={styles[platform]} target="_blank" rel="noopener noreferrer">
-                                    <i className={`fab fa-${platform}`}></i>
-                                </Link>
-                            ))}
-                        </div>
+                        
                     </div>
                     <div className={styles.info}>
                         <h2>{person.name}</h2>

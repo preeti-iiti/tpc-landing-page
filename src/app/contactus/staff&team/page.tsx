@@ -7,14 +7,14 @@ import FacultyProfile from "./FacultyProfile";
 
 export default function StaffTeam() {
     return (
-     <>
+     <div className=" flex flex-col gap-[35px]">
      
   
-    <h1 className="header1">Stream Team</h1>
+    <div className="header2">Staff And Team</div>
   
    <ContactCard></ContactCard>
     <FacultyProfile></FacultyProfile>
-     </>
+     </div>
       
     );
   }

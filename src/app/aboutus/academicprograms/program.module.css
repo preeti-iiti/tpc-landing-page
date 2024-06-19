@@ -102,3 +102,11 @@
                 radial-gradient(ellipse farthest-corner at left top, #ffffac83 0%, #FFFFAC 8%, #D1B464 25%, #90732f 62.5%, #866a29 100%);
 
 }
+
+
+
+@media screen and (max-width: 768px){
+    .name:hover , .name2:hover , .name3:hover , .name4:hover , .name5:hover{
+       font-size: 1.5rem;
+    }
+}
