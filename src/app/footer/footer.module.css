@@ -58,6 +58,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+
     
 }
 
@@ -156,12 +157,9 @@
     width: 3rem;
     height: auto;
 transition: .3s ease;
-    
+    margin-top: 20px;
 }
 
-.logos:hover{
-    transform: scale(1.4);
-}
 
 
 
@@ -171,9 +169,7 @@ transition: .3s ease;
     }
 }
 
-.copyright{
 
-}
 
 
 

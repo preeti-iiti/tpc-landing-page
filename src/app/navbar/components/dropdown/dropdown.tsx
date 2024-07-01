@@ -13,7 +13,7 @@ export default function DropdownUI(props: any) {
   <Button 
     color= "primary"
     variant="light"
-    className="text-sm hover:font-bold"
+    className="text-sm hover:font-bold poppins"
 
   >
     {props.children}

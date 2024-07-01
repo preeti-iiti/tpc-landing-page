@@ -14,9 +14,9 @@ export default function Recruiters(props: any) {
     <div>
 
 
-
-      <button className={styles.button}>OUR RECRUITERS</button>
-
+<div className=" w-[100%] flex justify-center">
+      <div className="w-[20rem] header2" >OUR RECRUITERS</div>
+      </div>
      <div className={styles.catalog}>
      
       {

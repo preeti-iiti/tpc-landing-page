@@ -4,7 +4,8 @@ import { ChartData } from 'chart.js';
 import styles from './page.module.css';
 import departmentData from './data.json';
 import { Button } from "@nextui-org/react";
-
+import Image from "next/image";
+import Link from "next/link";
 
 const createChartData = (labels: string[], data: number[]): ChartData<'pie'> => {
   return {
@@ -48,18 +49,27 @@ const createChartData = (labels: string[], data: number[]): ChartData<'pie'> => 
 const Demographics: React.FC = () => {
   return (
     <div className={styles.wrapper}>
-      <h1>Demographics</h1>
+      <div className='header1'>Demographics</div>
       <div className={styles.container}>
         {departmentData.departmentData.map((dept, index) => (
           <div key={index} className={styles.department}>
-            <h2>{dept.departmentName}</h2>
+            <div className=' flex justify-between items-center'>
+            <h2 className=' questitle'>{dept.departmentName}</h2>
+            <div className=" flex ">
+          <Link href="/aboutus/achievements">
+            <Button isIconOnly  className={` flex justify-center m-[5px] bg-transparent h-[3rem] w-[2rem] `}>
+              <Image src="/data/buttonspngs/medal.png" width={30} height={30} alt="achievements"/>
+            </Button>
+          </Link>
+        </div>
+        </div>
             <PieChart data={createChartData(dept.pieLabels.labels, dept.pieLabels.data)} />
             <ul>
               {dept.labels.map((label, idx) => (
                 <li key={idx}><span>{label}</span>: {dept.data[idx]}</li>
               ))}
             </ul>
-            <Button color="primary" variant="light" className=" hover:font-bold"> <a href="">View department achievements</a></Button>
+            
           </div>
         ))}
       </div>

@@ -55,13 +55,13 @@
 
 }
 
-.logos:hover{
+/* .logos:hover{
     scale: 1.15;
     transition: 0s ease;
     box-shadow: 0 0 30px -10px #115398;
 
     border-radius: 10px;
-}
+} */
 
 .catalog{
     display: flex;

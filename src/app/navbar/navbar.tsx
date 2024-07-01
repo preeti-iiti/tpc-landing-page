@@ -23,7 +23,7 @@ export default function NavbarUI(props:any) {
           <Link href="/"><Image width={60} height={45} src={props.logo} alt="iit indore" className={styles.iitilogo} /></Link>
              {/* <div className="flex"><Link href="/"><span className={styles.hindi}>प्रशिक्षण एवं नियोजन कक्ष</span></Link><span className={styles.partition}> | </span><Link href="/"><span className={styles.english}>Training and Placement Cell</span></Link></div> */}
             
-            <div className=" h-[5rem]  overflow-hidden flex flex-col justify-center gap-[0rem]">
+            <div className=" h-[5rem]  overflow-hidden flex flex-col justify-center gap-[0rem] poppins">
               <div className={styles.block1}>
             <Link href="/" color="foreground"><div className= {styles.tpc}>Training and Placement Cell</div></Link>
             <Link href="/" color="foreground"><div className= {styles.divider1}>&nbsp; | &nbsp;</div></Link>
@@ -43,7 +43,7 @@ export default function NavbarUI(props:any) {
 
           <NavbarMenuItem key={`${item}-${index}`}>
            
-           {item.isdrop ? <Drop {...item}>{item.title}</Drop> : <Button color= "primary" variant="light" className=" hover:font-bold"> <Link href={item.link} className=" text-sm" > <div >{item.title}</div></Link></Button>}
+           {item.isdrop ? <Drop {...item}>{item.title}</Drop> : <Button color= "primary" variant="light" className=" hover:font-bold poppins"> <Link href={item.link} className=" text-sm" > <div >{item.title}</div></Link></Button>}
               
           </NavbarMenuItem>
           

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -13,16 +13,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
   }
 }
 
 body {
   color: black;
   background: #FBFBFD;;
-  font-family: Poppins;
   scroll-behavior: smooth;
   
 }
@@ -52,7 +51,7 @@ body {
   flex-direction: column;
   gap: 100px;
   padding: 0;
-
+  font-family: 'Poppins';
   padding-inline: 1rem;
   /* background-color: aqua; */
 }
@@ -141,4 +140,21 @@ filter: brightness(150%);
     gap: 50px;
     padding: 2rem;
   }
+}
+
+.poppins{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.modal{
+
+
+  font-weight: bold;
+  background: linear-gradient(to right , #115398, #0488D3);
+  color: white;
+  font-size:2rem;
+  transition: .3s ease;
+  padding: 4px;
+  border-radius: 5px;
 }

@@ -1,5 +1,5 @@
 import styles from "./portalform.module.css"
-
+import Image from "next/image";
 export default function PortalForm() {
   return (
     <>
@@ -15,11 +15,11 @@ export default function PortalForm() {
           <div className={styles.button}>
             <button>
               <a href="">STUDENT</a>
-              <a href="">LOGIN  &mdash;&mdash;&mdash;&gt;</a>
+              <a href="">LOGIN </a>
             </button>
             <button>
               <a className={styles.gradientText} href="">RECRUITER</a>
-              <a className={styles.gradientText} href="">LOGIN  &mdash;&mdash;&mdash;&gt;</a>
+              <a className={styles.gradientText} href="">LOGIN</a>
             </button>
 
           </div>

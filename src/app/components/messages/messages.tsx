@@ -26,7 +26,7 @@ export default function Messages() {
             <div key={index} className={styles.message}>
               <div className={` header3 text-[2rem] w-[100%] hover:text-[2.5rem]`}>{message.title}</div>
 
-              <div className={styles.content}>
+              <div className={styles.content} >
 
 
 
@@ -37,7 +37,7 @@ export default function Messages() {
 
                   </div>
                   <div className={styles.para}>
-                    <div className={styles.summary}>{message.summary}</div>
+                    <div className={`${styles.summary} para `} style={{fontSize: "0.9rem"}}>{message.summary}</div>
                     {/* <button onClick={() => openModal(message.title, message.info, message.image)} className={styles.readmore}>
                       READ MORE
                       <div className={styles.arrow}>
