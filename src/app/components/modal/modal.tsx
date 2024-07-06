@@ -1,10 +1,26 @@
 import React from "react";
 import styles from "./modal.module.css";
-import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, RadioGroup, Radio} from "@nextui-org/react";
+import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
 import Image from 'next/image'
 
 export default function ModalUI(props:any) {
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
+  const paragraphs = props.info.split('. ');
+const signature = props.signature.split('  ');
+
+
+  const customClassNames = {
+    wrapper: styles.wrapper,
+    base: styles.base,
+    backdrop: styles.backdrop,
+    header: styles.header,
+    body: styles.body,
+    footer: styles.footer,
+    closeButton: styles.closeButton
+   
+  };
+
+
 
 
   return (
@@ -14,33 +30,42 @@ export default function ModalUI(props:any) {
         isOpen={isOpen}
         onOpenChange={onOpenChange}
         scrollBehavior="outside"
-        size="5xl"
+        
         backdrop="opaque"
+        classNames={customClassNames}
       >
-        <ModalContent >
+        <ModalContent>
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1">
                 <div className="flex flex-row gap-3">
-                  
-               <div className="modal mx-[4px]">
-                {props.title }
-               </div>
+                  <div className="modal mx-[4px]">
+                    {props.title}
+                  </div>
                 </div>
               </ModalHeader>
               <ModalBody className="flex flex-col gap-5 items-center para poppins">
-                <div className=" border-3 border-[#0488D3]">
-                  <Image src={props.image} width={200} height={300} alt={props.title} ></Image>
+                <div className="border-3 border-[#0488D3]">
+                  <Image src={props.image} width={200} height={300} alt={props.title} />
                 </div>
-                {props.info}
+                {paragraphs.map((para:string, index: React.Key | null | undefined) => (
+                  <p key={index} className="text-justify">{para}</p>
+                ))}
               </ModalBody>
               <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
+                <div className="flex-col justify-end ">
+               {signature.map((sign:string, index: React.Key | null | undefined) => (
+                 <p  key={index} className=" mt-2 font-extrabold text-xl font text-justify">{sign}</p>
+               ))}
+               <Button className=" mt-10" color="danger" variant="light" onPress={onClose}>
                   Close
                 </Button>
+               <div/>
+                
                 {/* <Button color="primary" onPress={onClose}>
                   Action
                 </Button> */}
+               </div>
               </ModalFooter>
             </>
           )}

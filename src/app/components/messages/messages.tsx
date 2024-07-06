@@ -11,6 +11,13 @@ export default function Messages() {
   const modalRef = useRef<HTMLDialogElement>(null);
   const [selectedMessage, setSelectedMessage] = useState<{ heading: string; info: string; photo: string} | null>(null);
 
+
+
+
+ 
+
+
+
   const openModal = (heading: string, info: string, photo:string) => {
     setSelectedMessage({ heading, info, photo });
     modalRef.current?.showModal();
