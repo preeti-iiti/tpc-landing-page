@@ -1,183 +1,243 @@
 {
-    "Info": [
+    "teamug": [
+      [
         {
-            "name": "Prof. Pavan Kumar Kankar",
-            "position": "Professor, Mechanical Engineering",
-            "department": "Professor-In-Charge, Training and Placement Cell",
-            "email": "head-tmp@iiti.ac.in",
-            "phone": "0731-660",
-            "extension": "3413",
-            "mobile": "",
-            "social": {
-                "linkedin": "https://linkedin.com/in/prof-pavan-kumar-kankar",
-                "twitter": "https://twitter.com/prof_pavan_kankar"
-            }
+          "name": "Mihir Kumar Patel",
+          "email": "cse210001050@iiti.ac.in",
+          "phone": "6354336973"
         },
         {
-            "name": "Mr. Pushpak Kumar Pemma",
-            "position": "Placement Officer",
-            "department": "Training and Placement Cell, IIT Indore",
-            "email": "placementofficer@iiti.ac.in",
-            "phone": "0731-660",
-            "extension": "3572",
-            "mobile": "+91-9000431899",
-            "social": {
-                "facebook": "https://facebook.com/pushpak.kumar.pemma",
-                "instagram": "https://instagram.com/pushpak.pemma"
-            }
+          "name": "G Aakash",
+          "email": "cse210001015@iiti.ac.in",
+          "phone": "8281545699"
         },
         {
-            "name": "Ms. Apeksha Rajpurohit",
-            "position": "Assistant Placement Officer",
-            "department": "Training and Placement Cell, IIT Indore",
-            "email": "apo@iiti.ac.in",
-            "phone": "0731-660",
-            "extension": "3431",
-            "mobile": "+91-9660537489",
-            "social": {
-                "linkedin": "https://linkedin.com/in/apeksha-rajpurohit",
-                "twitter": "https://twitter.com/apeksha_rajpurohit"
-            }
-        },
-        {
-            "name": "Ms. Preeti Sharma",
-            "position": "Jr. Tech. Superintendent",
-            "department": "Training and Placement Cell, IIT Indore",
-            "email": "managerplacement@iiti.ac.in",
-            "phone": "0731-660",
-            "extension": "3430",
-            "mobile": "+91-9644448860",
-            "social": {
-                "linkedin": "https://linkedin.com/in/preeti-sharma",
-                "twitter": "https://twitter.com/preeti_sharma"
-            }
+          "name": "Prajakta Darade",
+          "email": "cse210001052@iiti.ac.in",
+          "phone": "9022406734"
         }
-    ]
-,
-    "teamug":[
+      ],
+      [
         {
-            "Agrima Bundela":"9354201077",
-            "G Aakash":"8281545699",
-            "Mihir Patel":"6354336973",
-            "Prajakta Darade":"9022406734"
+          "name": "Agrima Bundela",
+          "email": "ee210002009@iiti.ac.in",
+          "phone": "9354201077"
         },
         {
-            "Anurag Das":"8787635592",
-            "Ishaan Mittal":"9971260556",
-            "Mansi Choudhary":"8420994387",
-            "Prakhar Goel":"8178782328"
+          "name": "Prakhar Goel",
+          "email": "ee210002058@iiti.ac.in",
+          "phone": "8178782328"
         },
         {
-            "Abhishek Ranjan":"9523248823",
-            "Monil Pitliya":"9116612623",
-            "Pulkit Gupta":"8267939100",
-            "Sai Abhinav":"8143941409"
-        },
-        {
-            "Ananya Pathak":"9179053456",
-            "Prachee Yadav":"9589098768",
-            "Pranjal Jaiswal":"9918490730",
-            "Tanvi Warvadekar":"8179602363"
-        },
-        {
-            "Anshu Ratan":"9973438636",
-            "Tarun Soni":"7007323641"
+          "name": "Ebrahim",
+          "email": "ee210002030@iiti.ac.in",
+          "phone": "9920702153"
         }
-       
-
-
-
-    ]
-,
-    "teampg":[
-
+      ],
+      [
         {
-            "dep":"CSE (M.S. Research)",
-            "name":"Aditi Roa S",
-            "phone":"8095152355"
+          "name": "Pulkit Gupta",
+          "email": "me210003058@iiti.ac.in",
+          "phone": "8267939100"
         },
         {
-            "dep":"CSE(M.Tech)",
-            "name":"S Deepak Raam",
-            "phone":"7795195088"
-        },{
-            "dep":"EE(M.S. Research)",
-            "name":"Anand Kachale",
-            "phone":"9011820196"
-        },{
-            "dep":"EE(M.tech VDN)",
-            "name":"Atharv Limaye",
-            "phone":"6265762982"
-        },{
-            "dep":"EE(M.tech CSP)",
-            "name":"Saish Kajrolkar",
-            "phone":"9834053674"
-        },{
-            "dep":"Mechanical (M.tech AM)",
-            "name":"G.T. Manoj Krishna",
-            "phone":"9110793311"
-        },{
-            "dep":"Mechanical (M.tech MSD)",
-            "name":"Rasika Kalokhe",
-            "phone":"9604322720"
-        },{
-            "dep":"Mechanical (M.tech MSD)",
-            "name":"Varade Tejas Deelip",
-            "phone":"9403316388"
-        },{
-            "dep":"Mechanical (M.tech AOLT)",
-            "name":"Vivek Ranjan Singh",
-            "phone":"7470900964"
-        },{
-            "dep":"MEMS (M.tech ME)",
-            "name":"Aditya Girge",
-            "phone":"9404149459"
-        },{
-            "dep":"MEMS (M.tech MSE)",
-            "name":"Sourabh Goswami",
-            "phone":"8403855652"
-        },{
-            "dep":"Civil (M.tech SE)",
-            "name":"Aditya Bhandakkar",
-            "phone":"9075232410"
-        },{
-            "dep":"Civil (M.tech WCS)",
-            "name":"Nakka Naveen Kumar",
-            "phone":"7702003707"
-        },{
-            "dep":"CEVITS (M.tech EVT)",
-            "name":"Dhruv Gavande",
-            "phone":"9284601350"
-        },{
-            "dep":"BSBE (M.tech BE)",
-            "name":"Advait Sohani",
-            "phone":"8975289476"
-        },{
-            "dep":"DAASE (M.tech SE)",
-            "name":"Katta Rajat",
-            "phone":"6300775706"
-        },{
-            "dep":"Physics (M.Sc)",
-            "name":"Divyansh Mishra",
-            "phone":"6264657794"
-        },{
-            "dep":"Chemistry (M.Sc)",
-            "name":"Dhairya Kumar Srivastava",
-            "phone":"9125676452"
-        },{
-            "dep":"Mathematics (M.Sc)",
-            "name":"Anshul",
-            "phone":"9350761297"
+          "name": "Abhishek Ranjan",
+          "email": "me210003006@iiti.ac.in",
+          "phone": "9523248823"
+        },
+        {
+          "name": "Monil Pitliya",
+          "email": "me210003048@iiti.ac.in",
+          "phone": "9116612623"
+        },
+        {
+          "name": "Sai Abhinav",
+          "email": "me210003041@iiti.ac.in",
+          "phone": "8143941409"
+        },
+        {
+          "name": "Ishaan Mittal",
+          "email": "me210003039@iiti.ac.in",
+          "phone": "9971260556"
         }
-
+      ],
+      [
+        {
+          "name": "Rasika Kalokhe",
+          "email": "mt2302103040@iiti.ac.in",
+          "phone": "9604322720"
+        },
+        {
+          "name": "Vivek Ranjan Singh",
+          "email": "mt2302103024@iiti.ac.in",
+          "phone": "7470900964"
+        },
+        {
+          "name": "Saish Kajrolkar",
+          "email": "mt2302102007@iiti.ac.in",
+          "phone": "9834053674"
+        },
+        {
+          "name": "Atharv Limaye",
+          "email": "mt2302102019@iiti.ac.in",
+          "phone": "6265762982"
+        },
+        {
+          "name": "Dhruv Gavande",
+          "email": "mt2302106001@iiti.ac.in",
+          "phone": "9284601350"
+        },
+        {
+          "name": "Sourabh Goswami",
+          "email": "mt2302105008@iiti.ac.in",
+          "phone": "8403855652"
+        },
+        {
+          "name": "Aditya Girge",
+          "email": "mt2302105023@iiti.ac.in",
+          "phone": "9404149459"
+        },
+        {
+          "name": "Rajat Katta",
+          "email": "mt2302121004@iiti.ac.in",
+          "phone": "6300775706"
+        },
+        {
+          "name": "Aditya Bhandakkar",
+          "email": "mt2302104010@iiti.ac.in",
+          "phone": "9075232410"
+        },
+        {
+          "name": "Naveen Kumar",
+          "email": "mt2302104015@iiti.ac.in",
+          "phone": "7702003707"
+        },
+        {
+          "name": "GT Manoj Krishna Varade",
+          "email": "mt2302103004@iiti.ac.in",
+          "phone": "9110793311"
+        }
+      ],
+      [
+        {
+          "name": "Anshu Ratan",
+          "email": "ce210004007@iiti.ac.in",
+          "phone": "9973438636"
+        },
+        {
+          "name": "Tarun Soni",
+          "email": "ce210004049@iiti.ac.in",
+          "phone": "7007323641"
+        },
+        {
+          "name": "Mansi Choudhary",
+          "email": "ce210004025@iiti.ac.in",
+          "phone": "8420994387"
+        },
+        {
+          "name": "Purav Biyani",
+          "email": "ce210004009@iiti.ac.in",
+          "phone": "8999548299"
+        }
+      ]
+    ],
+    "teampg": [
+      {
+        "name": "Tejas deelip",
+        "department": "Mechanical Engineering",
+        "email": "me200003082@iiti.ac.in",
+        "phone": "9403316388"
+      },
+      {
+        "name": "Rasika Kalokhe",
+        "department": "Metallurgical Engineering and Materials Science",
+        "email": "mt2302103040@iiti.ac.in",
+        "phone": "9604322720"
+      },
+      {
+        "name": "Vivek Ranjan Singh",
+        "department": "Metallurgical Engineering and Materials Science",
+        "email": "mt2302103024@iiti.ac.in",
+        "phone": "7470900964"
+      },
+      {
+        "name": "Anshul",
+        "department": "Mathematics",
+        "email": "msc2303141004@iiti.ac.in",
+        "phone": "9350761297"
+      },
+      {
+        "name": "Saish Kajrolkar",
+        "department": "Metallurgical Engineering and Materials Science",
+        "email": "mt2302102007@iiti.ac.in",
+        "phone": "9834053674"
+      },
+      {
+        "name": "Atharv Limaye",
+        "department": "Metallurgical Engineering and Materials Science",
+        "email": "mt2302102019@iiti.ac.in",
+        "phone": "6265762982"
+      },
+      {
+        "name": "Anand Nivrutti Kachale",
+        "department": "Mechanical Engineering",
+        "email": "ms2304102006@iiti.ac.in",
+        "phone": "9011820196"
+      },
+      {
+        "name": "Dhruv Gavande",
+        "department": "Metallurgical Engineering and Materials Science",
+        "email": "mt2302106001@iiti.ac.in",
+        "phone": "9284601350"
+      },
+      {
+        "name": "Sourabh Goswami",
+        "department": "Metallurgical Engineering and Materials Science",
+        "email": "mt2302105008@iiti.ac.in",
+        "phone": "8403855652"
+      },
+      {
+        "name": "Aditya Girge",
+        "department": "Metallurgical Engineering and Materials Science",
+        "email": "mt2302105023@iiti.ac.in",
+        "phone": "9404149459"
+      },
+      {
+        "name": "Rajat Katta",
+        "department": "Metallurgical Engineering and Materials Science",
+        "email": "mt2302121004@iiti.ac.in",
+        "phone": "6300775706"
+      },
+      {
+        "name": "Aditya Bhandakkar",
+        "department": "Metallurgical Engineering and Materials Science",
+        "email": "mt2302104010@iiti.ac.in",
+        "phone": "9075232410"
+      },
+      {
+        "name": "Naveen Kumar",
+        "department": "Metallurgical Engineering and Materials Science",
+        "email": "mt2302104015@iiti.ac.in",
+        "phone": "7702003707"
+      },
+      {
+        "name": "Aditi Rao",
+        "department": "Mechanical Engineering",
+        "email": "ms2304101001@iiti.ac.in",
+        "phone": "8095152355"
+      },
+      {
+        "name": "S Deepak Raam",
+        "department": "Metallurgical Engineering and Materials Science",
+        "email": "mt2302101012@iiti.ac.in",
+        "phone": "7795195088"
+      },
+      {
+        "name": "GT Manoj Krishna Varade",
+        "department": "Metallurgical Engineering and Materials Science",
+        "email": "mt2302103004@iiti.ac.in",
+        "phone": "9110793311"
+      }
     ]
-
-
-
-
-
-
-
-
-    }
-
+  }
+  
