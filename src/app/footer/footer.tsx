@@ -14,7 +14,7 @@ export default function Footer(props: any) {
                 <div className={styles.textcontent}>
                   {props.quicklinks.map((val: any, index: any) => {
                     return (
-                      <Link href={val.link} target="_blank">
+                      <Link href={val.link} key={index} target="_blank">
                         <div className={styles.links} key={index}>
                           {val.title}
                         </div>
