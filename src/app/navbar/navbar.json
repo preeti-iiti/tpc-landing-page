@@ -40,7 +40,7 @@
       "drop": [
         {
           "title": "Student Login",
-          "link": "/studentscorner/studentlogin"
+          "link": "https://tpc.iiti.ac.in/login"
         },
         {
           "title": "FAQs",
@@ -62,7 +62,7 @@
 
         {
           "title": "Recruiter Login",
-          "link": "/recruiterscorner/recruiterlogin"
+          "link": "https://tpc.iiti.ac.in/login"
         },
         {
           "title": "Timelines",
