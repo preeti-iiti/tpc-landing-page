@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import NavbarUI from "@/components/navbar";
 import Link from 'next/link';
 import Image from 'next/image'
 import { motion } from "framer-motion"
@@ -37,8 +38,13 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
 
-      <Navbar {...NavbarData} />
+      {/* <Navbar {...NavbarData} /> */}
+      
+      <NavbarUI /> 
+      <div className=" h-[6rem] w-full">
 
+      </div>
+      
       <div className="wrapper">
       <div className="unexpendable">
         {children}

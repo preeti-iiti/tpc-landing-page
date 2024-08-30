@@ -15,6 +15,10 @@ const config: Config = {
     //   'drkblue' : "#115398",
     // },
     extend: {
+      boxShadow: {
+        'neumorphisminset': ' 0px 0px 40px 10px #FBFBFD',
+        'neumorphism': 'inset 5px 5px 10px #d3d3d3,inset -5px -5px 10px #ededed',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

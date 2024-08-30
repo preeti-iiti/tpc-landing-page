@@ -1,18 +1,22 @@
 import Carousel from "./components/carousel/carousel";
 import PortalForm from "./components/portalform/portalform";
-import Recruiters from "./components/recruiters/recruiters";
-import Messages from "./components/messages/messages";
-
 import CarouselData from "./components/carousel/carousel.json";
-import RecruitersData from "./components/recruiters/ourrecruiters.json";
+import RecruiterUI from "@/components/recruiters"
+
+import Directorscard from "@/components/directorscard"
+import Piccard from "@/components/piccard"
 
 export default function Home() {
   return (
     <>
       <Carousel {...CarouselData} />
       <PortalForm />
-      <Messages />
-      <Recruiters {...RecruitersData} />
+   <div>
+    <Directorscard/>
+    <Piccard/>
+    </div>
+      <RecruiterUI/>
+
     </>
   );
 }
