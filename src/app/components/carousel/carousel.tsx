@@ -5,19 +5,6 @@ import { useState, useEffect } from "react"
 import styles from "./carousel.module.css"
 import React, { Component, MouseEvent } from 'react';
 import {Image} from '@nextui-org/react'
-import { motion } from 'framer-motion';
-const fadeInFromLeft = {
-  hidden: { opacity: 0, x: -50 },
-  visible: { opacity: 1, x: 0 },
-};
-const fadeInFromRight = {
-  hidden: { opacity: 0, x: 50 },
-  visible: { opacity: 1, x: 0 },
-};
-const fadeInFromBehind = {
-  hidden: { opacity: 0, x: 0 , scale : 0.5 },
-  visible: { opacity: 1, x: 0 , scale : 1 },
-};
 
 export default function Carousel(props: any) {
 
@@ -42,27 +29,9 @@ export default function Carousel(props: any) {
           <div className={styles.carousel}>
 
           <div className={styles.gallery}>
-          <motion.div
-                 initial="hidden"
-                 whileInView="visible"
-                 viewport={{ once: true, amount: 0.2 }} // Adjust amount based on when you want the animation to trigger
-                 variants={ fadeInFromBehind}
-                 transition={{ duration: 1 }} // Adjust the duration as needed
-                 
-               >
            <div className={styles.shadow}>
           <Image  isZoomed  src={props.images[currentIndex]} alt="tpc images" className={styles.displaypic}/>
           </div>
-          </motion.div>
-          
-          <motion.div
-                 initial="hidden"
-                 whileInView="visible"
-                 viewport={{ once: true, amount: 0.2 }} // Adjust amount based on when you want the animation to trigger
-                 variants={ fadeInFromBehind}
-                 transition={{ duration: 1 }} // Adjust the duration as needed
-                 
-               >
             <div className={styles.dots}>
 
               {props.images.map((image: string, index: number) => {
@@ -82,29 +51,18 @@ export default function Carousel(props: any) {
                 }})}
 
             </div>
-            </motion.div>
-            
+
             
 
           </div>
 
           <div className={styles.sidebar}>
               {props.images.map((image: string, index: number) => (
-                 <motion.div
-                 initial="hidden"
-                 whileInView="visible"
-                 viewport={{ once: true, amount: 0.2 }} // Adjust amount based on when you want the animation to trigger
-                 variants={ index === 2 || index === 4  ? fadeInFromLeft : fadeInFromRight}
-                 transition={{ duration: 1 }} // Adjust the duration as needed
-                 key={index}
-                 
-               >
-                <div className={styles.shadow2}  style={{ display: index === currentIndex ? "none" : "block" }  }>
+                <div className={styles.shadow2} key={index} style={{ display: index === currentIndex ? "none" : "block" }  }>
                 <button key={index} onClick={() => setCurrentIndex(index)} style={{ display: index === currentIndex ? "none" : "block" } }>
                 <Image radius="none" isZoomed key={index} alt="gallery" src={image} className={styles.thumbimg} />
                 </button>
                 </div>
-                </motion.div>
               ))
 
               }
