@@ -1,44 +1,64 @@
-
-import React from "react";
-import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button, RadioGroup, Radio} from "@nextui-org/react";
+"use client";
+import React, { useState, useEffect } from "react";
+import {
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+  Button,
+  RadioGroup,
+  Radio,
+} from "@nextui-org/react";
 import styles from "./dropdown.module.css";
 
 import Link from "next/link";
 export default function DropdownUI(props: any) {
+  const [scrolled, setScrolled] = useState(false);
 
-  return(
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
 
-<Dropdown shouldBlockScroll={false} >
-<DropdownTrigger>
-  <Button 
-    color= "primary"
-    variant="light"
-    className="text-sm hover:font-bold poppins"
+    window.addEventListener("scroll", handleScroll);
 
-  >
-    {props.children}
-  </Button>
-</DropdownTrigger>
-<DropdownMenu 
-  aria-label="Dropdown Variants"
-  color= "default"
-    variant="light"
-     
->
-
-{props.drop.map((item:any, index:any) => (
-    
-<DropdownItem className={`${styles.menuitem}`}  key={index} href={item.link} target={item.target}  >{item.title}</DropdownItem>
-
-  ))}
-
-  
-</DropdownMenu>
-</Dropdown>
-
-
-
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  return (
+    <Dropdown shouldBlockScroll={false}>
+      <DropdownTrigger>
+        <Button
+          color="default"
+          variant="light"
+          className={` text-sm min-w-[155px] opacity-80  poppins ${
+            scrolled ? "text-black" : "text-white"
+          }`}
+        >
+          {props.children}
+        </Button>
+      </DropdownTrigger>
+      <DropdownMenu
+        aria-label="Dropdown Variants"
+        color="default"
+        variant="light"
+      >
+        {props.drop.map((item: any, index: any) => (
+          <DropdownItem
+            className={`${styles.menuitem}`}
+            key={index}
+            href={item.link}
+            target={item.target}
+          >
+            {item.title}
+          </DropdownItem>
+        ))}
+      </DropdownMenu>
+    </Dropdown>
   );
-
-
 }

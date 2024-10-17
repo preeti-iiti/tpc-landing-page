@@ -3,21 +3,21 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import Link from 'next/link';
-import Image from 'next/image'
-import { motion } from "framer-motion"
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
-import Navbar from "./navbar/navbar"
-import Footer from "./footer/footer"
+import Navbar from "./navbar/navbar";
+import Footer from "./footer/footer";
 import FooterData from "./footer/footer.json";
 import NavbarData from "./navbar/navbar.json";
-
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Training and Placement Cell, IIT Indore",
-  description: "Students' Placement Office of IIT Indore, is the organization which handles all activities related to the campus placement of the graduating batch.",
+  description:
+    "Students' Placement Office of IIT Indore, is the organization which handles all activities related to the campus placement of the graduating batch.",
 };
 
 export default function RootLayout({
@@ -35,19 +35,17 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} max-w-[100dvw] overflow-x-clip pt-[3rem]`}
+      >
+        <Navbar {...NavbarData} />
 
-      <Navbar {...NavbarData} />
+        <div className="wrapper max-w-[100dvw] overflow-x-clip">
+          <div className="unexpendable">{children}</div>
+        </div>
 
-      <div className="wrapper">
-      <div className="unexpendable">
-        {children}
-        </div>
-        </div>
-        
-        <Footer {...FooterData}/>
- 
-        </body>
+        <Footer {...FooterData} />
+      </body>
     </html>
   );
 }

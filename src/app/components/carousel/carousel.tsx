@@ -1,97 +1,59 @@
-"use client"
+"use client";
 
-
-import { useState, useEffect } from "react"
-import styles from "./carousel.module.css"
-import React, { Component, MouseEvent } from 'react';
-import {Image} from '@nextui-org/react'
+import { useState, useEffect } from "react";
+import styles from "./carousel.module.css";
+import React, { Component, MouseEvent } from "react";
+import Image from "next/image";
 
 export default function Carousel(props: any) {
-
-
   const [currentIndex, setCurrentIndex] = useState(0);
-
-
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-
-      setCurrentIndex(currentIndex => (currentIndex === props.images.length - 1 ? 0 : currentIndex + 1));
-
-    }, 5000)
+      setCurrentIndex((currentIndex) =>
+        currentIndex === props.images.length - 1 ? 0 : currentIndex + 1
+      );
+    }, 5000);
 
     return () => clearInterval(intervalId);
-  }, [props.images.length])
+  }, [props.images.length]);
 
   return (
-    <>
+    <div className="  z-20 h-[80vh]">
+      <Image
+        height={500}
+        width={500}
+        src={props.images[currentIndex]}
+        alt="tpc images"
+        className="  object-cover w-[80vh] rounded-l-[100px] aspect-square absolute right-[-5px] top-[40px]   border-[5px] border-white  "
+      />
 
-          <div className={styles.carousel}>
-
-          <div className={styles.gallery}>
-           <div className={styles.shadow}>
-          <Image  isZoomed  src={props.images[currentIndex]} alt="tpc images" className={styles.displaypic}/>
-          </div>
-            <div className={styles.dots}>
-
-              {props.images.map((image: string, index: number) => {
-
-                if (index === currentIndex) {
-                  return (
-                    <button onClick={() => setCurrentIndex(index)} key={index}>
-                  <div className={styles.activedot} key={index}>.</div>
+      {/* <div className={styles.dots}>
+            {props.images.map((image: string, index: number) => {
+              if (index === currentIndex) {
+                return (
+                  <button onClick={() => setCurrentIndex(index)} key={index}>
+                    <div className={styles.activedot} key={index}>
+                      .
+                    </div>
                   </button>
-              )}
-                else {
-                  return(
-                  <button onClick={() => setCurrentIndex(index)} key={index} >
-                 <div className={styles.inactivedot} key={index}>.</div>
+                );
+              } else {
+                return (
+                  <button onClick={() => setCurrentIndex(index)} key={index}>
+                    <div className={styles.inactivedot} key={index}>
+                      .
+                    </div>
                   </button>
-                  )
-                }})}
-
-            </div>
-
-            
-
-          </div>
-
-          <div className={styles.sidebar}>
-              {props.images.map((image: string, index: number) => (
-                <div className={styles.shadow2} key={index} style={{ display: index === currentIndex ? "none" : "block" }  }>
-                <button key={index} onClick={() => setCurrentIndex(index)} style={{ display: index === currentIndex ? "none" : "block" } }>
-                <Image radius="none" isZoomed key={index} alt="gallery" src={image} className={styles.thumbimg} />
-                </button>
-                </div>
-              ))
-
+                );
               }
-            </div>
-
-
-            </div>
-
-
-
-       
-
-
-    </>
-
-
-
-
-
+            })}
+          </div> */}
+    </div>
   );
 }
 
-
-
-
-
-
 // "use client"
-
 
 // import { useState, useEffect } from "react"
 // import styles from "./carousel.module.css"
@@ -100,10 +62,7 @@ export default function Carousel(props: any) {
 
 // export default function Carousel(props: any) {
 
-
 //   const [currentIndex, setCurrentIndex] = useState(0);
-
-
 
 //   useEffect(() => {
 //     const intervalId = setInterval(() => {
@@ -145,8 +104,6 @@ export default function Carousel(props: any) {
 
 //             </div>
 
-            
-
 //           </div>
 
 //           <div className={styles.sidebar}>
@@ -159,19 +116,9 @@ export default function Carousel(props: any) {
 //               }
 //             </div>
 
-
 //             </div>
 
-
-
-       
-
-
 //     </>
-
-
-
-
 
 //   );
 // }

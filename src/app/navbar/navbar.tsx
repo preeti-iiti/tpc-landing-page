@@ -1,59 +1,199 @@
-"use client"
-import React from "react";
-import useState from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button, Dropdown} from "@nextui-org/react";
-import styles from "./navbar.module.css"
+"use client";
+import React, { useState, useEffect } from "react";
+
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+  Link,
+  Button,
+  Dropdown,
+} from "@nextui-org/react";
+import styles from "./navbar.module.css";
 import Image from "next/image";
-import Drop from "./components/dropdown/dropdown"
-import Accord from "./components/accordion/accordion"
-import {Divider} from "@nextui-org/react";
+import Drop from "./components/dropdown/dropdown";
+import Accord from "./components/accordion/accordion";
+import { Divider } from "@nextui-org/react";
+import HomeIcon from "@mui/icons-material/Home";
+import DatasetLinkedIcon from "@mui/icons-material/DatasetLinked";
+import InfoIcon from "@mui/icons-material/Info";
+import ContactSupportIcon from "@mui/icons-material/ContactSupport";
+import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
+import SchoolIcon from "@mui/icons-material/School";
 
-export default function NavbarUI(props:any) {
+export default function NavbarUI(props: any) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 200) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
- 
+    <Navbar
+      onMenuOpenChange={setIsMenuOpen}
+      isBlurred={false}
+      isBordered={scrolled ? true : false}
+      maxWidth="2xl"
+      className={`w-full overflow-hidden fixed top-0 transition-all duration-300 ${
+        scrolled ? "bg-white h-[4rem]" : "bg-sky-700 h-[5rem]"
+      }`}
+    >
+      <NavbarContent
+        justify="start"
+        className={`overflow-hidden min-w-[130px] gap-[0.5rem] ${
+          scrolled ? "flex" : "hidden"
+        }`}
+      >
+        <Link href="/">
+          <Image
+            width={60}
+            height={45}
+            src={props.logo}
+            alt="iit indore"
+            className={styles.iitilogo}
+          />
+        </Link>
 
+        <div
+          className={`h-[5rem]  overflow-hidden flex flex-col justify-center gap-[0rem] poppins ${
+            scrolled ? "text-black" : "text-white"
+          }`}
+        >
+          <div className="flex">
+            <Link
+              href="/"
+              color="foreground"
+              className={`${scrolled ? "text-black" : "text-white"}`}
+            >
+              <div className="text-[1.2rem]">TPC IITI</div>
+            </Link>
+          </div>
+        </div>
 
-    
-    <Navbar onMenuOpenChange={setIsMenuOpen} isBlurred={false} maxWidth="2xl" isBordered={true} className=" w-full overflow-hidden h-[6rem]">
-        <NavbarContent justify="start" className=" overflow-hidden gap-[0.5rem]">
-       
-          <Link href="/"><Image width={60} height={45} src={props.logo} alt="iit indore" className={styles.iitilogo} /></Link>
-             {/* <div className="flex"><Link href="/"><span className={styles.hindi}>प्रशिक्षण एवं नियोजन कक्ष</span></Link><span className={styles.partition}> | </span><Link href="/"><span className={styles.english}>Training and Placement Cell</span></Link></div> */}
-            
-            <div className=" h-[5rem]  overflow-hidden flex flex-col justify-center gap-[0rem] poppins">
-              <div className={styles.block1}>
-            <Link href="/" color="foreground"><div className= {styles.tpc}>Training and Placement Cell</div></Link>
-            <Link href="/" color="foreground"><div className= {styles.divider1}>&nbsp; | &nbsp;</div></Link>
-            <Link href="/" color="foreground"><div className= {`${styles.tpc} ${styles.hindi}`}>प्रशिक्षण एवं नियोजन कक्ष</div></Link>
-            </div>
-            <div className={styles.block2}>
-            <Link href="/" color="foreground"><div className={styles.iiti}>Indian Institute of Technology, Indore </div></Link>
-            <Link href="/" color="foreground"><div className={styles.divider2}>&nbsp; | &nbsp;</div></Link>
-            <Link href="/" color="foreground"><div className={`${styles.iiti} ${styles.hindi}`}>भारतीय प्रौद्योगिकी संस्थान, इंदौर </div></Link>
-            </div>
-            </div>
-
+        {/* <div
+          className={`h-[5rem]  overflow-hidden flex flex-col justify-center gap-[0rem] poppins ${
+            scrolled ? "text-black" : "text-white"
+          }`}
+        >
+          <div className={styles.block1}>
+            <Link
+              href="/"
+              color="foreground"
+              className={`${scrolled ? "text-black" : "text-white"}`}
+            >
+              <div className={styles.tpc}>Training and Placement Cell</div>
+            </Link>
+            <Link
+              href="/"
+              color="foreground"
+              className={`${scrolled ? "text-black" : "text-white"}`}
+            >
+              <div className={styles.divider1}>&nbsp; | &nbsp;</div>
+            </Link>
+            <Link
+              href="/"
+              color="foreground"
+              className={`${scrolled ? "text-black" : "text-white"}`}
+            >
+              <div className={`${styles.tpc} ${styles.hindi}`}>
+                प्रशिक्षण एवं नियोजन कक्ष
+              </div>
+            </Link>
+          </div>
+          <div className={styles.block2}>
+            <Link
+              href="/"
+              color="foreground"
+              className={`${scrolled ? "text-black" : "text-white"}`}
+            >
+              <div className={styles.iiti}>
+                Indian Institute of Technology, Indore{" "}
+              </div>
+            </Link>
+            <Link
+              href="/"
+              color="foreground"
+              className={`${scrolled ? "text-black" : "text-white"}`}
+            >
+              <div className={styles.divider2}>&nbsp; | &nbsp;</div>
+            </Link>
+            <Link
+              href="/"
+              color="foreground"
+              className={`${scrolled ? "text-black" : "text-white"}`}
+            >
+              <div className={`${styles.iiti} ${styles.hindi}`}>
+                भारतीय प्रौद्योगिकी संस्थान, इंदौर{" "}
+              </div>
+            </Link>
+          </div>
+        </div> */}
       </NavbarContent>
 
-      <NavbarContent  justify="end" className="hidden lg:flex gap-0.5">
-      {props.buttons.map((item:any, index:any) => (
-
+      <NavbarContent
+        justify="center"
+        className="hidden  w-full md:flex justify-around  "
+        style={{ justifyContent: "space-around" }}
+      >
+        {props.buttons.map((item: any, index: any) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-           
-           {item.isdrop ? <Drop {...item}>{item.title}</Drop> : <Button color= "primary" variant="light" className=" hover:font-bold poppins"> <Link href={item.link} className=" text-sm" > <div >{item.title}</div></Link></Button>}
-              
+            {item.isdrop ? (
+              <Drop {...item}>
+                {item.title == "About Us" ? (
+                  <InfoIcon className=" text-[1rem]" />
+                ) : item.title == "Contact Us" ? (
+                  <ContactSupportIcon className=" text-[1rem]" />
+                ) : item.title == "Recruiters' Corner" ? (
+                  <BusinessCenterIcon className=" text-[1rem]" />
+                ) : item.title == "Students' Corner" ? (
+                  <SchoolIcon className=" text-[1rem]" />
+                ) : null}
+                {item.title}
+              </Drop>
+            ) : (
+              <Button
+                color="default"
+                variant="light"
+                className=" min-w-[155px]  poppins"
+              >
+                {" "}
+                <Link
+                  href={item.link}
+                  className={` opacity-80 flex  items-center gap-1 text-sm ${
+                    scrolled ? "text-black" : "text-white"
+                  }`}
+                >
+                  {" "}
+                  {item.title == "Home" ? (
+                    <HomeIcon className=" text-[1rem]" />
+                  ) : (
+                    <DatasetLinkedIcon className=" text-[1rem]" />
+                  )}
+                  <div>{item.title}</div>
+                </Link>
+              </Button>
+            )}
           </NavbarMenuItem>
-          
         ))}
-
-      
-
       </NavbarContent>
 
-      
       {/* <NavbarContent justify="end">
         
         <NavbarItem>
@@ -63,36 +203,19 @@ export default function NavbarUI(props:any) {
         </NavbarItem>
       </NavbarContent> */}
 
+      <NavbarMenuToggle
+        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        className="lg:hidden"
+      />
 
-        
-        <NavbarMenuToggle
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="lg:hidden"
-          />
-  
-
-
-
-      <NavbarMenu >
-
-     
-
+      <NavbarMenu>
         <NavbarMenuItem className=" my-10">
           <Accord {...props} />
         </NavbarMenuItem>
-
-
       </NavbarMenu>
     </Navbar>
-
-   
-  
   );
 }
-
-
-
-
 
 // "use client"
 
@@ -102,20 +225,17 @@ export default function NavbarUI(props:any) {
 
 // export default function Navbar(props: any) {
 
-
-
-
 //   return (
 //     <div className={styles.wrapper}>
 //       <div className={styles.unexpendable}>
 
-        // <div className={styles.logo}>
-        //   <Link href="/"><Image width={50} height={50} src={props.logo} alt="iit indore" className={styles.iitilogo} /></Link>
-        //   <div className={styles.name}>
-        //     <div className={styles.tpc}><Link href="/"><span className={styles.hindi}>प्रशिक्षण एवं नियोजन कक्ष</span></Link><span className={styles.partition}> | </span><Link href="/"><span className={styles.english}>Training and Placement Cell</span></Link></div>
-        //     <div className={styles.iiti}><Link href="/"><span className={styles.hindi}>भारतीय प्रौद्योगिकी संस्थान, इंदौर</span></Link><span className={styles.partition}> | </span><Link href="/"><span className={styles.english}>Indian Institute of technology, Indore</span></Link></div>
-        //   </div>
-        // </div>
+// <div className={styles.logo}>
+//   <Link href="/"><Image width={50} height={50} src={props.logo} alt="iit indore" className={styles.iitilogo} /></Link>
+//   <div className={styles.name}>
+//     <div className={styles.tpc}><Link href="/"><span className={styles.hindi}>प्रशिक्षण एवं नियोजन कक्ष</span></Link><span className={styles.partition}> | </span><Link href="/"><span className={styles.english}>Training and Placement Cell</span></Link></div>
+//     <div className={styles.iiti}><Link href="/"><span className={styles.hindi}>भारतीय प्रौद्योगिकी संस्थान, इंदौर</span></Link><span className={styles.partition}> | </span><Link href="/"><span className={styles.english}>Indian Institute of technology, Indore</span></Link></div>
+//   </div>
+// </div>
 
 //         <div className={styles.modals}>
 //           <ul>
@@ -124,7 +244,7 @@ export default function NavbarUI(props:any) {
 //                   let abc = val.ismodal
 //                   if (abc) {
 //                     return <>
-                    
+
 //                     <li className={styles.modalbutton} key={index}>
 //                       <div className={styles.headlink}>
 //                      {val.title}
@@ -135,7 +255,7 @@ export default function NavbarUI(props:any) {
 //                       </div>
 //                     </li>
 //                     </>
-                   
+
 //                   }
 //                   else {
 //                     return <li className={styles.modalbutton} key={index}><Link href="/">{val.title}</Link></li>
@@ -150,8 +270,6 @@ export default function NavbarUI(props:any) {
 //           <div className={styles.midbar}></div>
 //           <div className={styles.lowbar}></div>
 //         </div>
-
-
 
 //       </div>
 //     </div>

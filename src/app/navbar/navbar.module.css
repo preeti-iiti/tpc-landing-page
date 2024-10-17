@@ -1,101 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+.tpc {
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-wrap: pretty;
 
-.tpc{
-    font-size: 0.9rem;
+  padding: 0;
+  margin: 0;
+  line-height: 1rem;
+}
+.divider1 {
+  font-size: 0.9rem;
+
+  text-wrap: pretty;
+
+  padding: 0;
+  margin: 0;
+  line-height: 1rem;
+  opacity: 50%;
+}
+
+.iiti {
+  font-size: 0.7rem;
+  text-wrap: nowrap;
+
+  padding: 0;
+  margin: 0;
+  line-height: 0.8rem;
+}
+.divider2 {
+  font-size: 0.7rem;
+  text-wrap: nowrap;
+  opacity: 50%;
+  padding: 0;
+  margin: 0;
+  line-height: 0.8rem;
+}
+
+.iitilogo {
+  width: 53px;
+  height: 45px;
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 1258px) and (min-width: 1024px) {
+  .iitilogo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .tpc {
+    font-size: 1.2vw;
     font-weight: 800;
-    text-wrap:pretty ;
-
     padding: 0;
     margin: 0;
-    line-height: 1rem;
-}
-.divider1{
-    font-size: 0.9rem;
+    line-height: 1.3vw;
+  }
 
-    text-wrap:pretty ;
+  .divider1 {
+    display: none;
+  }
+
+  .iiti {
+    font-size: 0.8vw;
+    text-wrap: nowrap;
 
     padding: 0;
-    margin: 0;
-    line-height: 1rem;
-    opacity: 50%;
-}
 
-.iiti{
-    font-size: 0.7rem;
-    text-wrap:nowrap ;
-
-padding: 0;
-margin: 0;
-line-height: 0.8rem;
-}
-.divider2{
-    font-size: 0.7rem;
-    text-wrap:nowrap ;
-    opacity: 50%;
-padding: 0;
-margin: 0;
-line-height: 0.8rem;
-}
-
-.iitilogo{
-    width: 60px;
-    height: 60px;
-    transition: .3s ease;
-  
-}
-
-@media screen and (max-width: 1258px ) and (min-width: 1024px){
-    .iitilogo{
-        width: 50px;
-        height: 50px;
-      
-    }
-    
-    .tpc{
-        font-size: 1.2vw;
-        font-weight: 800;
-        padding: 0;
-        margin: 0;
-        line-height: 1.3vw;
-    }
-
-    .divider1{
-        display: none;
-    }
-    
-    .iiti{
-        font-size: 0.8vw;
-        text-wrap:nowrap ;
-    
-    padding: 0;
-  
     line-height: 0.9vw;
-    }
-    .divider2{
-        display: none;
-    }
-    .block1{
-        display: flex;
-        flex-direction: column;
-    }
-    .block2{
-        display: flex;
-        flex-direction: column;
-        margin-top: 7px;
-    }
-
-
+  }
+  .divider2 {
+    display: none;
+  }
+  .block1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .block2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7px;
+  }
 }
 
-
-@media screen and (max-width: 520px ){
-
-    .hindi ,.divider1, .divider2{
-        display: none;
-    }
-    
-
-
+@media screen and (max-width: 520px) {
+  .hindi,
+  .divider1,
+  .divider2 {
+    display: none;
+  }
 }
-
