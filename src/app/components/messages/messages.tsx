@@ -27,7 +27,7 @@ export default function Messages() {
     const handleScroll = () => {
       if(window.scrollY <870)
       setScroll1Y(window.scrollY);
-      if(window.scrollY <1320)
+      if(window.scrollY <870)
       setScroll2Y(window.scrollY);
     };
 
@@ -58,7 +58,7 @@ export default function Messages() {
               <Modal {...message}></Modal>
             </div>
             <div
-            style={{ right:  index % 2 === 0 ?  `` :  `${-scroll2Y*0.3 + 400}px`, left:  index % 2 === 0 ?  `${-scroll1Y*0.3 + 250}px` :  `` }}
+            style={{ right:  index % 2 === 0 ?  `` :  `${-scroll2Y*0.45 + 390}px`, left:  index % 2 === 0 ?  `${-scroll1Y*0.3 + 260}px` :  `` }}
               className={` ${
                 index % 2 === 0
                   ? "border-sky-700 bg-white  text-black shadow-2xl shadow-sky-700/20 items-start"

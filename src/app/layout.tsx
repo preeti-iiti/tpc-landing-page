@@ -36,7 +36,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.className} max-w-[100dvw] overflow-x-clip pt-[3rem]`}
+        className={`${inter.className} max-w-[100dvw] overflow-x-clip pt-[6rem]`}
       >
         <Navbar {...NavbarData} />
 

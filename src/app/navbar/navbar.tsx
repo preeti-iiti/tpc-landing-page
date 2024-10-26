@@ -31,7 +31,7 @@ export default function NavbarUI(props: any) {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY >= 200) {
+      if (window.scrollY >= 150) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -49,15 +49,14 @@ export default function NavbarUI(props: any) {
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
       isBlurred={false}
-      isBordered={scrolled ? true : false}
+      // isBordered={scrolled ? true : false}
       maxWidth="2xl"
-      className={`w-full overflow-hidden fixed top-0 transition-all duration-300 bg-sky-700 h-[5rem] `}
+      className={`w-full overflow-hidden fixed top-0 transition-all duration-300 bg-sky-700 h-[5rem] ${scrolled ? `shadow-md` : ""} `}
     >
+      
       <NavbarContent
         justify="start"
-        className={`overflow-hidden min-w-max  hover:scale-105 transition-all duration-300 bg-[rgb(255,255,255,1)] rounded-xl px-3 ${
-          scrolled ? "bg-sky-700 " : "bg-[rgb(255,255,255,0.9)] "
-        }  `}
+        className={`overflow-hidden min-w-max  hover:scale-105 transition-all duration-300 bg-sky-700  rounded-xl px-3  `}
       >
           <Link href="/" className="">
         
@@ -66,16 +65,12 @@ export default function NavbarUI(props: any) {
             height={45}
             src={props.logo}
             alt="iit indore"
-            className={`${styles.iitilogo} ${
-              scrolled ? " invert brightness-0 " : ""
-            }  `}
+            className={`${styles.iitilogo}  invert brightness-0 `}
           />
         
 
         <div
-          className={`h-[5rem]  overflow-hidden flex flex-col ml-2 items-start justify-center  transition-all duration-300 poppins ${
-            scrolled ? "text-white " : "text-sky-700 "
-          } `}
+          className={`h-[5rem]  text-white overflow-hidden flex flex-col ml-2 items-start justify-center  transition-all duration-300 poppins  `}
         >
           
               <div className="text-[0.7rem] font-bold leading-4">Training and Placement Cell</div>
