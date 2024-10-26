@@ -20,15 +20,17 @@ export default function Messages() {
     modalRef.current?.showModal();
   };  
 
-  const [scroll1Y, setScroll1Y] = useState(0);
-  const [scroll2Y, setScroll2Y] = useState(0);
+  const [scroll1Y, setScroll1Y] = useState(870);
+  const [scroll2Y, setScroll2Y] = useState(870);
 
   useEffect(() => {
     const handleScroll = () => {
       if(window.scrollY <870)
-      setScroll1Y(window.scrollY);
+      {setScroll1Y(window.scrollY)}
+     
       if(window.scrollY <870)
-      setScroll2Y(window.scrollY);
+      {setScroll2Y(window.scrollY)}
+      
     };
 
     window.addEventListener("scroll", handleScroll);

@@ -86,15 +86,16 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[250px] h-[250px] max-w-full relative rounded-2xl flex items-center hover:scale-[108%] transition-all duration-200 bg-white border flex-shrink-0 px-8 py-6 "
+            className="w-[250px] bg-[#f2f1f1] h-[250px] max-w-full relative rounded-2xl flex items-center hover:scale-[108%] transition-all duration-200   flex-shrink-0 px-8 py-6 "
             key={idx}
           >
             <div>
             <Image
                    
+                    style={{ mixBlendMode: "multiply" }}
                     src={item.path}
                     alt={"image"}
-                    className="w-full  object-contain rounded-lg"
+                    className="w-full   object-contain rounded-lg"
                   />
              
             </div>
