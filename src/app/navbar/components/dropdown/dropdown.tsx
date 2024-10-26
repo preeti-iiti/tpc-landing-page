@@ -36,8 +36,8 @@ export default function DropdownUI(props: any) {
         <Button
           color="default"
           variant="light"
-          className={` text-sm min-w-[155px] opacity-80  poppins ${
-            scrolled ? "text-black" : "text-white"
+          className={` text-sm min-w-[155px] transition-all duration-200 text-white  poppins ${
+            scrolled ? "opacity-100" : "opacity-80"
           }`}
         >
           {props.children}

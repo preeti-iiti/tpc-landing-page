@@ -51,40 +51,36 @@ export default function NavbarUI(props: any) {
       isBlurred={false}
       isBordered={scrolled ? true : false}
       maxWidth="2xl"
-      className={`w-full overflow-hidden fixed top-0 transition-all duration-300 ${
-        scrolled ? "bg-white h-[4rem]" : "bg-sky-700 h-[5rem]"
-      }`}
+      className={`w-full overflow-hidden fixed top-0 transition-all duration-300 bg-sky-700 h-[5rem] `}
     >
       <NavbarContent
         justify="start"
-        className={`overflow-hidden min-w-[130px] gap-[0.5rem] ${
-          scrolled ? "flex" : "hidden"
-        }`}
+        className={`overflow-hidden min-w-max  hover:scale-105 transition-all duration-300 bg-[rgb(255,255,255,1)] rounded-3xl px-3 ${
+          scrolled ? "bg-sky-700 " : "bg-[rgb(255,255,255,0.9)] "
+        }  `}
       >
-        <Link href="/">
+          <Link href="/" className="">
+        
           <Image
             width={60}
             height={45}
             src={props.logo}
             alt="iit indore"
-            className={styles.iitilogo}
+            className={`${styles.iitilogo} ${
+              scrolled ? " invert brightness-0 " : ""
+            }  `}
           />
-        </Link>
+        
 
         <div
-          className={`h-[5rem]  overflow-hidden flex flex-col justify-center gap-[0rem] poppins ${
-            scrolled ? "text-black" : "text-white"
-          }`}
+          className={`h-[5rem]  overflow-hidden flex flex-col ml-2 items-start justify-center  transition-all duration-300 poppins ${
+            scrolled ? "text-white " : "text-sky-700 "
+          } `}
         >
-          <div className="flex">
-            <Link
-              href="/"
-              color="foreground"
-              className={`${scrolled ? "text-black" : "text-white"}`}
-            >
-              <div className="text-[1.2rem]">TPC IITI</div>
-            </Link>
-          </div>
+          
+              <div className="text-[0.7rem] font-bold leading-4">Training and Placement Cell</div>
+              <div className="text-[0.5rem] font-bold leading-4">Indian Institue of Technology Indore</div>
+            
         </div>
 
         {/* <div
@@ -145,15 +141,15 @@ export default function NavbarUI(props: any) {
             </Link>
           </div>
         </div> */}
+      </Link>
       </NavbarContent>
-
       <NavbarContent
         justify="center"
         className="hidden  w-full md:flex justify-around  "
         style={{ justifyContent: "space-around" }}
       >
         {props.buttons.map((item: any, index: any) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+          <NavbarMenuItem className={`enter1 delay-500`} key={`${item}-${index}`}>
             {item.isdrop ? (
               <Drop {...item}>
                 {item.title == "About Us" ? (
@@ -176,8 +172,8 @@ export default function NavbarUI(props: any) {
                 {" "}
                 <Link
                   href={item.link}
-                  className={` opacity-80 flex  items-center gap-1 text-sm ${
-                    scrolled ? "text-black" : "text-white"
+                  className={` text-white flex transition-all duration-200  items-center gap-1 text-sm ${
+                    scrolled ? "opacity-100 " : "opacity-80 "
                   }`}
                 >
                   {" "}

@@ -8,6 +8,22 @@ import Image from "next/image";
 export default function Carousel(props: any) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+      
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+ 
+
+
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((currentIndex) =>
@@ -19,13 +35,14 @@ export default function Carousel(props: any) {
   }, [props.images.length]);
 
   return (
-    <div className="  z-20 h-[80vh]">
+    <div className="  z-20 h-[80vh] mb-10">
       <Image
         height={500}
         width={500}
         src={props.images[currentIndex]}
         alt="tpc images"
-        className="  object-cover w-[80vh] rounded-l-[100px] aspect-square absolute right-[-5px] top-[40px]   border-[5px] border-white  "
+        style={{ right: `${-scrollY*0.5 - 5}px`, top: "40px" }} // Dynamically update the right position
+        className={`  object-cover w-[80vh] rounded-l-[100px] aspect-square absolute  border-[5px] border-white  `}
       />
 
       {/* <div className={styles.dots}>

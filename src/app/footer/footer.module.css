@@ -37,7 +37,7 @@
   margin: 1rem;
   width: auto;
 
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   transition: 0.3s ease;
 }
 
@@ -71,7 +71,7 @@
 .googlemap {
   border: 0;
   border-radius: 6px;
-  width: 35rem;
+  width: 30rem;
   margin-inline: 20px;
 }
 
@@ -119,15 +119,15 @@
 }
 
 .links {
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding-left: 10px;
   transition: 0.3s ease;
 }
 
 .links:hover {
-  transition: 0s ease;
+
   scale: 1.1;
-  border-left: 2px solid white;
+  transform: translateX(3%);
 }
 
 .logos {

@@ -1,16 +1,36 @@
+"use client";
 import Carousel from "./components/carousel/carousel";
 import PortalForm from "./components/portalform/portalform";
 import Recruiters from "./components/recruiters/recruiters";
 import Messages from "./components/messages/messages";
 
 import CarouselData from "./components/carousel/carousel.json";
-import RecruitersData from "./components/recruiters/ourrecruiters.json";
+import {useState, useEffect} from "react";
 
 export default function Home() {
+
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+      
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+ 
+
+
   return (
     <>
       <div className=" absolute top-0 h-[100vh]">
-        <div className=" w-[4000px] h-[4000px] bg-sky-700 rounded-[500px] absolute left-[-500px] bottom-[40vh] rotate-[-10deg]"></div>
+        <div
+          style={{ bottom: `calc(${scrollY*0.3}px + 40vh)`, left: "-500px" }} // Dynamically update the right position
+         className=" w-[4000px] h-[4000px] bg-sky-700 rounded-[500px] absolute left-[-500px] bottom-[40vh] rotate-[-10deg]"></div>
       </div>
       <div className="">
         <div className=" flex justify-start items-center ">
@@ -19,7 +39,7 @@ export default function Home() {
         </div>
       </div>
       <Messages />
-      <Recruiters {...RecruitersData} />
+      <Recruiters />
     </>
   );
 }

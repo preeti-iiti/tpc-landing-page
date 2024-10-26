@@ -18,7 +18,26 @@ export default function Messages() {
   const openModal = (heading: string, info: string, photo: string) => {
     setSelectedMessage({ heading, info, photo });
     modalRef.current?.showModal();
-  };
+  };  
+
+  const [scroll1Y, setScroll1Y] = useState(0);
+  const [scroll2Y, setScroll2Y] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if(window.scrollY <870)
+      setScroll1Y(window.scrollY);
+      if(window.scrollY <1320)
+      setScroll2Y(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+ 
 
   return (
     <>
@@ -28,7 +47,7 @@ export default function Messages() {
             {message.title}
           </h2>
           <div className={index % 2 === 0 ? styles.info : styles.infoReverse}>
-            <div className="   min-w-max  flex flex-col gap-5 justify-center">
+            <div  className=" relative   min-w-max  flex flex-col gap-5 justify-center">
               <Image
                 width={200}
                 height={200}
@@ -39,15 +58,17 @@ export default function Messages() {
               <Modal {...message}></Modal>
             </div>
             <div
+            style={{ right:  index % 2 === 0 ?  `` :  `${-scroll2Y*0.3 + 400}px`, left:  index % 2 === 0 ?  `${-scroll1Y*0.3 + 250}px` :  `` }}
               className={` ${
                 index % 2 === 0
-                  ? "border-sky-700 bg-white text-black shadow-2xl shadow-sky-700/20 items-start"
+                  ? "border-sky-700 bg-white  text-black shadow-2xl shadow-sky-700/20 items-start"
                   : "border-sky-700 bg-white text-black shadow-2xl shadow-sky-700/20  items-end"
-              }  p-10 flex flex-col justify-center   rounded-3xl  gap-7 `}
+              }  p-10 relative flex flex-col justify-center   rounded-3xl  gap-7 `}
             >
               <div
                 className={`${styles.summary} para `}
                 style={{ fontSize: "0.9rem" }}
+                
               >
                 {message.summary}
               </div>
