@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React , {useState} from "react";
 import PieChart from "./chart";
 import { ChartData } from "chart.js";
 import styles from "./page.module.css";
@@ -50,12 +51,22 @@ const createChartData = (
 };
 
 const Demographics: React.FC = () => {
+
+    const [visible, setVisible] = useState("CSE");
+
   return (
-    <div className={styles.wrapper}>
+    <div className="">
       <div className="header1">Demographics</div>
-      <div className={styles.container}>
-        {departmentData.departmentData.map((dept, index) => (
-          <div key={index} className={styles.department}>
+      <div className=" flex  flex-row  justify-around ">
+
+
+      <div  className=" flex flex-col  min-h-[100%]  justify-around ">
+      {departmentData.departmentData.map((dept, index) => (
+        <div onClick={()=> setVisible(dept.short)} style={{backgroundColor : dept.short == visible ? "#0284c7" : "white", color : dept.short == visible ? "white" : "#0284c7" }} className=" flex items-center transition-all duration-300 justify-center  shadow-sm px-6 py-4 rounded-3xl text-white">{dept.departmentName}</div>
+        ))}
+      </div>
+      {departmentData.departmentData.map((dept, index) => (
+      <div key={index} style={{display : dept.short == visible ? "flex" : "none" }} className="  flex-col w-[450px] h-[750px] items-center justify-center ">
             <div className=" flex justify-between items-center">
               <h2 className=" questitle">{dept.departmentName}</h2>
               <div className=" flex ">
@@ -90,7 +101,11 @@ const Demographics: React.FC = () => {
               ))}
             </div>
           </div>
-        ))}
+
+      ))};
+
+
+      
       </div>
     </div>
   );
