@@ -143,7 +143,7 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export default function Recruiters() {
   return (
-    <section className="mb-16">
+    <section className="mb-8">
     <h2 className="text-3xl font-semibold mb-8 text-center text-[#2C3E50]">
           Our Recruiters
           </h2>

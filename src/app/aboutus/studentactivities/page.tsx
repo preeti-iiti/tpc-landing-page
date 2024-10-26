@@ -9,7 +9,7 @@ export default function StudentActivities() {
     return (
      
     <div className=' flex flex-col gap-[40px]'>
-    <div className='header2'>Student Activities</div>
+    <div className="text-3xl font-semibold  text-center text-[#2C3E50]">Student Activities</div>
   <Activities></Activities> 
 
   <Gymkhana></Gymkhana>
