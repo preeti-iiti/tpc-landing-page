@@ -55,7 +55,7 @@ export default function NavbarUI(props: any) {
     >
       <NavbarContent
         justify="start"
-        className={`overflow-hidden min-w-max  hover:scale-105 transition-all duration-300 bg-[rgb(255,255,255,1)] rounded-3xl px-3 ${
+        className={`overflow-hidden min-w-max  hover:scale-105 transition-all duration-300 bg-[rgb(255,255,255,1)] rounded-xl px-3 ${
           scrolled ? "bg-sky-700 " : "bg-[rgb(255,255,255,0.9)] "
         }  `}
       >
