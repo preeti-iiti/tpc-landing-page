@@ -36,11 +36,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     <div className="w-full font-sans" ref={containerRef}>
       <div className="max-w-4xl  py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
-          Our Journey
+          Placement process
         </h2>
-        <p className="mt-4 max-w-2xl text-xl text-gray-500 dark:text-gray-300">
-          Explore the key milestones that have shaped our path.
-        </p>
 
         <div className="mt-16 relative">
           <motion.div
