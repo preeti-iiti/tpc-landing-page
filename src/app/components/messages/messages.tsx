@@ -20,16 +20,15 @@ export default function Messages() {
     modalRef.current?.showModal();
   };  
 
-  const [scroll1Y, setScroll1Y] = useState(870);
-  const [scroll2Y, setScroll2Y] = useState(870);
+  const [scrollY, setScrollY] = useState(870);
+
 
   useEffect(() => {
     const handleScroll = () => {
-      if(window.scrollY <870)
-      {setScroll1Y(window.scrollY)}
+ 
+      {setScrollY(window.scrollY)}
      
-      if(window.scrollY <870)
-      {setScroll2Y(window.scrollY)}
+  
       
     };
 
@@ -60,7 +59,7 @@ export default function Messages() {
               <Modal {...message}></Modal>
             </div>
             <div
-            style={{ right:  index % 2 === 0 ?  `` :  `${-scroll2Y*0.45 + 390}px`, left:  index % 2 === 0 ?  `${-scroll1Y*0.3 + 260}px` :  `` }}
+            style={{ right:  scrollY<870 && index % 2 != 0 ?  `${-scrollY*0.45 + 390}px` :  ``, left:  scrollY<870 && index % 2 === 0 ?  `${-scrollY*0.3 + 260}px` :  `` }}
               className={` ${
                 index % 2 === 0
                   ? "border-sky-700 bg-white  text-black shadow-2xl shadow-sky-700/20 items-start"

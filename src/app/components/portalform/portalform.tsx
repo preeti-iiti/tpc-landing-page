@@ -2,7 +2,11 @@
 import styles from "./portalform.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+
 export default function PortalForm() {
+  const words = `Training and Placement Cell IIT Indore, is the organization which handles all activities related to the campus placement of the graduating batch.
+`;
   return (
     <div className=" w-[45%] relative z-10  ">
       {/* <div className=" flex items-center">
@@ -24,10 +28,10 @@ export default function PortalForm() {
         IIT Indore
       </div> */}
       <div className=" text-white opacity-70 font-thin">
-        {
-          "Training and Placement Cell IIT Indore, is the organization which handles all activities related to the campus placement of the graduating batch."
-        }
+       
+        <TextGenerateEffect words={words} />
       </div>
+
       <div className=" flex justify-start gap-7 my-10">
         <button
           onClick={() => {

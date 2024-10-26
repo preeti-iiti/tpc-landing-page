@@ -15,7 +15,7 @@ export default function WhyRecruit() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if(window.scrollY< 500)
+    
       setScrollY(window.scrollY);
       
     };
@@ -67,7 +67,7 @@ export default function WhyRecruit() {
         {data.map((item,index)=>(<>
           <div
           className={` shadow-md relative  flex justify-around  h-[250px] w-[45%]  rounded-3xl`}
-          style={{ left:   index>1 && index % 2 != 0 ?  `${scrollY*0.7 - 337 }px` :  ``, right: index>1 && index % 2 === 0 ?  `${scrollY*0.7 - 337 }px` :  ``, top: index>1 ? `${-scrollY*(index-2)*0.55 + (index-2)*270 }px` :"" }}
+          style={{ left: scrollY<500 && index>1 && index % 2 != 0 ?  `${scrollY*0.7 - 337 }px` :  ``, right: scrollY<500 && index>1 && index % 2 === 0 ?  `${scrollY*0.7 - 337 }px` :  ``, top: scrollY<500 &&  index>1 ? `${-scrollY*(index-2)*0.55 + (index-2)*270 }px` :"" }}
         >
           <div className=" w-[40%] h-full bg-sky-700 rounded-l-3xl rounded-r-none flex items-center justify-center text-white text-[5rem]">{index+1}</div>
           {/* <div className=" w-[40%] h-full bg-sky-400 rounded-l-none rounded-r-3xl flex items-center justify-center text-white text-[5rem]"></div> */}

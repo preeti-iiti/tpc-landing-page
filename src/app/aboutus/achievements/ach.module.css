@@ -16,8 +16,8 @@
 }
 
 .header:hover {
-    font-size: 3.5rem;
-    filter: brightness(120%);
+    
+    filter: brightness(110%);
 }
 
 .subheader
