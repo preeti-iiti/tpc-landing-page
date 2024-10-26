@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import styles from "./recruit.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import data from "./data.json";
 import { Image } from "@nextui-org/image";
 
@@ -11,17 +11,25 @@ export default function WhyRecruit() {
   const handleMouseEnter = (newColor: any) => setColor(newColor);
   const handleMouseLeave = () => setColor("text-[#115398]");
 
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+    
+      setScrollY(window.scrollY);
+      
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+ 
+
   return (
     <div>
-      <div className={`${styles.hover4} text-[2rem]`}>
-        Why{" "}
-        <span
-          className={`${color} transition-all duration-1000 brightness-[80%]`}
-        >
-          Recruit{" "}
-        </span>{" "}
-        From IIT Indore ?
-      </div>
+      
 
       <div className={styles.grid}>
         <div
@@ -29,96 +37,46 @@ export default function WhyRecruit() {
           onMouseEnter={() => handleMouseEnter("text-[#67a8ac]")}
           onMouseLeave={handleMouseLeave}
         >
-          <Image src={data[9]} alt="" className="scale-[0.6]" />
+          <Image src="/data/rankings/1.png" alt="" className="scale-[0.6]" />
         </div>
         <div
           className={styles.card}
           onMouseEnter={() => handleMouseEnter("text-[#67a8ac]")}
           onMouseLeave={handleMouseLeave}
         >
-          <Image src={data[10]} alt="" className="scale-[0.7]" />
+          <Image src="/data/rankings/2.png" alt="" className="scale-[0.7]" />
         </div>
         <div
           className={styles.card}
           onMouseEnter={() => handleMouseEnter("text-[#67a8ac]")}
           onMouseLeave={handleMouseLeave}
         >
-          <Image src={data[11]} alt="" className="scale-[0.7]" />
+          <Image src="/data/rankings/3.png" alt="" className="scale-[0.7]" />
         </div>
         <div
           className={styles.card}
           onMouseEnter={() => handleMouseEnter("text-[#67a8ac]")}
           onMouseLeave={handleMouseLeave}
         >
-          <Image src={data[12]} alt="" className="scale-[0.9]" />
+          <Image src="/data/rankings/4.png" alt="" className="scale-[0.9]" />
         </div>
       </div>
 
       <div className="questitle mb-5 mt-5">Highlights</div>
-      <div className="flex flex-col gap-10">
-        <div
-          className={`${styles.block} border-l-[2px] border-[#08da4e]`}
-          onMouseEnter={() => handleMouseEnter("text-[#08da4e]")}
-          onMouseLeave={handleMouseLeave}
+      <div className="flex flex-wrap justify-center gap-10">
+        {data.map((item,index)=>(<>
+          <div
+          className={` shadow-md relative  flex justify-around  h-[250px] w-[45%]  rounded-3xl`}
+          style={{ left: scrollY<500 && index>1 && index % 2 != 0 ?  `${scrollY*0.7 - 337 }px` :  ``, right: scrollY<500 && index>1 && index % 2 === 0 ?  `${scrollY*0.7 - 337 }px` :  ``, top: scrollY<500 &&  index>1 ? `${-scrollY*(index-2)*0.55 + (index-2)*270 }px` :"" }}
         >
-          <span className="para">{data[0]}</span>
+          <div className=" w-[40%] h-full bg-sky-700 rounded-l-3xl rounded-r-none flex items-center justify-center text-white text-[5rem]">{index+1}</div>
+          {/* <div className=" w-[40%] h-full bg-sky-400 rounded-l-none rounded-r-3xl flex items-center justify-center text-white text-[5rem]"></div> */}
+          <div className=" w-full h-full bg-white rounded-l-none rounded-r-3xl flex items-center justify-center text-sky-700 text-[1rem] p-6">{item}</div>
+          
+          
+         
         </div>
-        <div
-          className={`${styles.block} border-l-[2px] border-[#ff6347]`}
-          onMouseEnter={() => handleMouseEnter("text-[#ff6347]")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <span className="para">{data[1]}</span>
-        </div>
-        <div
-          className={`${styles.block} border-l-[2px] border-[#1e90ff]`}
-          onMouseEnter={() => handleMouseEnter("text-[#1e90ff]")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <span className="para">{data[2]}</span>
-        </div>
-        <div
-          className={`${styles.block} border-l-[2px] border-[#ff8c00]`}
-          onMouseEnter={() => handleMouseEnter("text-[#ff8c00]")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <span className="para">{data[3]}</span>
-        </div>
-        <div
-          className={`${styles.block} border-l-[2px] border-[#ff1493]`}
-          onMouseEnter={() => handleMouseEnter("text-[#ff1493]")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <span className="para">{data[4]}</span>
-        </div>
-        <div
-          className={`${styles.block} border-l-[2px] border-[#32cd32]`}
-          onMouseEnter={() => handleMouseEnter("text-[#32cd32]")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <span className="para">{data[5]}</span>
-        </div>
-        <div
-          className={`${styles.block} border-l-[2px] border-[#4682b4]`}
-          onMouseEnter={() => handleMouseEnter("text-[#4682b4]")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <span className="para">{data[6]}</span>
-        </div>
-        <div
-          className={`${styles.block} border-l-[2px] border-[#ff4500]`}
-          onMouseEnter={() => handleMouseEnter("text-[#ff4500]")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <span className="para">{data[7]}</span>
-        </div>
-        <div
-          className={`${styles.block} border-l-[2px] border-[#daa520]`}
-          onMouseEnter={() => handleMouseEnter("text-[#daa520]")}
-          onMouseLeave={handleMouseLeave}
-        >
-          <span className="para">{data[8]}</span>
-        </div>
+        </>))}
       </div>
     </div>
   );
