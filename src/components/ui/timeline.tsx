@@ -2,7 +2,7 @@
 
 import React, { useRef, useState, useEffect } from "react"
 import { motion, useScroll, useTransform, useSpring, useInView, MotionValue } from "framer-motion"
-import { ChevronDown } from "lucide-react"
+import { ChevronDown,Pin } from "lucide-react"
 
 interface TimelineEntry {
   title: string
@@ -98,31 +98,48 @@ const backgroundShadow = useTransform(
     [start, end],
     ["#E9D5FF", "#7C3AED"] // From light purple to dark purple
   )
+  const iconColor = useTransform(
+    progress,
+    [start, end],
+    ["#0369a1", "#2563eb"] // From sky-700 to blue-600
+  )
+  const backgroundOpacity = useTransform(
+    progress,
+    [start, end],
+    [0.5, 1]
+  )
 
   return (
     <motion.div
       ref={ref}
-      className="mb-16 ml-16 relative"
+      className="mb-16 ml-20 relative"
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-      transition={{ duration: 0.5, delay: 0.2 }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
     >
       <motion.div
-        className="absolute -left-10 mt-1.5 h-4 w-4 rounded-full"
-        style={{ backgroundColor }}
+        className="absolute -left-[59px] mt-1.5 h-6 w-6 rounded-full bg-gradient-to-br from-sky-500 to-blue-500 flex items-center justify-center"
+        style={{ backgroundColor: iconColor }}
         initial={{ scale: 0 }}
         animate={isInView ? { scale: 1 } : { scale: 0 }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
-      />
-      <motion.div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
-      
-        style={{ boxShadow: backgroundColor }}
-
-      transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <h3 className="text-lg font-medium  text-gray-900 dark:text-white mb-2">{item.title}</h3>
-        <div className="prose dark:prose-invert max-w-none">{item.content}</div>
+        {item.icon}
       </motion.div>
+      <motion.div 
+  className="bg-white dark:bg-sky-900 p-8 rounded-lg shadow-xl overflow-hidden relative"
+  style={{ 
+    boxShadow: "0 10px 15px -3px rgba(3, 105, 161, 0.1), 0 4px 6px -2px rgba(3, 105, 161, 0.05)",
+  }}
+>
+  <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-sky-500 to-blue-500"></div>
+  <div className="absolute bottom-0 right-0 w-24 h-24 bg-sky-100 dark:bg-sky-800 rounded-tl-full"></div>
+  <div className="absolute top-2 right-2">
+    <Pin className="w-6 h-6 mt-4 text-sky-900 dark:text-sky-100" />
+  </div>
+  <h3 className="text-2xl font-bold text-sky-900 dark:text-sky-100 mb-4 relative z-10">{item.title}</h3>
+  <div className="prose dark:prose-invert max-w-none text-sky-700 dark:text-sky-300 relative z-10">{item.content}</div>
+</motion.div>
     </motion.div>
   )
 }
