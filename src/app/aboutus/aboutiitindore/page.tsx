@@ -53,16 +53,16 @@ export default function AboutIITIndore() {
       </div>
 
 
-      <div className={styles.questitle}>Academics</div>
+      {/* <div className={styles.questitle}>Academics</div> */}
 
     <div className={styles.content}>
 
 
-      <div className="para">
+      {/* <div className="para">
         {data.academicsstarter}
-      </div>
+      </div> */}
     
-    <div className={` flex flex-row justify-between items-start w-[100%] ${styles.academicquery} `}>
+    {/* <div className={` flex flex-row justify-between items-start w-[100%] ${styles.academicquery} `}>
       <div className="flex  flex-col my-[2rem] justify-center max-[945px]:my-0 ">
       <Tabs aria-label="Dynamic tabs" items={tabs} radius="md" color="secondary" className={styles.tabname}>
         {(item) => (
@@ -92,11 +92,11 @@ export default function AboutIITIndore() {
       </Listbox>
       </div>
       </div>
-      </div>
+      </div> */}
 
-      <div className="para">
+      {/* <div className="para">
         {data.academicsend}
-      </div>
+      </div> */}
 
 
       <div className={styles.questitle}>Research And Innovation</div>
@@ -157,7 +157,7 @@ export default function AboutIITIndore() {
 
           <div className="para"> {data.reaseachend}</div>
 
-      <div className={styles.questitle}>Infrastructure</div>
+      {/* <div className={styles.questitle}>Infrastructure</div>
 
 
       <div className="para">{data.infrastructure}</div>
@@ -179,7 +179,7 @@ export default function AboutIITIndore() {
               
             );
 
-          })}
+          })} */}
 
 
       
