@@ -147,18 +147,28 @@ export default function Recruiters() {
     <h2 className="text-3xl font-semibold mb-8 text-center text-[#2C3E50]">
           Our Recruiters
           </h2>
-    <div className="h-[20rem] rounded-md flex flex-col antialiased dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="h-[15rem] rounded-md flex flex-col antialiased dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
-        items={recruiters}
+        items={recruiters1}
         direction="right"
         speed="slow"
       />
     </div>
+    <div className="h-[15rem] rounded-md flex flex-col antialiased dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+      <InfiniteMovingCards
+        items={recruiters2}
+        direction="left"
+        speed="slow"
+      />  
+    </div>
     </section>
   );
 }
-const recruiters = Array.from({ length: 31 }, (_, i) => ({
+const recruiters1 = Array.from({ length: 31 }, (_, i) => ({
   path: require(`../../../../public/data/recruiters/prorec/l${i + 1}.png`),
+}));
+const recruiters2 = Array.from({ length: 31 }, (_, i) => ({
+  path: require(`../../../../public/data/recruiters/prorec/l${31 - i}.png`),
 }));
 
 const testimonials = [
