@@ -1,6 +1,5 @@
 "use client";
 import Carousel from "./components/carousel/carousel";
-import Carouselsm from "./components/carouselsm/carouselsm";
 import CarouselData from "./components/carousel/carousel.json";
 
 import styles from "./aboutiiti.module.css"
@@ -37,18 +36,19 @@ export default function AboutIITIndore() {
     <div >
 
       <div className={styles.introcard}>
-        <div>
+        <div className=" flex flex-col items-center gap-5">
           <Carousel {...CarouselData} />
-        </div>
-
-        <div className={styles.intro}>
-        <div className="header2 leading-normal">About IITI</div>
-          {data.intro}
           <Link href={data.iitihome} target="_blank">
       <Button color="primary" variant="flat"
       radius="full" className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg text-[1.5rem] h-[5rem] uppercase font-bold">
          IIT Indore Home
       </Button></Link> 
+        </div>
+
+        <div className={styles.intro}>
+        <div className="header2 leading-normal">About IITI</div>
+          {data.intro}
+          
         </div>
       </div>
 
