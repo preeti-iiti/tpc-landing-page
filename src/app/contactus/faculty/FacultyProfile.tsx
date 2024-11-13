@@ -17,11 +17,7 @@ const FacultyProfile: React.FC = () => {
                         <p>{faculty.department}</p>
                     </div>
                  </div>
-                 <div className={`${styles.cardside} ${styles.back}`}>
-                    <div className=" flex flex-col w-[100%] h-[100%] justify-around items-center">
-                        <Image src="/data/logo/iiti.png" alt="IITI" height={250} width={250} className={styles.embeded} />
-                    </div>
-                    </div>
+               
 
 
                 </div>

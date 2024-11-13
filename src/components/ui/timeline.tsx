@@ -40,7 +40,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
         <div className="relative">
           <motion.div
-            className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-purple-200 dark:bg-gray-700"
+            className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-sky-500"
             style={{ scaleY, originY: 0 }}
           />
 
@@ -111,10 +111,8 @@ const TimelineItem = ({
           }}
         >
           <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-sky-500 to-blue-500"></div>
-          <div className="absolute bottom-0 right-0 w-24 h-24 bg-sky-100 dark:bg-sky-800 rounded-tl-full"></div>
-          <div className="absolute top-2 right-2">
-            <Pin className="w-6 h-6 mt-4 text-sky-900 dark:text-sky-100" />
-          </div>
+          
+          
           <h3 className="text-2xl font-bold text-sky-900 dark:text-sky-100 mb-4 relative z-10">{item.title}</h3>
           <div className="prose dark:prose-invert max-w-none text-sky-700 dark:text-sky-300 relative z-10">{item.content}</div>
         </motion.div>

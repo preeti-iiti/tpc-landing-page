@@ -20,9 +20,9 @@ export default function HowToReachIITI() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="  pt-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-4xl font-bold text-center text-gray-900 mb-8">How To Reach IITI</h1>
+        <h1 className="text-4xl font-bold text-center header2 mb-8">How To Reach IITI</h1>
         
         <div className="bg-white shadow-lg rounded-lg overflow-hidden mb-8">
           <div className="flex border-b">

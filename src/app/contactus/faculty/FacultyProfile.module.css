@@ -76,12 +76,9 @@
   }
   
   .card:hover .cardside.front {
-    transform: rotateY(180deg);
+   scale: 1.1;
   }
   
-  .card:hover .cardside.back {
-    transform: rotateY(0deg);
-  }
 
 
 
