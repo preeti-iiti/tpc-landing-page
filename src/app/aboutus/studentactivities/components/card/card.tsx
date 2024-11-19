@@ -19,11 +19,11 @@ return(
                 {props.Clubs.map((club: { img: string; title: string; link: string; }, index: number) => (
 
             <motion.div
-                    
+                    key={index}
                     initial={{ opacity: 0, y: 50 }} // Start with opacity 0 and 50px to the right
                     animate={isInView ? { opacity: 1, y: 0 } : {}}  // Animate to opacity 1 and its original position
                     transition={{ duration: 0.5, delay: 0.1 + index*0.1 }} className=" w-full">
-                    <div className={styles.card} key={index}>
+                    <div className={styles.card}>
                         <Image src={club.img} alt={club.title} />
                         <div className=" text-[0.8rem] font-semibold">{club.title}</div>
                         

@@ -13,6 +13,7 @@ export default function List(props:any) {
 {props.achieve.map((item:any, index:any) => (
 
 <motion.div
+key={index}
 initial={{ opacity: 0, x: 50 }} // Start with opacity 0 and 50px to the right
 animate={{ opacity: 1, x: 0 }}  // Animate to opacity 1 and its original position
 transition={{ duration: 0.3, delay: 0.3 + index*0.3 }} className="group  w-[45%]">

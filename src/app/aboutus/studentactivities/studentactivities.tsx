@@ -11,10 +11,11 @@ export default function Activities() {
             <div className={styles.cardContainer}>
                 {data.activities.map((activity, index) => (
                     <motion.div
+                    key={index}
                     initial={{ opacity: 0, x: 50 }} // Start with opacity 0 and 50px to the right
                     animate={{ opacity: 1, x: 0 }}  // Animate to opacity 1 and its original position
                     transition={{ duration: 0.5, delay: 0.1 + index*0.1 }} className=" w-full">
-                    <div key={index} className={styles.card}>
+                    <div  className={styles.card}>
                     <div className={`${styles.cardside} ${styles.front}`}>
                         <Image src={activity.img} alt={activity.title} className={styles.image}  />
                    </div>
