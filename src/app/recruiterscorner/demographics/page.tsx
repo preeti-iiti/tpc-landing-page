@@ -62,7 +62,7 @@ const Demographics: React.FC = () => {
 
       <div  className=" flex flex-col  min-h-[100%]  justify-around ">
       {departmentData.departmentData.map((dept, index) => (
-        <div onClick={()=> setVisible(dept.short)} style={{backgroundColor : dept.short == visible ? "#0284c7" : "white", color : dept.short == visible ? "white" : "#0284c7" }} className=" flex items-center transition-all duration-300 justify-center  shadow-sm px-6 py-4 rounded-3xl text-white">{dept.departmentName}</div>
+        <div key={index} onClick={()=> setVisible(dept.short)} style={{backgroundColor : dept.short == visible ? "#0284c7" : "white", color : dept.short == visible ? "white" : "#0284c7" }} className=" flex items-center transition-all duration-300 justify-center  shadow-sm px-6 py-4 rounded-3xl text-white">{dept.departmentName}</div>
         ))}
       </div>
       {departmentData.departmentData.map((dept, index) => (
