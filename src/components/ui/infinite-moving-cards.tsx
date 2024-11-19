@@ -93,6 +93,7 @@ export const InfiniteMovingCards = ({
             <Image
                    
                     style={{ mixBlendMode: "multiply" }}
+                    
                     src={item.path}
                     alt={"image"}
                     className="w-full   object-contain rounded-lg"

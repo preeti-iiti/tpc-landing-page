@@ -39,6 +39,7 @@ export default function Carousel(props: any) {
       <Image
         height={500}
         width={500}
+        blurDataURL={props.images[currentIndex]}
         src={props.images[currentIndex]}
         alt="tpc images"
         style={{ right: `${-scrollY*0.5 - 5}px`, top: "40px" }} // Dynamically update the right position
