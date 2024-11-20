@@ -229,10 +229,7 @@ export default function AboutIITIndore() {
         
 
       </div>
-      <div className="header2 leading-normal mt-16">Conclusion</div>
-<div className={styles.conclude}>
-      IIT Indore, with its robust academic programs, cutting-edge research, and vibrant campus life, stands as a beacon of higher education in India. The institute continues to strive towards its mission of nurturing innovative minds and contributing to the technological and scientific advancement of the nation and the world.
-      </div>
+     
     </div>
 
 
