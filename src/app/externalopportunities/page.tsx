@@ -4,10 +4,9 @@ import styles from "./externalopportunities.module.css";
 
 import TableUI from "./components/table";
 
-const baseUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
-
 export default function ExternalOpportunities() {
   const [OpportunitiesData, setOpportunitiesData] = React.useState([]);
+  const baseUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
 
   useEffect(() => {
     const fetchData = async () => {
