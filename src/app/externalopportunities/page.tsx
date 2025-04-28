@@ -6,14 +6,12 @@ import TableUI from "./components/table";
 
 export default function ExternalOpportunities() {
   const [OpportunitiesData, setOpportunitiesData] = React.useState([]);
-  const baseUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        console.log(baseUrl)
         const response = await fetch(
-          `${baseUrl}/api/v1/external-opportunities`,
+          `api/v1/external-opportunities`,
         );
         const data = await response.json();
         console.log(data);
